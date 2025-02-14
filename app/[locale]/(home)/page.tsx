@@ -1,3 +1,4 @@
+import LanguageChanger from '@/components/LanguageChanger';
 import initTranslations from '../../i18n';
 import TranslationsProvider from '@/components/TranslationsProvider';
 
@@ -14,6 +15,7 @@ export default async function Home({params: {locale}} : {params : {locale: strin
         >
             <div>
                 <h1>{t('hello')}</h1>
+                <LanguageChanger/>
             </div>
         </TranslationsProvider>
     );
