@@ -9,7 +9,13 @@ export default {
   ],
   theme: {
   	extend: {
+		backgroundImage: {
+			'back-home' : 'url("/assets/img/capa-site-1.png")',
+		},
   		colors: {
+			blue: {
+				primary: '#4FA1FF',
+			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -54,9 +60,11 @@ export default {
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
+  			sm: 'calc(var(--radius) - 4px)',
+			button: '30px'
   		}
   	}
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;

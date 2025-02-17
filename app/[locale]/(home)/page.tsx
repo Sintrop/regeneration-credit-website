@@ -1,6 +1,7 @@
-import LanguageChanger from '@/components/LanguageChanger';
 import initTranslations from '../../i18n';
 import TranslationsProvider from '@/components/TranslationsProvider';
+import { Header } from '@/components/Header/Header';
+import { Hero } from './_components/Hero';
 
 const i18nNamespaces = ['home'];
 
@@ -13,10 +14,13 @@ export default async function Home({params: {locale}} : {params : {locale: strin
             locale={locale}
             resources={resources}
         >
-            <div>
-                <h1>{t('hello')}</h1>
-                <LanguageChanger/>
-            </div>
+            <>
+                <div className='bg-back-home w-full flex flex-col bg-cover bg-center'>
+                    <Header/>
+
+                    <Hero/>
+                </div>
+            </>
         </TranslationsProvider>
     );
 }
