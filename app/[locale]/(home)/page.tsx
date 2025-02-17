@@ -2,6 +2,7 @@ import initTranslations from '../../i18n';
 import TranslationsProvider from '@/components/TranslationsProvider';
 import { Header } from '@/components/Header/Header';
 import { Hero } from './_components/Hero';
+import { WhatIsIt } from './_components/WhatIsIt';
 
 const i18nNamespaces = ['home'];
 
@@ -20,6 +21,10 @@ export default async function Home({params: {locale}} : {params : {locale: strin
 
                     <Hero/>
                 </div>
+
+                <main className='container mx-auto px-5 lg:px-20'>
+                    <WhatIsIt/>
+                </main>
             </>
         </TranslationsProvider>
     );

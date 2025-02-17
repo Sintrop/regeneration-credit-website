@@ -7,9 +7,9 @@ export function Hero() {
                 A Peer-to-Peer Nature Regeneration System
             </h2>
 
-            <h3 className="text-white text-center lg:text-start lg:text-2xl lg:max-w-[50%]">
+            <p className="text-white text-center lg:text-start lg:text-2xl lg:max-w-[50%]">
                 We introduce the Regeneration Credit, a funding mechanism for environmental service and a smart contract certification system.
-            </h3>
+            </p>
 
             <div className="flex flex-col items-center gap-5 md:gap-10 md:flex-row">
                 <Button

@@ -11,10 +11,14 @@ export default {
   	extend: {
 		backgroundImage: {
 			'back-home' : 'url("/assets/img/capa-site-1.png")',
+			'network': 'url("/assets/img/rede-descentralizada.png")'
 		},
   		colors: {
 			blue: {
 				primary: '#4FA1FF',
+			},
+			green: {
+				primary: '#149954',
 			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
