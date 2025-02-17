@@ -16,7 +16,7 @@ export default async function Home({params: {locale}} : {params : {locale: strin
         >
             <>
                 <div className='bg-back-home w-full flex flex-col bg-cover bg-center'>
-                    <Header/>
+                    <Header locale={locale} namespace={i18nNamespaces} />
 
                     <Hero/>
                 </div>
