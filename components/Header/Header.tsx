@@ -12,8 +12,9 @@ export async function Header({t}: Props){
         <header
             className="container mx-auto py-10 flex items-center justify-between px-5"
         >
-            <section
+            <Link
                 className="flex items-center gap-4"
+                href="/"
             >
                 <Image
                     src={ImageRc}
@@ -23,7 +24,7 @@ export async function Header({t}: Props){
                 />
 
                 <h1 className="text-white font-bold uppercase lg:text-xl">{t('regenerationCredit')}</h1>
-            </section>
+            </Link>
 
             <section className="items-center gap-5 hidden lg:flex">
                 <nav className="flex items-center gap-10 rounded-button bg-white/50 px-10 h-[60px]">

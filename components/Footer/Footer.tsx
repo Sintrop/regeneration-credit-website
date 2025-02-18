@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import { TType } from '@/types/t';
+import { FaPlay } from 'react-icons/fa6';
 
 
 interface Props {
@@ -46,8 +47,8 @@ export async function Footer({ t }: Props) {
                     >
                         Get started
 
-                        <div className="h-[40px] w-[40px] rounded-full bg-blue-primary items-center justify-center">
-
+                        <div className="h-[40px] w-[40px] rounded-full bg-blue-primary flex items-center justify-center">
+                            <FaPlay size={20} color='white' />
                         </div>
                     </Button>
                 </section>
