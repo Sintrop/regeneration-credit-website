@@ -1,12 +1,13 @@
-import { CardTokenInfo } from './CardTokenInfo';
 import Link from 'next/link';
+import { CardTokenInfo } from './CardTokenInfo';
 import { Button } from '@/components/ui/button';
 import { TType } from '@/types/t';
+import { QrToken } from './QrToken';
 
 interface Props {
     t: TType;
 }
-export async function RcToken({t}: Props) {
+export async function RcToken({ t }: Props) {
     return (
         <section className="flex flex-col py-10 lg:py-20">
             <h3 className='text-3xl font-bold uppercase text-center'>{t('regenerationCredit')} (RC)</h3>
@@ -37,21 +38,21 @@ export async function RcToken({t}: Props) {
                 </div>
 
                 <div className='w-full flex flex-col items-center justify-center gap-5 mt-10 lg:mt-0 lg:max-w-[50%] lg:items-end'>
-                    <div className='w-36 h-36 bg-red-500 rounded-md'>
-                        QR Code
-                    </div>
+                    <QrToken/>
+                    
                     <div className='flex gap-2'>
                         <Link
-                            href="https://sequoia.sintrop.com/token/0xA2628da7B5C8B9921E52402438c320e03d191275"
+                            href={`https://sequoia.sintrop.com/token/${process.env.NEXT_PUBLIC_ADDRESS_RCTOKEN}`}
                             target='_blank'
                             className='underline text-blue-500'
                         >
-                            0xA2628da7B5C8B9921E52402438c320e03d191275
+                            {process.env.NEXT_PUBLIC_ADDRESS_RCTOKEN}
                         </Link>
                     </div>
 
                     <Button
-                        className='rounded-[40] h-[50px] px-10 border-2 text-black border-green-primary bg-transparent'
+                        className='border-green-primary'
+                        variant='outline'
                     >
                         Add Metamask
                     </Button>
