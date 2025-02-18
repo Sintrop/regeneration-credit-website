@@ -6,6 +6,7 @@ import { WhatIsIt } from './_components/WhatIsIt';
 import { RcToken } from './_components/RcToken';
 import { Technology } from './_components/Technology';
 import { Community } from './_components/Community';
+import { Footer } from '@/components/Footer/Footer';
 
 const i18nNamespaces = ['home'];
 
@@ -38,6 +39,8 @@ export default async function Home({params: {locale}} : {params : {locale: strin
                         <Community />
                     </div>
                 </main>
+
+                <Footer locale={locale} namespace={i18nNamespaces}/>
             </>
         </TranslationsProvider>
     );
