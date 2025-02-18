@@ -10,8 +10,8 @@ import { Footer } from '@/components/Footer/Footer';
 
 const i18nNamespaces = ['home'];
 
-export default async function Home({params: {locale}} : {params : {locale: string}}) {
-    const {t, resources} = await initTranslations(locale, i18nNamespaces);
+export default async function Home({ params: { locale } }: { params: { locale: string } }) {
+    const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
     return (
         <TranslationsProvider
@@ -19,29 +19,27 @@ export default async function Home({params: {locale}} : {params : {locale: strin
             locale={locale}
             resources={resources}
         >
-            <>
-                <div className='bg-back-home w-full flex flex-col bg-cover bg-center'>
-                    <Header locale={locale} namespace={i18nNamespaces} />
+            <div className='bg-back-home w-full flex flex-col bg-cover bg-center'>
+                <Header t={t} />
 
-                    <Hero/>
+                <Hero t={t} />
+            </div>
+
+            <main>
+                <div className='container mx-auto px-5 lg:px-20'>
+                    <WhatIsIt t={t} />
+
+                    <RcToken t={t} />
                 </div>
 
-                <main>
-                    <div className='container mx-auto px-5 lg:px-20'>
-                        <WhatIsIt/>
+                <Technology t={t} />
 
-                        <RcToken locale={locale} namespace={i18nNamespaces}/>
-                    </div>
+                <div className='container mx-auto px-5 lg:px-20'>
+                    <Community t={t} />
+                </div>
+            </main>
 
-                    <Technology />
-
-                    <div className='container mx-auto px-5 lg:px-20'>
-                        <Community />
-                    </div>
-                </main>
-
-                <Footer locale={locale} namespace={i18nNamespaces}/>
-            </>
+            <Footer t={t} />
         </TranslationsProvider>
     );
 }

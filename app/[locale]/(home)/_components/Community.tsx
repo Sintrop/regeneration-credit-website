@@ -1,6 +1,10 @@
+import { TType } from "@/types/t";
 import { UserTypeCommunity } from "./UserTypeCommunity";
 
-export async function Community(){
+interface Props{
+    t: TType;
+}
+export async function Community({}: Props){
     return(
         <section className="flex flex-col py-10 lg:py-20">
             <h3 className="font-bold text-3xl">Comunidade</h3>

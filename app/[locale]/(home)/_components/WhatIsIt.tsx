@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
 import ImageRc from '@/public/assets/img/rc.png';
+import { TType } from "@/types/t";
 import Image from "next/image";
 
-export async function WhatIsIt() {
+interface Props{
+    t: TType;
+}
+export async function WhatIsIt({}: Props) {
     return (
         <section
             className="flex flex-col items-center justify-between py-10 lg:py-20 lg:flex-row"

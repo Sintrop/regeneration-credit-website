@@ -1,15 +1,12 @@
-import initTranslations from '@/app/i18n';
 import { CardTokenInfo } from './CardTokenInfo';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { TType } from '@/types/t';
 
 interface Props {
-    locale: string;
-    namespace: string[];
+    t: TType;
 }
-export async function RcToken({ locale, namespace }: Props) {
-    const { t } = await initTranslations(locale, namespace);
-
+export async function RcToken({t}: Props) {
     return (
         <section className="flex flex-col py-10 lg:py-20">
             <h3 className='text-3xl font-bold uppercase text-center'>{t('regenerationCredit')} (RC)</h3>

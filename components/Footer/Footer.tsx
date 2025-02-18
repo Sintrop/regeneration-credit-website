@@ -1,17 +1,14 @@
 import ImageRc from '@/public/assets/img/rc.png';
-import initTranslations from '@/app/i18n';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ui/button';
+import { TType } from '@/types/t';
 
 
 interface Props {
-    locale: string;
-    namespace: string[];
+    t: TType;
 }
-export async function Footer({ locale, namespace }: Props) {
-    const { t } = await initTranslations(locale, namespace);
-
+export async function Footer({ t }: Props) {
     return (
         <footer className="bg-green-primary py-10 lg:py-20">
             <div className="container mx-auto flex flex-col gap-5">

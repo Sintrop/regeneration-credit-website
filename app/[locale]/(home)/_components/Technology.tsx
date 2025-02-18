@@ -1,6 +1,10 @@
+import { TType } from "@/types/t";
 import { CardTechnologyInfo } from "./CardTechnologyInfo";
 
-export async function Technology(){
+interface Props{
+    t: TType;
+}
+export async function Technology({}: Props){
     return(
         <section className="w-screen bg-back-home-2 py-10 lg:py-20 bg-cover bg-center bg-no-repeat">
             <div className="container mx-auto px-5 lg:px-20">

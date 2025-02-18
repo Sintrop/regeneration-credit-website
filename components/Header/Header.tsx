@@ -2,15 +2,12 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import ImageRc from '@/public/assets/img/rc.png';
-import initTranslations from '@/app/i18n';
+import { TType } from "@/types/t";
 
 interface Props{
-    locale: string;
-    namespace: string[];
+    t: TType;
 }
-export async function Header({locale, namespace}: Props){
-    const {t} = await initTranslations(locale, namespace);
-
+export async function Header({t}: Props){
     return(
         <header
             className="container mx-auto py-10 flex items-center justify-between px-5"
