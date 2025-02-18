@@ -3,6 +3,8 @@ import initTranslations from "@/app/i18n";
 import { Header } from "@/components/Header/Header";
 import { HeroResources } from "./_components/HeroResources";
 import { AccessAllResources } from "./_components/AccessAllResources";
+import { SocialNetwork } from "./_components/SocialNetwork";
+import { Footer } from "@/components/Footer/Footer";
 
 const i18nNamespaces = ['resources'];
 
@@ -14,19 +16,21 @@ export default async function Resources({ params: { locale } }: { params: { loca
             locale={locale}
             resources={resources}
         >
-            <>
-                <div className='bg-back-home w-full flex flex-col bg-cover bg-center'>
-                    <Header t={t} />
+            <div className='bg-back-home w-full flex flex-col bg-cover bg-center'>
+                <Header t={t} />
 
-                    <HeroResources t={t}/>
+                <HeroResources t={t} />
+            </div>
+
+            <main>
+                <div className="container mx-auto px-5 lg:px-20">
+                    <AccessAllResources t={t} />
                 </div>
 
-                <main>
-                    <div className="container mx-auto px-5 lg:px-20">
-                        <AccessAllResources t={t} />
-                    </div>
-                </main>
-            </>
+                <SocialNetwork t={t} />
+            </main>
+
+            <Footer t={t} />
         </TranslationsProvider>
     )
 }
