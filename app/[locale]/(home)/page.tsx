@@ -4,6 +4,7 @@ import { Header } from '@/components/Header/Header';
 import { Hero } from './_components/Hero';
 import { WhatIsIt } from './_components/WhatIsIt';
 import { RcToken } from './_components/RcToken';
+import { Technology } from './_components/Technology';
 
 const i18nNamespaces = ['home'];
 
@@ -23,10 +24,14 @@ export default async function Home({params: {locale}} : {params : {locale: strin
                     <Hero/>
                 </div>
 
-                <main className='container mx-auto px-5 lg:px-20'>
-                    <WhatIsIt/>
+                <main>
+                    <div className='container mx-auto px-5 lg:px-20'>
+                        <WhatIsIt/>
 
-                    <RcToken locale={locale} namespace={i18nNamespaces}/>
+                        <RcToken locale={locale} namespace={i18nNamespaces}/>
+                    </div>
+
+                    <Technology />
                 </main>
             </>
         </TranslationsProvider>

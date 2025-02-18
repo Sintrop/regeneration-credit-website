@@ -11,6 +11,7 @@ export default {
   	extend: {
 		backgroundImage: {
 			'back-home' : 'url("/assets/img/capa-site-1.png")',
+			'back-home-2' : 'url("/assets/img/capa-site-2.png")',
 			'network': 'url("/assets/img/rede-descentralizada.png")'
 		},
   		colors: {
