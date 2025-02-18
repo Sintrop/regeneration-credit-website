@@ -1,5 +1,5 @@
 import { TType } from "@/types/t";
-import { CardTechnologyInfo } from "./CardTechnologyInfo";
+import { CardInfoWithLink } from "@/components/CardInfoWithLink/CardInfoWithLink";
 
 interface Props{
     t: TType;
@@ -11,17 +11,17 @@ export async function Technology({}: Props){
                 <h3 className="font-bold text-white text-3xl">Technology</h3>
 
                 <div className="flex flex-wrap justify-center gap-8 mt-20">
-                    <CardTechnologyInfo
+                    <CardInfoWithLink
                         title="Open source"
                         description="Open source and community developed."
                         link="https://google.com"
                     />
-                    <CardTechnologyInfo
+                    <CardInfoWithLink
                         title="Public data"
                         description="Every data in the system is public and transparent to everyone"
                         link="https://google.com"
                     />
-                    <CardTechnologyInfo
+                    <CardInfoWithLink
                         title="Smart contracts"
                         description="The RC is a set of smart contracts that define the rules of the system without a trusted central authority."
                         link="https://google.com"

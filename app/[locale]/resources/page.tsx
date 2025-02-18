@@ -2,6 +2,7 @@ import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "@/app/i18n";
 import { Header } from "@/components/Header/Header";
 import { HeroResources } from "./_components/HeroResources";
+import { AccessAllResources } from "./_components/AccessAllResources";
 
 const i18nNamespaces = ['resources'];
 
@@ -19,6 +20,12 @@ export default async function Resources({ params: { locale } }: { params: { loca
 
                     <HeroResources t={t}/>
                 </div>
+
+                <main>
+                    <div className="container mx-auto px-5 lg:px-20">
+                        <AccessAllResources t={t} />
+                    </div>
+                </main>
             </>
         </TranslationsProvider>
     )
