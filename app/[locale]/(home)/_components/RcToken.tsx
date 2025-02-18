@@ -15,35 +15,31 @@ export async function RcToken({ locale, namespace }: Props) {
             <h3 className='text-3xl font-bold uppercase text-center'>{t('regenerationCredit')} (RC)</h3>
 
             <div className='flex flex-col lg:flex-row lg:mt-10'>
-                <div className='flex flex-wrap items-center gap-8 mt-5 w-full lg:max-w-[50%] lg:border-r lg:py-5'>
+                <div className='flex flex-wrap items-center justify-center gap-8 mt-5 w-full lg:justify-start lg:max-w-[50%] lg:border-r lg:py-5'>
                     <CardTokenInfo
                         label='Total Supply'
                         value={1375499899}
                     />
-
                     <CardTokenInfo
                         label='Type'
-                        value={18}
+                        value={0}
+                        erc20
                     />
                     <CardTokenInfo
                         label='Holders'
                         value={45}
                     />
-
                     <CardTokenInfo
                         label='Total Transfers'
                         value={85}
                     />
-
-
-
                     <CardTokenInfo
                         label='Decimals'
                         value={18}
                     />
                 </div>
 
-                <div className='w-full flex flex-col justify-center gap-2 lg:max-w-[50%] lg:items-end'>
+                <div className='w-full flex flex-col items-center justify-center gap-5 mt-10 lg:mt-0 lg:max-w-[50%] lg:items-end'>
                     <div className='w-36 h-36 bg-red-500 rounded-md'>
                         QR Code
                     </div>

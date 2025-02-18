@@ -6,7 +6,7 @@ export async function Technology(){
             <div className="container mx-auto px-5 lg:px-20">
                 <h3 className="font-bold text-white text-3xl">Technology</h3>
 
-                <div className="flex flex-wrap gap-8 mt-20">
+                <div className="flex flex-wrap justify-center gap-8 mt-20">
                     <CardTechnologyInfo
                         title="Open source"
                         description="Open source and community developed."

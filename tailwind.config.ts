@@ -21,6 +21,7 @@ export default {
 			green: {
 				primary: '#149954',
 			},
+			"users-community": "#F7FFF4",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
