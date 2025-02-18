@@ -3,6 +3,7 @@ import TranslationsProvider from '@/components/TranslationsProvider';
 import { Header } from '@/components/Header/Header';
 import { Hero } from './_components/Hero';
 import { WhatIsIt } from './_components/WhatIsIt';
+import { RcToken } from './_components/RcToken';
 
 const i18nNamespaces = ['home'];
 
@@ -24,6 +25,8 @@ export default async function Home({params: {locale}} : {params : {locale: strin
 
                 <main className='container mx-auto px-5 lg:px-20'>
                     <WhatIsIt/>
+
+                    <RcToken locale={locale} namespace={i18nNamespaces}/>
                 </main>
             </>
         </TranslationsProvider>
