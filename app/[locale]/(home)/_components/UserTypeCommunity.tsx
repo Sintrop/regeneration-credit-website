@@ -20,7 +20,7 @@ export async function UserTypeCommunity({userType}: Props){
             className='w-full flex flex-col items-center gap-5 justify-between rounded-[30px] p-5 bg-users-community lg:flex-row'
             data-aos='fade-up'
         >
-            <div className='flex items-center gap-5'>
+            <div className='flex flex-col items-center gap-5 md:flex-row'>
                 <Image
                     src={data?.image}
                     alt='image user'

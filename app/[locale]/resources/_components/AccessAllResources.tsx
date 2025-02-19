@@ -6,10 +6,10 @@ interface Props {
 }
 export function AccessAllResources({ }: Props) {
     return (
-        <section className="w-full bg-[#08514C] rounded-[40px] px-2 py-10 lg:px-20 lg:py-20 mt-20">
+        <section className="w-full bg-[#08514C] rounded-[40px] px-5 py-10 lg:px-20 lg:py-20 mt-20">
             <h3 className="font-bold text-white text-3xl">Accesse todos os recursos</h3>
 
-            <div className="flex flex-wrap mt-10 gap-10 lg:gap-5">
+            <div className="flex flex-wrap mt-10 gap-10 lg:gap-5 justify-center">
                 <CardInfoWithLink
                     title="Whitepapper"
                     description="Code open source and community developed."

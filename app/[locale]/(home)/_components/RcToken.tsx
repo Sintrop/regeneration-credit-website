@@ -38,17 +38,18 @@ export async function RcToken({ t }: Props) {
                 </div>
 
                 <div className='w-full flex flex-col items-center justify-center gap-5 mt-10 lg:mt-0 lg:max-w-[50%] lg:items-end'>
-                    <QrToken/>
-                    
-                    <div className='flex gap-2'>
-                        <Link
-                            href={`https://sequoia.sintrop.com/token/${process.env.NEXT_PUBLIC_ADDRESS_RCTOKEN}`}
-                            target='_blank'
-                            className='underline text-blue-500'
-                        >
-                            {process.env.NEXT_PUBLIC_ADDRESS_RCTOKEN}
-                        </Link>
-                    </div>
+                    <h4>Accesse o token</h4>
+                    <QrToken />
+
+
+                    <Link
+                        href={`https://sequoia.sintrop.com/token/${process.env.NEXT_PUBLIC_ADDRESS_RCTOKEN}`}
+                        target='_blank'
+                        className='underline text-blue-500 max-w-[100%] truncate text-ellipsis overflow-hidden text-right'
+                    >
+                        {process.env.NEXT_PUBLIC_ADDRESS_RCTOKEN}
+                    </Link>
+
 
                     <Button
                         className='border-green-primary'
