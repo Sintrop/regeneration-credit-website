@@ -35,20 +35,20 @@ export async function Header({t}: Props){
                         href="/"
                         className="text-white"
                     >
-                        Home
+                        {t('home')}
                     </Link>
                     <Link 
                         href="/resources"
                         className="text-white"
                     >
-                        Resources
+                        {t('resources')}
                     </Link>
                 </nav>
 
                 <Button
                     className="px-10 h-[50px] rounded-[40px] bg-blue-primary text-white text-semibold"
                 >
-                    Launch App
+                    {t('launchApp')}
                 </Button>
             </section>
 

@@ -37,26 +37,26 @@ export function NavMenuMobile({ t }: Props) {
                     href="/"
                     className="text-black underline"
                 >
-                    - Home
+                    - {t('home')}
                 </Link>
                 <Link
                     href="/resources"
                     className="text-black underline"
                 >
-                    - Resources
+                    - {t('resources')}
                 </Link>
             </nav>
 
             <Button
                 className="px-10 h-[50px] rounded-[40px] bg-blue-primary text-white text-semibold mt-10"
             >
-                Launch App
+                {t('launchApp')}
             </Button>
 
             <Button
                 className="mt-5 border-2 border-blue-primary rounded-[40px] h-[50px] bg-transparent text-black flex items-center justify-between pr-1 font-semibold gap-5 w-fit"
             >
-                Get started
+                {t('getStarted')}
 
                 <div className="h-[40px] w-[40px] rounded-full bg-blue-primary flex items-center justify-center">
                     <FaPlay size={20} color='white' />

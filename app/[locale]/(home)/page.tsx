@@ -23,8 +23,8 @@ export async function generateMetadata(
     const { t } = await initTranslations(locale, i18nNamespaces);
 
     return {
-        title: 'title',
-        description: 'teste description novo'
+        title: t('seo-title'),
+        description: t('seo-description'),
     }
 }
 
