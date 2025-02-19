@@ -14,8 +14,9 @@ export async function Footer({ t }: Props) {
         <footer className="bg-green-primary py-10 lg:py-20">
             <div className="container mx-auto flex flex-col gap-5">
                 <section className="flex flex-col gap-5 items-center justify-around border-b border-white pb-10 lg:flex-row">
-                    <section
-                        className="flex items-center gap-4"
+                    <Link
+                        className="flex items-center gap-3"
+                        href="/"
                     >
                         <Image
                             src={ImageRc}
@@ -25,27 +26,27 @@ export async function Footer({ t }: Props) {
                         />
 
                         <h4 className="text-white font-bold uppercase lg:text-xl">{t('regenerationCredit')}</h4>
-                    </section>
+                    </Link>
 
                     <nav className="flex flex-col gap-5">
                         <Link
                             href="/"
                             className="text-white hover:underline"
                         >
-                            - Home
+                            - {t('home')}
                         </Link>
                         <Link
                             href="/resources"
                             className="text-white hover:underline"
                         >
-                            - Resources
+                            - {t('resources')}
                         </Link>
                     </nav>
 
                     <Button
                         className="border-2 border-white rounded-[40px] h-[50px] bg-transparent flex items-center justify-between pr-1 font-semibold gap-5 w-fit md:w-auto"
                     >
-                        Get started
+                        {t('getStarted')}
 
                         <div className="h-[40px] w-[40px] rounded-full bg-blue-primary flex items-center justify-center">
                             <FaPlay size={20} color='white' />
@@ -55,6 +56,6 @@ export async function Footer({ t }: Props) {
 
                 <p className='text-white text-center mt-5'>Copyright © Regeneration Credit</p>
             </div>
-        </footer>
+        </footer >
     )
 }

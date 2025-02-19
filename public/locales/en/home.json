@@ -13,5 +13,19 @@
     "descWhatIsIt": "The Regeneration Credit is a payment for environmental service system. Users can regenerate to earn the tokens and trade it for a certificate.",
     "downloadApp": "Download App",
     "webPlatform": "Web platform",
-    "altIconRc": "Regeneration Credit icon"
+    "altIconRc": "Regeneration Credit icon",
+    "totalSupply": "Total Supply",
+    "type": "Type",
+    "holders": "Holders",
+    "totalTransfers": "Total Transfers",
+    "decimals": "Decimals",
+    "accessTheToken": "Access the token",
+    "addToMetamask": "Add to Metamask",
+    "technology": "Technology",
+    "openSource": "Open source",
+    "descCardOpenSource": "Open source and community developed.",
+    "publicData": "Public data",
+    "descCardPublicData": "Every data in the system is public and transparent to everyone",
+    "smartContracts": "Smart contracts",
+    "descCardSmartContracts": "The RC is a set of smart contracts that define the rules of the system without a trusted central authority."
 }

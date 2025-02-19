@@ -15,30 +15,30 @@ export async function RcToken({ t }: Props) {
             <div className='flex flex-col lg:flex-row lg:mt-10'>
                 <div className='flex flex-wrap items-center justify-center gap-8 mt-5 w-full lg:justify-start lg:max-w-[50%] lg:border-r lg:py-5'>
                     <CardTokenInfo
-                        label='Total Supply'
+                        label={t('totalSupply')}
                         value={1375499899}
                     />
                     <CardTokenInfo
-                        label='Type'
+                        label={t('type')}
                         value={0}
                         erc20
                     />
                     <CardTokenInfo
-                        label='Holders'
+                        label={t('holders')}
                         value={45}
                     />
                     <CardTokenInfo
-                        label='Total Transfers'
+                        label={t('totalTransfers')}
                         value={85}
                     />
                     <CardTokenInfo
-                        label='Decimals'
+                        label={t('decimals')}
                         value={18}
                     />
                 </div>
 
                 <div className='w-full flex flex-col items-center justify-center gap-5 mt-10 lg:mt-0 lg:max-w-[50%] lg:items-end'>
-                    <h4>Accesse o token</h4>
+                    <h4>{t('accessTheToken')}</h4>
                     <QrToken />
 
 
@@ -55,7 +55,7 @@ export async function RcToken({ t }: Props) {
                         className='border-green-primary'
                         variant='outline'
                     >
-                        Add Metamask
+                        {t('addToMetamask')}
                     </Button>
                 </div>
             </div>

@@ -13,5 +13,19 @@
     "descWhatIsIt": "O Crédito Regeneração é um sistema de pagamento por serviço ambiental. Os usuários podem regenerar para ganhar os tokens e trocá-los por um certificado.",
     "downloadApp": "Baixar App",
     "webPlatform": "Plataforma Web",
-    "altIconRc": "Ícone do crédito de regeneração"
+    "altIconRc": "Ícone do crédito de regeneração",
+    "totalSupply": "Oferta total",
+    "type": "Tipo",
+    "holders": "Titulares",
+    "totalTransfers": "Transferências totais",
+    "decimals": "Decimais",
+    "accessTheToken": "Acesse o token",
+    "addToMetamask": "Adicionar ao Metamask",
+    "technology": "Tecnologia",
+    "openSource": "Código aberto",
+    "descCardOpenSource": "Código aberto e desenvolvido pela comunidade.",
+    "publicData": "Dados públicos",
+    "descCardPublicData": "Todos os dados do sistema são públicos e transparente para todos.",
+    "smartContracts": "Contratos inteligentes",
+    "descCardSmartContracts": "O RC é um conjunto de contratos inteligentes que definem as regras do sistema sem uma autoridade central confiável."
 }
