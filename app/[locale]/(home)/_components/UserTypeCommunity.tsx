@@ -16,7 +16,10 @@ export async function UserTypeCommunity({userType}: Props){
     const data = mapUserTypeToData[userType];
 
     return(
-        <div className='w-full flex flex-col items-center gap-5 justify-between rounded-[30px] p-5 bg-users-community lg:flex-row'>
+        <div 
+            className='w-full flex flex-col items-center gap-5 justify-between rounded-[30px] p-5 bg-users-community lg:flex-row'
+            data-aos='fade-up'
+        >
             <div className='flex items-center gap-5'>
                 <Image
                     src={data?.image}

@@ -4,6 +4,7 @@ import { dir } from 'i18next';
 import { notFound } from 'next/navigation';
 import i18nConfig from '@/i18nConfig';
 import "./globals.css";
+import { AosInit } from "@/components/aosInit";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -48,6 +49,8 @@ export default function RootLayout({
         className={`${antaFont.variable} antialiased`}
       >
         {children}
+
+        <AosInit />
       </body>
     </html>
   );
