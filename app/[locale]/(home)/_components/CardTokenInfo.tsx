@@ -30,6 +30,7 @@ export function CardTokenInfo({label, value, erc20}: Props){
 
         return () => {
             if(cardRef.current){
+                // eslint-disable-next-line react-hooks/exhaustive-deps
                 observer.unobserve(cardRef.current);
             };
         };
