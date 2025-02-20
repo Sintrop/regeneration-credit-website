@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { CardTokenInfo } from './CardTokenInfo';
-import { Button } from '@/components/ui/button';
 import { TType } from '@/types/t';
 import { QrToken } from './QrToken';
 import { getTokenData } from '@/services/getTokenData';
+import { AddTokenToMetamask } from './AddTokenToMetamask';
 
 interface Props {
     t: TType;
@@ -62,12 +62,7 @@ export async function RcToken({ t }: Props) {
                     </Link>
 
 
-                    <Button
-                        className='border-green-primary'
-                        variant='outline'
-                    >
-                        {t('addToMetamask')}
-                    </Button>
+                    <AddTokenToMetamask />
                 </div>
             </div>
         </section>
