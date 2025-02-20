@@ -1,10 +1,18 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 'use client';
 
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import i18nConfig from '@/i18nConfig';
-import { ChangeEvent } from 'react';
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function LanguageChanger() {
   const { i18n } = useTranslation();
@@ -12,9 +20,7 @@ export default function LanguageChanger() {
   const router = useRouter();
   const currentPathname = usePathname();
 
-  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const newLocale = e.target.value;
-
+  const handleChange = (newLocale: string) => {
     // set cookie for next-i18n-router
     const days = 30;
     const date = new Date();
@@ -24,6 +30,7 @@ export default function LanguageChanger() {
     // redirect to the new locale path
     if (
       currentLocale === i18nConfig.defaultLocale &&
+      //@ts-ignore
       !i18nConfig.prefixDefault
     ) {
       router.push('/' + newLocale + currentPathname);
@@ -37,9 +44,15 @@ export default function LanguageChanger() {
   };
 
   return (
-    <select onChange={handleChange} value={currentLocale}>
-      <option value="en">English</option>
-      <option value="pt">Português</option>
-    </select>
+    <Select value={currentLocale} onValueChange={handleChange}>
+      <SelectTrigger className="w-[120px] border-2 border-white rounded-[40px] text-white">
+        <SelectValue placeholder="Language"/>
+      </SelectTrigger>
+      <SelectContent>
+        <SelectItem value="en">English</SelectItem>
+        <SelectItem value="pt">Português</SelectItem>
+      </SelectContent>
+    </Select>
+
   );
 }
