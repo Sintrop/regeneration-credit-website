@@ -27,5 +27,6 @@
     "publicData": "Public data",
     "descCardPublicData": "Every data in the system is public and transparent to everyone",
     "smartContracts": "Smart contracts",
-    "descCardSmartContracts": "The RC is a set of smart contracts that define the rules of the system without a trusted central authority."
+    "descCardSmartContracts": "The RC is a set of smart contracts that define the rules of the system without a trusted central authority.",
+    "errorGetDataToken": "Error getting token information!"
 }

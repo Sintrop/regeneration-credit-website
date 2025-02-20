@@ -27,5 +27,6 @@
     "publicData": "Dados públicos",
     "descCardPublicData": "Todos os dados do sistema são públicos e transparente para todos.",
     "smartContracts": "Contratos inteligentes",
-    "descCardSmartContracts": "O RC é um conjunto de contratos inteligentes que definem as regras do sistema sem uma autoridade central confiável."
+    "descCardSmartContracts": "O RC é um conjunto de contratos inteligentes que definem as regras do sistema sem uma autoridade central confiável.",
+    "errorGetDataToken": "Erro ao obter as informações do token!"
 }

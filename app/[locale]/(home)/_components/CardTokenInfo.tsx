@@ -38,6 +38,7 @@ export function CardTokenInfo({label, value, erc20}: Props){
 
     useEffect(() => {
         if(!isVisible) return;
+        if(value === 0) return;
 
         const start = 0;
         const end = value;
