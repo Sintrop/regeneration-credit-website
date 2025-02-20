@@ -5,7 +5,7 @@ import { Hero } from './_components/Hero';
 import { WhatIsIt } from './_components/WhatIsIt';
 import { RcToken } from './_components/RcToken/RcToken';
 import { Technology } from './_components/Technology';
-import { Community } from './_components/Community';
+import { Community } from './_components/Community/Community';
 import { Footer } from '@/components/Footer/Footer';
 import type { Metadata } from 'next';
 
