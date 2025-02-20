@@ -17,7 +17,7 @@ export function AddTokenToMetamask() {
                     address: process.env.NEXT_PUBLIC_ADDRESS_RCTOKEN,
                     symbol: process.env.NEXT_PUBLIC_RCTOKEN_SYMBOL,
                     decimals: 18,
-                    image: "https://sintrop.com/assets/token.png",
+                    image: process.env.NEXT_PUBLIC_RCTOKEN_IMAGE_URL
                 }
             }
         });

@@ -3,7 +3,7 @@ import TranslationsProvider from '@/components/TranslationsProvider';
 import { Header } from '@/components/Header/Header';
 import { Hero } from './_components/Hero';
 import { WhatIsIt } from './_components/WhatIsIt';
-import { RcToken } from './_components/RcToken';
+import { RcToken } from './_components/RcToken/RcToken';
 import { Technology } from './_components/Technology';
 import { Community } from './_components/Community';
 import { Footer } from '@/components/Footer/Footer';

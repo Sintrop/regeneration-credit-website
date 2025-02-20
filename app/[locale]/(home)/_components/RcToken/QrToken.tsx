@@ -2,13 +2,12 @@
 
 import { QRCode } from 'react-qrcode-logo';
 
-
 export function QrToken() {
     return (
         <QRCode
-            value="https://sequoia.sintrop.com/token/0xA2628da7B5C8B9921E52402438c320e03d191275"
+            value={`${process.env.NEXT_PUBLIC_URL_EXPLORER}/token/${process.env.NEXT_PUBLIC_ADDRESS_RCTOKEN}`}
             size={100}
-            logoImage='https://sintrop.com/assets/token.png'
+            logoImage={process.env.NEXT_PUBLIC_RCTOKEN_IMAGE_URL}
             logoWidth={30}
             logoHeight={30}
             logoPadding={1}
