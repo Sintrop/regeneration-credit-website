@@ -5,16 +5,6 @@ import i18nConfig from '@/i18nConfig';
 import "./globals.css";
 import { AosInit } from "@/components/aosInit";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 const antaFont = Anta({
   variable: "--font-anta",
   subsets: ["latin"],
