@@ -10,19 +10,19 @@ export default {
   ],
   theme: {
   	extend: {
-		backgroundImage: {
-			'back-home' : 'url("/assets/img/capa-site-1.png")',
-			'back-home-2' : 'url("/assets/img/capa-site-2.png")',
-			'network': 'url("/assets/img/rede-descentralizada.png")'
-		},
+  		backgroundImage: {
+  			'back-home': 'url("/assets/img/capa-site-1.png")',
+  			'back-home-2': 'url("/assets/img/capa-site-2.png")',
+  			network: 'url("/assets/img/rede-descentralizada.png")'
+  		},
   		colors: {
-			blue: {
-				primary: '#4FA1FF',
-			},
-			green: {
-				primary: '#149954',
-			},
-			"users-community": "#F7FFF4",
+  			blue: {
+  				primary: '#4FA1FF'
+  			},
+  			green: {
+  				primary: '#149954'
+  			},
+  			'users-community': '#F7FFF4',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -68,7 +68,29 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)',
-			button: '30px'
+  			button: '30px'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
   	}
   },
