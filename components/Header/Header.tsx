@@ -39,7 +39,7 @@ export async function Header({ t }: Props) {
           </Link>
         </nav>
 
-        <Button className="px-10 h-[50px] rounded-[40px] bg-blue-primary text-white text-semibold">
+        <Button className="hidden px-10 h-[50px] rounded-[40px] bg-blue-primary text-white text-semibold">
           {t("launchApp")}
         </Button>
       </section>

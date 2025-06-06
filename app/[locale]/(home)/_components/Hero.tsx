@@ -18,7 +18,7 @@ export function Hero({ t }: Props) {
       </p>
 
       <div className="flex flex-col items-center gap-5 md:gap-10 md:flex-row">
-        <Button className="bg-blue-primary w-full md:w-[295px]">
+        <Button className="hidden bg-blue-primary w-full md:w-[295px]">
           {t("downloadWhitepaper")}
         </Button>
 
