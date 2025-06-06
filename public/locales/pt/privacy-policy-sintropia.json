@@ -1,0 +1,63 @@
+{
+  "privacy": {
+    "title": "Política de Privacidade - Método Sintropia",
+    "updated": "Última atualização: 3 de junho de 2025",
+    "intro": "Esta Política de Privacidade descreve como o aplicativo \"Método Sintropia\" (\"o App\") lida com suas informações. Nosso objetivo é ser uma ferramenta de código aberto (licença GPL-3.0), simples e direta, projetada para auxiliar inspetores na coleta de dados.",
+    "commitmentTitle": "Compromisso Central",
+    "commitment": "O App \"Método Sintropia\" foi desenvolvido com forte foco em sua privacidade. Não coletamos, armazenamos ou processamos qualquer informação pessoal ou dados de uso em servidores privados, na nuvem ou em qualquer outro local externo ao seu dispositivo. Todos os dados gerados durante o uso do App são salvos exclusivamente localmente, no próprio celular do usuário.",
+    "agreement": "Ao utilizar o App, você concorda com os termos desta política.",
+    
+    "section1": {
+      "title": "1. Quais informações coletamos e como são utilizadas?",
+      "description": "O App não coleta informações para qualquer servidor ou banco de dados externo. As informações são geradas e processadas apenas no seu dispositivo para os seguintes propósitos:",
+      "1": {
+        "title": "1.1. Informações geradas e salvas localmente no seu dispositivo",
+        "inspection": "Dados de Inspeção: As informações que você insere no App para registrar inspeções (como contagem de árvores, número de espécies, descrições, etc.) são processadas e salvas apenas no seu dispositivo.",
+        "camera": "Dados da Câmera: O App solicita acesso à sua câmera para que você possa tirar fotos das árvores e do ambiente durante a inspeção. Essas fotos são salvas apenas localmente no seu dispositivo.",
+        "location": "Dados de Localização: O App solicita acesso à sua localização para registrar a geolocalização das árvores e da área inspecionada. Esses dados são salvos somente localmente no seu dispositivo."
+      },
+      "2": {
+        "title": "1.2. Como usamos suas informações (localmente)",
+        "reports": "Gerar Relatórios de Inspeção: O App usa os dados inseridos e coletados (câmera, localização) para compilar um relatório de inspeção automatizado.",
+        "functionality": "Funcionalidade do App: Permitir que você visualize, edite e gerencie suas inspeções salvas localmente."
+      }
+    },
+
+    "section2": {
+      "title": "2. Como suas informações são compartilhadas?",
+      "description": "O App \"Método Sintropia\" não compartilha seus dados com servidores, desenvolvedores ou terceiros.",
+      "blockchain": "Se você optar por usar esse relatório em uma blockchain, lembre-se de que os dados em blockchain são públicos e imutáveis. Não temos controle sobre esses dados após o envio."
+    },
+
+    "section3": {
+      "title": "3. Seus direitos de privacidade",
+      "control": "Controle Local: Você tem total controle sobre os dados salvos em seu telefone.",
+      "permissions": "Permissões do Dispositivo: Você pode gerenciar as permissões de câmera e localização do App nas configurações do seu dispositivo."
+    },
+
+    "section4": {
+      "title": "4. Segurança dos dados",
+      "description": "A segurança das suas informações depende da segurança do seu dispositivo. O App não transmite seus dados, portanto, a proteção contra acessos não autorizados depende das configurações de segurança do seu próprio aparelho."
+    },
+
+    "section5": {
+      "title": "5. Retenção de dados",
+      "description": "Todas as informações são retidas apenas localmente no seu dispositivo pelo tempo que você desejar. Você pode excluir os dados a qualquer momento desinstalando o App ou limpando os dados do aplicativo nas configurações do seu celular."
+    },
+
+    "section6": {
+      "title": "6. Privacidade de crianças",
+      "description": "Nossos serviços não se destinam a indivíduos com menos de 13 anos. Não coletamos conscientemente informações pessoais de crianças menores de 13 anos. Se você é pai, mãe ou responsável e tem conhecimento de que seu filho nos forneceu informações pessoais, entre em contato conosco."
+    },
+
+    "section7": {
+      "title": "7. Alterações nesta Política de Privacidade",
+      "description": "Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos sobre quaisquer alterações atualizando esta página. Recomendamos que você revise esta Política regularmente."
+    },
+
+    "section8": {
+      "title": "8. Contato",
+      "contact": "Se você tiver dúvidas sobre esta Política de Privacidade ou sobre as práticas de dados do App \"Método Sintropia\", entre em contato conosco através do repositório: https://github.com/Sintrop/Sintropia-method"
+    }
+  }
+}
