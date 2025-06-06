@@ -14,17 +14,17 @@ export async function Technology({t}: Props){
                     <CardInfoWithLink
                         title={t('openSource')}
                         description={t('descCardOpenSource')}
-                        link="https://google.com"
+                        link="https://github.com/Sintrop/regeneration-credit"
                     />
                     <CardInfoWithLink
                         title={t('publicData')}
                         description={t('descCardPublicData')}
-                        link="https://google.com"
+                        link="https://explorer.sintrop.com"
                     />
                     <CardInfoWithLink
                         title={t('smartContracts')}
                         description={t('descCardSmartContracts')}
-                        link="https://google.com"
+                        link="https://github.com/Sintrop/regeneration-credit"
                     />
                 </div>
             </div>
