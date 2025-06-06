@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import initTranslations from "../../i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import { Header } from "@/components/Header/Header";
@@ -7,7 +8,9 @@ import { WhatIsIt } from "./_components/WhatIsIt";
 import { Technology } from "./_components/Technology";
 import { Community } from "./_components/Community/Community";
 import { Footer } from "@/components/Footer/Footer";
-import type { Metadata } from "next";
+
+import CommingSoon from '@/public/assets/img/banner-comming-soon.jpg';
+import Image from "next/image";
 
 const i18nNamespaces = ["home"];
 
@@ -26,11 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function Home({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+export default async function Home({ params }: Props) {
+  const { locale } = await params;
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
@@ -47,6 +47,15 @@ export default async function Home({
 
       <main>
         <div className="container mx-auto px-5 lg:px-20">
+          <div className="mt-10 flex justify-center lg:mt-20">
+            <Image
+              alt="Comming soon banner"
+              src={CommingSoon}
+              quality={100}
+              className="lg:w-[1024px] object-contain rounded-2xl overflow-hidden"
+            />
+          </div>
+
           <WhatIsIt t={t} />
 
           {/* <RcToken t={t} /> */}
