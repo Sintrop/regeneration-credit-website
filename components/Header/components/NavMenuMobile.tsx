@@ -42,7 +42,7 @@ export function NavMenuMobile({ t }: Props) {
         </Link>
       </nav>
 
-      <Button className="px-10 h-[50px] rounded-[40px] bg-blue-primary text-white text-semibold mt-10">
+      <Button className="hidden px-10 h-[50px] rounded-[40px] bg-blue-primary text-white text-semibold mt-10">
         {t("launchApp")}
       </Button>
 
