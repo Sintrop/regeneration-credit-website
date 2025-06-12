@@ -8,11 +8,13 @@ import DeveloperImage from "@/public/assets/img/developer.png";
 import ContributorImage from "@/public/assets/img/contributors.png";
 import ActivistImage from "@/public/assets/img/activists.png";
 import SupporterImage from "@/public/assets/img/supporter.png";
+import { TType } from "@/types/t";
 
 interface Props {
   userType: UserTypeToDataType;
+  t: TType;
 }
-export async function UserTypeCommunity({ userType }: Props) {
+export async function UserTypeCommunity({ userType, t }: Props) {
   const data = mapUserTypeToData[userType];
 
   return (
@@ -29,8 +31,8 @@ export async function UserTypeCommunity({ userType }: Props) {
         />
 
         <div className="flex flex-col gap-3">
-          <h4 className="font-bold text-3xl">{data?.title}</h4>
-          <p className="text-lg">{data?.description}</p>
+          <h4 className="font-bold text-3xl">{t(data?.title)}</h4>
+          <p className="text-lg">{t(data?.description)}</p>
         </div>
       </div>
 
@@ -43,45 +45,38 @@ export async function UserTypeCommunity({ userType }: Props) {
 
 const mapUserTypeToData = {
   1: {
-    title: "regenerators",
-    description:
-      "Seja recompensado pelo serviço de regeneração de ecossistemas terrestres",
+    title: "community.regenerators",
+    description: "community.descRegenerators",
     image: ProducerImage,
   },
   2: {
-    title: "inspectors",
-    description:
-      "Seja recompensado pelo serviço de regeneração de ecossistemas terrestres",
+    title: "community.inspectors",
+    description: "community.descInspectors",
     image: InspectorImage,
   },
   3: {
-    title: "researchers",
-    description:
-      "Seja recompensado pelo serviço de regeneração de ecossistemas terrestres",
+    title: "community.researchers",
+    description: "community.descResearchers",
     image: ResearcherImage,
   },
   4: {
-    title: "developers",
-    description:
-      "Seja recompensado pelo serviço de regeneração de ecossistemas terrestres",
+    title: "community.developers",
+    description: "community.descDevelopers",
     image: DeveloperImage,
   },
   5: {
-    title: "contributors",
-    description:
-      "Seja recompensado pelo serviço de regeneração de ecossistemas terrestres",
+    title: "community.contributors",
+    description: "community.descContributors",
     image: ContributorImage,
   },
   6: {
-    title: "activists",
-    description:
-      "Seja recompensado pelo serviço de regeneração de ecossistemas terrestres",
+    title: "community.activists",
+    description: "community.descActivists",
     image: ActivistImage,
   },
   7: {
-    title: "supporters",
-    description:
-      "Seja recompensado pelo serviço de regeneração de ecossistemas terrestres",
+    title: "community.supporters",
+    description: "community.descSupporters",
     image: SupporterImage,
   },
 };
