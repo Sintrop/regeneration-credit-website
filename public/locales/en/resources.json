@@ -1,4 +1,12 @@
 {
-    "regenerationCredit": "Regeneration Credit",
-    "resources": "Resources"
+  "seo-title": "Resources - Regeneration Credit",
+  "seo-description": "Resources of Regeneration Credit",
+  "regenerationCredit": "Regeneration Credit",
+  "resources": "Resources",
+  "tutorials": "Tutorials",
+  "home": "Home",
+  "accessAllResources": "Access all resources",
+  "descGithub": "Code open source and community developed.",
+  "linkMoreInfo": "Link to more information",
+  "commingSoon": "Comming soon"
 }

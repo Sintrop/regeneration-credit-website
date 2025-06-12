@@ -1,12 +1,12 @@
 {
     "regenerationCredit": "Crédito de regeneração",
     "seo-title": "Crédito de regeneração",
-    "seo-description": "Sistema de regeneração da natureza ponto a ponto",
+    "seo-description": "Sistema de regeneração da natureza pessoa a pessoa",
     "home": "Início",
     "resources": "Recursos",
     "launchApp": "Iniciar App",
     "getStarted": "Vamos começar",
-    "titleHero": "Sistema de regeneração da natureza ponto a ponto",
+    "titleHero": "Sistema de regeneração da natureza pessoa a pessoa",
     "descriptionHero": "Apresentamos o Crédito Regeneração, um mecanismo de financiamento para serviços ambientais e um sistema de certificação de contratos inteligentes.",
     "downloadWhitepaper": "Baixar Whitepaper",
     "regenerateToEarn": "Regenerar para ganhar",
@@ -28,5 +28,24 @@
     "descCardPublicData": "Todos os dados do sistema são públicos e transparente para todos.",
     "smartContracts": "Contratos inteligentes",
     "descCardSmartContracts": "O RC é um conjunto de contratos inteligentes que definem as regras do sistema sem uma autoridade central confiável.",
-    "errorGetDataToken": "Erro ao obter as informações do token!"
+    "errorGetDataToken": "Erro ao obter as informações do token!",
+    "community": {
+      "title" : "Comunidade",
+      "description": "",
+      "regenerators": "Regeneradores",
+      "inspectors": "Inspetores",
+      "researchers": "Pesquisadores",
+      "developers": "Desenvolvedores",
+      "contributors": "Contribuidores",
+      "activists": "Ativistas",
+      "supporters": "Apoiadores",
+      "descRegenerators": "Usuários principais que fornecem serviços de regeneração de ecossistemas terrestres registrando e gerenciando uma área de regeneração.",
+      "descInspectors": "Responsável pela coleta descentralizada de dados e verificação das atividades dos Regeneradores, como contagem de árvores e avaliação da biodiversidade.",
+      "descResearchers": "Responsável pela pesquisa ambiental, desenvolvimento de metodologias de avaliação e criação de itens para calculadoras de impacto.",
+      "descDevelopers": "Responsável pelo desenvolvimento técnico do sistema, incluindo contratos inteligentes, interfaces front-end e aplicativos relacionados.",
+      "descContributors": "Um usuário contribuinte genérico que pode fornecer suporte à comunidade, traduções, design e quaisquer outras funções gerais que beneficiem o projeto.",
+      "descActivists": "Autorizado a convidar novos Regeneradores e Inspetores para o sistema, expandindo o alcance da comunidade.",
+      "descSupporters": "Qualquer indivíduo ou organização que pode financiar a regeneração comprando tokens de usuários e depois queimando-os para receber um certificado de compensação, expandindo o alcance da comunidade."
+    },
+    "linkMoreInfo": "Link para mais informações"
 }

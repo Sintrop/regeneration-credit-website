@@ -1,14 +1,21 @@
-import { Anta } from "next/font/google";
+import { Anta, Akatab } from "next/font/google";
 import { dir } from 'i18next';
 import { notFound } from 'next/navigation';
 import i18nConfig from '@/i18nConfig';
-import "./globals.css";
 import { AosInit } from "@/components/aosInit";
+import "./globals.css";
+import "./markdown.css";
 
 const antaFont = Anta({
   variable: "--font-anta",
   subsets: ["latin"],
   weight: "400"
+})
+
+const akatabFont = Akatab({
+  variable: "--font-akatab",
+  subsets: ["latin"],
+  weight: '400'
 })
 
 export function generateStaticParams() {
@@ -30,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang={locale} dir={dir(locale)}>
       <body
-        className={`${antaFont.variable} antialiased`}
+        className={`${antaFont.variable} ${akatabFont.variable} antialiased`}
       >
         {children}
 
