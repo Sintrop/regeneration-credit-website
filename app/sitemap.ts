@@ -3,38 +3,38 @@ import type { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://regenerationcredit.com',
+      url: 'https://regenerationcredit.org',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1,
       alternates: {
         languages: {
-          en: 'https://regenerationcredit.com',
-          pt: 'https://regenerationcredit.com/pt'
+          en: 'https://regenerationcredit.org',
+          pt: 'https://regenerationcredit.org/pt'
         }
       }
     },
     {
-      url: 'https://regenerationcredit.com/resources',
+      url: 'https://regenerationcredit.org/resources',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.8,
       alternates: {
         languages: {
-          en: 'https://regenerationcredit.com/resources',
-          pt: 'https://regenerationcredit.com/pt/resources'
+          en: 'https://regenerationcredit.org/resources',
+          pt: 'https://regenerationcredit.org/pt/resources'
         }
       }
     },
     {
-      url: 'https://regenerationcredit.com/tutorials',
+      url: 'https://regenerationcredit.org/tutorials',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.8,
       alternates: {
         languages: {
-          en: 'https://regenerationcredit.com/tutorials',
-          pt: 'https://regenerationcredit.com/pt/tutorials'
+          en: 'https://regenerationcredit.org/tutorials',
+          pt: 'https://regenerationcredit.org/pt/tutorials'
         }
       }
     },

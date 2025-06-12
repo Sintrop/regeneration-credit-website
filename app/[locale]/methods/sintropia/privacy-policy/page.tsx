@@ -19,6 +19,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t("seo-title"),
     description: t("seo-description"),
+    openGraph: {
+      type: "website",
+      title: t("seo-title") as string,
+      description: t("seo-description") as string,
+      alternateLocale: ["en", "pt"],
+      url: `https://regenerationcredit.org/${locale}/methods/sintropia/privacy-policy`,
+      locale,
+      siteName: t('regenerationCredit'),
+      images: "https://regenerationcredit.org/assets/img/og.jpg",
+    },
+    alternates: {
+      canonical: "https://regenerationcredit.org/methods/sintropia/privacy-policy",
+      languages: {
+        en: "https://regenerationcredit.org/en/methods/sintropia/privacy-policy",
+        pt: "https://regenerationcredit.org/pt/methods/sintropia/privacy-policy",
+      },
+    },
   };
 }
 

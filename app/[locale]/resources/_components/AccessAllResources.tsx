@@ -14,7 +14,7 @@ export function AccessAllResources({ t }: Props) {
       <div className="flex flex-wrap mt-10 gap-10 lg:gap-5 justify-center">
         <CardInfoWithLink
           title="Whitepapper"
-          description="Code open source and community developed."
+          description={t('commingSoon')}
           t={t}
         />
 
@@ -27,7 +27,7 @@ export function AccessAllResources({ t }: Props) {
 
         <CardInfoWithLink
           title="Documentation"
-          description="Code open source and community developed."
+          description={t('commingSoon')}
           t={t}
         />
       </div>

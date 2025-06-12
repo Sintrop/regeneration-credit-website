@@ -34,6 +34,9 @@ export async function Footer({ t }: Props) {
             <Link href="/resources" className="text-white hover:underline">
               - {t("resources")}
             </Link>
+            <Link href="/tutorials" className="text-white hover:underline">
+              - {t("tutorials")}
+            </Link>
           </nav>
 
           <div className="flex flex-col gap-5">

@@ -26,6 +26,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t("seo-title"),
     description: t("seo-description"),
+    openGraph: {
+      type: "website",
+      title: t("seo-title") as string,
+      description: t("seo-description") as string,
+      alternateLocale: ["en", "pt"],
+      url: `https://regenerationcredit.org/${locale}`,
+      locale,
+      siteName: t('regenerationCredit'),
+      images: "https://regenerationcredit.org/assets/img/og.jpg",
+    },
+    alternates: {
+      canonical: "https://regenerationcredit.org",
+      languages: {
+        en: "https://regenerationcredit.org/en",
+        pt: "https://regenerationcredit.org/pt",
+      },
+    },
   };
 }
 

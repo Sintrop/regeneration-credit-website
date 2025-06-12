@@ -25,23 +25,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { t } = await initTranslations(locale, i18nNamespaces);
 
   return {
-    title: t("seo-title-tutorials"),
-    description: t("seo-description-tutorials"),
+    title: t("seo-title"),
+    description: t("seo-description"),
     openGraph: {
       type: "website",
-      title: t("seo-title-tutorials") as string,
-      description: t("seo-description-tutorials") as string,
+      title: t("seo-title") as string,
+      description: t("seo-description") as string,
       alternateLocale: ["en", "pt"],
-      url: `https://sintrop.com/${locale}/tutorials`,
+      url: `https://regenerationcredit.org/${locale}/tutorials`,
       locale,
-      siteName: "Sintrop",
-      images: "https://sintrop.com/assets/images/sintrop-og.png",
+      siteName: t('regenerationCredit'),
+      images: "https://regenerationcredit.org/assets/img/og.jpg",
     },
     alternates: {
-      canonical: "https://sintrop.com/tutorials",
+      canonical: "https://regenerationcredit.org/tutorials",
       languages: {
-        en: "https://sintrop.com/en/tutorials",
-        pt: "https://sintrop.com/pt/tutorials",
+        en: "https://regenerationcredit.org/en/tutorials",
+        pt: "https://regenerationcredit.org/pt/tutorials",
       },
     },
   };
