@@ -1,5 +1,10 @@
 {
-    "regenerationCredit": "Regeneration Credit",
-    "resources": "Resources",
-    "tutorials": "Tutorials"
+  "regenerationCredit": "Regeneration Credit",
+  "resources": "Resources",
+  "tutorials": "Tutorials",
+  "home": "Home",
+  "accessAllResources": "Access all resources",
+  "descGithub": "Code open source and community developed.",
+  "linkMoreInfo": "Link to more information",
+  "commingSoon": "Comming soon"
 }

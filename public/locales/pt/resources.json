@@ -1,5 +1,10 @@
 {
-    "regenerationCredit": "Crédito de regeneração",
-    "resources": "Recursos",
-    "tutorials": "Tutoriais"
+  "regenerationCredit": "Crédito de Regeneração",
+  "resources": "Recursos",
+  "tutorials": "Tutoriais",
+  "home": "Início",
+  "accessAllResources": "Acesse todos so recursos",
+  "descGithub": "Projeto de código aberto e desenvolvido pela comunidade.",
+  "linkMoreInfo": "Link para mais informações",
+  "commingSoon": "Em breve"
 }

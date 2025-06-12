@@ -47,5 +47,6 @@
       "descContributors": "A generic contribution user who can provide community support, translations, design, and any other general functions that benefit the project.",
       "descActivists": "Empowered to invite new Regenerators and Inspectors into the system, expanding the community's reach.",
       "descSupporters": "Any individual or organization, who can finance regeneration by purchasing tokens from users and then burning them to receive an offset certificate."
-    }
+    },
+    "linkMoreInfo": "Link to more information"
 }
