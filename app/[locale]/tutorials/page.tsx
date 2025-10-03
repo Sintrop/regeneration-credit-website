@@ -11,8 +11,6 @@ import {
   tutorialsListPerLanguage,
 } from "./tutorialsList";
 import { Footer } from "@/components/Footer/Footer";
-import CommingSoon from "@/public/assets/img/banner-comming-soon.jpg";
-import Image from "next/image";
 
 const i18nNamespaces = ["tutorials"];
 
@@ -34,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       alternateLocale: ["en", "pt"],
       url: `https://regenerationcredit.org/${locale}/tutorials`,
       locale,
-      siteName: t('regenerationCredit'),
+      siteName: t("regenerationCredit"),
       images: "https://regenerationcredit.org/assets/img/og.jpg",
     },
     alternates: {
@@ -63,15 +61,7 @@ export default async function Tutorials({ params }: Props) {
       </div>
 
       <main className="container mx-auto px-5 lg:px-20 my-10 lg:my-20">
-        <div className="mt-10 flex justify-center lg:mt-20">
-          <Image
-            alt="Comming soon banner"
-            src={CommingSoon}
-            quality={100}
-            className="lg:w-[1024px] object-contain rounded-2xl overflow-hidden"
-          />
-        </div>
-
+        <h4 className="text-center">{t("commingSoon")}</h4>
         <Accordion type="single" collapsible className="gap-5 flex flex-col">
           {tutorialsListPerLanguage[locale].map((item, index) => (
             <>
