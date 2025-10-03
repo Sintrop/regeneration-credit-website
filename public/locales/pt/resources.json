@@ -8,5 +8,7 @@
   "accessAllResources": "Acesse todos so recursos",
   "descGithub": "Projeto de código aberto e desenvolvido pela comunidade.",
   "linkMoreInfo": "Link para mais informações",
-  "commingSoon": "Em breve"
+  "commingSoon": "Em breve",
+  "descPaper": "Paper com a descrição e explicação conceitual to projeto e seus fundamentos.",
+  "descDocs": "Documentação técnica para desenvolvedores."
 }

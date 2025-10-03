@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       alternateLocale: ["en", "pt"],
       url: `https://regenerationcredit.org/${locale}/resources`,
       locale,
-      siteName: t('regenerationCredit'),
+      siteName: t("regenerationCredit"),
       images: "https://regenerationcredit.org/assets/img/og.jpg",
     },
     alternates: {
@@ -58,7 +58,7 @@ export default async function Resources({ params }: Props) {
 
       <main>
         <div className="container mx-auto px-5 lg:px-20">
-          <AccessAllResources t={t} />
+          <AccessAllResources t={t} locale={locale} />
         </div>
 
         {/* <SocialNetwork t={t} /> */}
