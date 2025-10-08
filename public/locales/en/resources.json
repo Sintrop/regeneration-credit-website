@@ -10,5 +10,8 @@
   "linkMoreInfo": "Link to more information",
   "commingSoon": "Comming soon",
   "descPaper": "Article with the description and conceptual explanation of the project and its foundations.",
-  "descDocs": "Technical documentation for developers."
+  "descDocs": "Technical documentation for developers.",
+  "clickHereToSeeAllVersions": "Click here to see all versions",
+  "clickToDownload": "Click to download",
+  "releases": "Releases"
 }

@@ -6,6 +6,8 @@ import { HeroResources } from "./_components/HeroResources";
 import { AccessAllResources } from "./_components/AccessAllResources";
 //import { SocialNetwork } from "./_components/SocialNetwork";
 import { Footer } from "@/components/Footer/Footer";
+import { getReleasesFromGitHub } from "@/services/github";
+import { ReleaseItem } from "./_components/ReleaseItem/ReleaseItem";
 
 const i18nNamespaces = ["resources"];
 
@@ -44,6 +46,11 @@ export default async function Resources({ params }: Props) {
   const { locale } = await params;
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
+  const releasesRcCore = await getReleasesFromGitHub({
+    repo: "regeneration-credit-core",
+    username: "sintrop",
+  });
+
   return (
     <TranslationsProvider
       namespaces={i18nNamespaces}
@@ -56,8 +63,22 @@ export default async function Resources({ params }: Props) {
         <HeroResources t={t} />
       </div>
 
-      <main>
-        <div className="container mx-auto px-5 lg:px-20">
+      <main className="container mx-auto px-5 lg:px-20 py-10 lg:py-20">
+        <h3 className="text-2xl md:text-4xl">{t("releases")}</h3>
+
+        <h4 className="text-xl mt-5">Regeneration Credit Core</h4>
+        <div className="flex flex-col gap-5 mt-1">
+          {releasesRcCore.map((release, index) => (
+            <ReleaseItem
+              key={index}
+              t={t}
+              release={release}
+              latest={index === 0}
+            />
+          ))}
+        </div>
+
+        <div className="">
           <AccessAllResources t={t} locale={locale} />
         </div>
 
