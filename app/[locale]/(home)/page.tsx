@@ -7,6 +7,7 @@ import { WhatIsIt } from "./_components/WhatIsIt";
 import { Technology } from "./_components/Technology";
 import { Community } from "./_components/Community/Community";
 import { Footer } from "@/components/Footer/Footer";
+import { RcToken } from "./_components/RcToken/RcToken";
 
 const i18nNamespaces = ["home"];
 
@@ -62,7 +63,7 @@ export default async function Home({ params }: Props) {
         <div className="container mx-auto px-5 lg:px-20">
           <WhatIsIt t={t} />
 
-          {/* <RcToken t={t} /> */}
+          <RcToken t={t} />
         </div>
 
         <Technology t={t} />

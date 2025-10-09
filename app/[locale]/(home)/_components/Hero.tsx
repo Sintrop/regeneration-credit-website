@@ -22,7 +22,7 @@ export function Hero({ t, locale }: Props) {
 
       <div className="flex flex-col items-center gap-5 md:gap-10 md:flex-row">
         <Link
-          href="/tutorials"
+          href="/resources"
           className="border-2 text-white border-white rounded-[40px] h-[50px] bg-transparent flex items-center justify-between pr-1 font-semibold gap-5 w-full md:w-auto pl-3"
         >
           {t("getStarted")}
