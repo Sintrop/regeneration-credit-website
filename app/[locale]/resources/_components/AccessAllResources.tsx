@@ -19,7 +19,7 @@ export async function AccessAllResources({ t, locale }: Props) {
         <CardInfoWithLink
           title="Whitepapper"
           description={t("descPaper")}
-          link={`https://regenerationcredit.org/assets/docs/${whitepaperFileName}`}
+          link={`https://regenerationcredit.org/assets/${whitepaperFileName}`}
           t={t}
         />
 
