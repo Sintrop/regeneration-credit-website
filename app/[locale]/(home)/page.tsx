@@ -4,13 +4,10 @@ import TranslationsProvider from "@/components/TranslationsProvider";
 import { Header } from "@/components/Header/Header";
 import { Hero } from "./_components/Hero";
 import { WhatIsIt } from "./_components/WhatIsIt";
-//import { RcToken } from "./_components/RcToken/RcToken";
 import { Technology } from "./_components/Technology";
 import { Community } from "./_components/Community/Community";
 import { Footer } from "@/components/Footer/Footer";
-
-import CommingSoon from '@/public/assets/img/banner-comming-soon.jpg';
-import Image from "next/image";
+import { RcToken } from "./_components/RcToken/RcToken";
 
 const i18nNamespaces = ["home"];
 
@@ -33,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       alternateLocale: ["en", "pt"],
       url: `https://regenerationcredit.org/${locale}`,
       locale,
-      siteName: t('regenerationCredit'),
+      siteName: t("regenerationCredit"),
       images: "https://regenerationcredit.org/assets/img/og.jpg",
     },
     alternates: {
@@ -59,23 +56,14 @@ export default async function Home({ params }: Props) {
       <div className="bg-back-home w-full flex flex-col bg-cover bg-center">
         <Header t={t} />
 
-        <Hero t={t} />
+        <Hero t={t} locale={locale} />
       </div>
 
       <main>
         <div className="container mx-auto px-5 lg:px-20">
-          <div className="mt-10 flex justify-center lg:mt-20">
-            <Image
-              alt="Comming soon banner"
-              src={CommingSoon}
-              quality={100}
-              className="lg:w-[1024px] object-contain rounded-2xl overflow-hidden"
-            />
-          </div>
-
           <WhatIsIt t={t} />
 
-          {/* <RcToken t={t} /> */}
+          <RcToken t={t} />
         </div>
 
         <Technology t={t} />
