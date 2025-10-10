@@ -4,16 +4,30 @@ import InspectionJson from "./InspectionRules.json"
 const provider = new Web3(process.env.NEXT_PUBLIC_RPC_URL)
 const contract = new provider.eth.Contract(InspectionJson.abi, process.env.NEXT_PUBLIC_INSPECTION_ADDRESS)
 
-interface Props {
+interface ReturnImpactPerEra {
+  trees: number;
+  biodiversity: number;
+  inspections: number;
+}
+interface ImpactPerEraProps {
   era: number;
 }
-async function impactPerEra({ era }: Props): Promise<number> {
+async function impactPerEra({ era }: ImpactPerEraProps): Promise<ReturnImpactPerEra> {
   try {
-    const response = await contract.methods.impactPerEra(1).call();
-    return parseFloat(String(response).replace('n', '')) / 10 ** 18;
+    const response = await contract.methods.impactPerEra(era).call() as { trees: string; biodiversity: string; realizedInspections: string; };
+
+    return {
+      biodiversity: parseFloat(String(response.biodiversity).replace('n', '')),
+      trees: parseFloat(String(response.trees).replace('n', '')),
+      inspections: parseFloat(String(response.realizedInspections).replace('n', ''))
+    }
   } catch (e) {
     console.log(e);
-    return 0;
+    return {
+      biodiversity: 0,
+      inspections: 0,
+      trees: 0
+    };
   }
 }
 

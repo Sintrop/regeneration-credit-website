@@ -6,7 +6,7 @@ export function QrToken() {
   return (
     <QRCode
       value={`${process.env.NEXT_PUBLIC_RCTOKEN_ADDRESS}`}
-      size={100}
+      size={130}
       logoImage={process.env.NEXT_PUBLIC_RCTOKEN_IMAGE_URL}
       logoWidth={30}
       logoHeight={30}

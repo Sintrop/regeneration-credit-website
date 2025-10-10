@@ -1,12 +1,20 @@
 import { inspectionContract } from "./inspectionContract"
 
 interface ReturnGetTokenData {
-  totalTrees: number;
+  trees: number;
+  biodiversity: number;
+  inspections: number;
 }
-async function getImpactPerEra(): Promise<ReturnGetTokenData> {
+interface GetImpactPerEra {
+  era: number;
+}
+async function getImpactPerEra({ era }: GetImpactPerEra): Promise<ReturnGetTokenData> {
+  const response = await inspectionContract.impactPerEra({ era });
 
   return {
-    totalTrees: 0
+    trees: response.trees,
+    biodiversity: response.biodiversity,
+    inspections: response.inspections
   }
 }
 
