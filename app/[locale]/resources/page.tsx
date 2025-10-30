@@ -51,6 +51,16 @@ export default async function Resources({ params }: Props) {
     username: "sintrop",
   });
 
+  const releasesSintropia = await getReleasesFromGitHub({
+    repo: "sintropia-method",
+    username: "sintrop",
+  });
+
+  const releasesRcMobile = await getReleasesFromGitHub({
+    repo: "regeneration-credit-mobile",
+    username: "sintrop",
+  });
+
   return (
     <TranslationsProvider
       namespaces={i18nNamespaces}
@@ -74,6 +84,32 @@ export default async function Resources({ params }: Props) {
               t={t}
               release={release}
               latest={index === 0}
+            />
+          ))}
+        </div>
+
+        <h4 className="text-xl mt-7">Sintropia</h4>
+        <div className="flex flex-col gap-5 mt-1">
+          {releasesSintropia.map((release, index) => (
+            <ReleaseItem
+              key={index}
+              t={t}
+              release={release}
+              latest={index === 0}
+              apk
+            />
+          ))}
+        </div>
+
+        <h4 className="text-xl mt-7">Regeneration Credit (Mobile)</h4>
+        <div className="flex flex-col gap-5 mt-1">
+          {releasesRcMobile.map((release, index) => (
+            <ReleaseItem
+              key={index}
+              t={t}
+              release={release}
+              latest={index === 0}
+              apk
             />
           ))}
         </div>
