@@ -5,6 +5,7 @@
   "home": "Home",
   "resources": "Resources",
   "tutorials": "Tutorials",
+  "network": "Network",
   "launchApp": "Launch App",
   "privacy": {
     "title": "Privacy Policy - Sintropia Method",
@@ -13,7 +14,7 @@
     "commitmentTitle": "Core Commitment",
     "commitment": "The \"Sintropia Method\" App has been developed with a strong focus on your privacy. We do not collect, store, or process any personal information or usage data on private servers, in the cloud, or in any other location external to your device. All data generated during your use of the App is saved exclusively locally, on the user's own mobile phone.",
     "agreement": "By using the App, you agree to the terms of this policy.",
-    
+
     "section1": {
       "title": "1. What information do we collect and how is it used?",
       "description": "The App does not collect information for any external server or database. Information is generated and processed only on your device for the following purposes:",

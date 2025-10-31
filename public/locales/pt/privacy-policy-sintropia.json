@@ -4,6 +4,7 @@
   "seo-description": "Esta Política de Privacidade descreve como o aplicativo \"Método Sintropia\" (\"o App\") lida com suas informações.",
   "home": "Início",
   "resources": "Recursos",
+  "network": "Rede",
   "tutorials": "Tutoriais",
   "launchApp": "Iniciar App",
   "privacy": {
@@ -13,7 +14,7 @@
     "commitmentTitle": "Compromisso Central",
     "commitment": "O App \"Método Sintropia\" foi desenvolvido com forte foco em sua privacidade. Não coletamos, armazenamos ou processamos qualquer informação pessoal ou dados de uso em servidores privados, na nuvem ou em qualquer outro local externo ao seu dispositivo. Todos os dados gerados durante o uso do App são salvos exclusivamente localmente, no próprio celular do usuário.",
     "agreement": "Ao utilizar o App, você concorda com os termos desta política.",
-    
+
     "section1": {
       "title": "1. Quais informações coletamos e como são utilizadas?",
       "description": "O App não coleta informações para qualquer servidor ou banco de dados externo. As informações são geradas e processadas apenas no seu dispositivo para os seguintes propósitos:",

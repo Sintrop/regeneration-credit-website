@@ -37,6 +37,9 @@ export function NavMenuMobile({ t }: Props) {
         <Link href="/resources" className="text-black underline">
           - {t("resources")}
         </Link>
+        <Link href="/network" className="text-black underline">
+          - {t("network")}
+        </Link>
         <Link href="/tutorials" className="text-black underline">
           - {t("tutorials")}
         </Link>
