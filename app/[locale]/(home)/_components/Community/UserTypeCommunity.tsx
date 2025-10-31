@@ -23,7 +23,7 @@ export async function UserTypeCommunity({ userType, t }: Props) {
       data-aos="fade-up"
     >
       <div className="flex flex-col items-center gap-5 md:flex-row">
-        <div className="w-[175px] h-[175px]">
+        <div className="w-[175px] h-[175px] flex items-center justify-center">
           <UsersImages userType={userType} />
         </div>
 

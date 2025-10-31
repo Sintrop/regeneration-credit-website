@@ -88,9 +88,9 @@ export default async function Resources({ params }: Props) {
           ))}
         </div>
 
-        <h4 className="text-xl mt-7">Sintropia</h4>
+        <h4 className="text-xl mt-7">{t("regenerationCredit")} (Mobile)</h4>
         <div className="flex flex-col gap-5 mt-1">
-          {releasesSintropia.map((release, index) => (
+          {releasesRcMobile.map((release, index) => (
             <ReleaseItem
               key={index}
               t={t}
@@ -101,9 +101,9 @@ export default async function Resources({ params }: Props) {
           ))}
         </div>
 
-        <h4 className="text-xl mt-7">Regeneration Credit (Mobile)</h4>
+        <h4 className="text-xl mt-7">Sintropia</h4>
         <div className="flex flex-col gap-5 mt-1">
-          {releasesRcMobile.map((release, index) => (
+          {releasesSintropia.map((release, index) => (
             <ReleaseItem
               key={index}
               t={t}

@@ -18,18 +18,49 @@ export function UsersImages({ userType }: Props) {
   }, []);
 
   return (
-    <div className="flex flex-wrap w-[182px] h-[175px] gap-0 rounded-2xl bg-gray-300 overflow-hidden">
-      {images.map((item, index) => (
-        <Image
-          key={item}
-          src={item}
-          width={200}
-          height={200}
-          className="object-cover w-[86px] h-[86px] border border-white"
-          alt={`image user ${index}`}
-          quality={100}
-        />
-      ))}
+    <div className="flex flex-col w-[182px] h-[175px] gap-0 rounded-2xl bg-gray-100 overflow-hidden">
+      {images.length > 0 && (
+        <>
+          <div className="flex">
+            <Image
+              src={images[0]}
+              width={200}
+              height={200}
+              className="object-cover w-[88px] h-[88px] border border-white"
+              alt={`image user`}
+              quality={100}
+            />
+
+            <Image
+              src={images[1]}
+              width={200}
+              height={200}
+              className="object-cover w-[88px] h-[88px] border border-white"
+              alt={`image user`}
+              quality={100}
+            />
+          </div>
+          <div className="flex">
+            <Image
+              src={images[2]}
+              width={200}
+              height={200}
+              className="object-cover w-[88px] h-[88px] border border-white"
+              alt={`image user`}
+              quality={100}
+            />
+
+            <Image
+              src={images[3]}
+              width={200}
+              height={200}
+              className="object-cover w-[88px] h-[88px] border border-white"
+              alt={`image user`}
+              quality={100}
+            />
+          </div>
+        </>
+      )}
     </div>
   );
 }
