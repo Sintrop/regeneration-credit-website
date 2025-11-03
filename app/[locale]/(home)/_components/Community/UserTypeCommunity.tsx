@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 import ProducerImage from "@/public/assets/img/producer.png";
 import InspectorImage from "@/public/assets/img/inspector.png";
@@ -9,6 +8,7 @@ import ContributorImage from "@/public/assets/img/contributors.png";
 import ActivistImage from "@/public/assets/img/activists.png";
 import SupporterImage from "@/public/assets/img/supporter.png";
 import { TType } from "@/types/t";
+import { UsersImages } from "./UsersImages";
 
 interface Props {
   userType: UserTypeToDataType;
@@ -23,12 +23,9 @@ export async function UserTypeCommunity({ userType, t }: Props) {
       data-aos="fade-up"
     >
       <div className="flex flex-col items-center gap-5 md:flex-row">
-        <Image
-          src={data?.image}
-          alt="image user"
-          quality={100}
-          className="w-[180px] h-[180px] rounded-[30px] object-cover"
-        />
+        <div className="w-[175px] h-[175px] flex items-center justify-center">
+          <UsersImages userType={userType} />
+        </div>
 
         <div className="flex flex-col gap-3">
           <h4 className="font-bold text-3xl">{t(data?.title)}</h4>

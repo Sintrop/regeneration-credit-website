@@ -8,9 +8,10 @@ interface Props {
   t: TType;
   release: ReleaseProps;
   latest?: boolean;
+  apk?: boolean;
 }
 
-export function ReleaseItem({ t, release, latest }: Props) {
+export function ReleaseItem({ t, release, latest, apk }: Props) {
   return (
     <div className="p-5 rounded-md bg-green-200 w-full flex flex-wrap justify-between">
       <div className="flex flex-col w-full md:max-w-[50%]">
@@ -34,13 +35,35 @@ export function ReleaseItem({ t, release, latest }: Props) {
       <div className="flex flex-col w-full md:max-w-[50%] mt-10 md:mt-0">
         <h4 className="text-xl text-center lg:text-start">{t("download")}</h4>
         <div className="flex flex-wrap gap-5 justify-center mt-5 lg:mt-1 lg:justify-start">
-          <SystemItemDownload t={t} assets={release.assets} system="windows" />
+          {apk ? (
+            <SystemItemDownload
+              t={t}
+              assets={release.assets}
+              system="androidApk"
+            />
+          ) : (
+            <>
+              <SystemItemDownload
+                t={t}
+                assets={release.assets}
+                system="windows"
+              />
 
-          <SystemItemDownload t={t} assets={release.assets} system="linux" />
+              <SystemItemDownload
+                t={t}
+                assets={release.assets}
+                system="linux"
+              />
 
-          <SystemItemDownload t={t} assets={release.assets} system="macosarm" />
+              <SystemItemDownload
+                t={t}
+                assets={release.assets}
+                system="macosarm"
+              />
 
-          {/* <SystemItemDownload t={t} assets={release.assets} system="macosx86" /> */}
+              {/* <SystemItemDownload t={t} assets={release.assets} system="macosx86" /> */}
+            </>
+          )}
         </div>
 
         <Link

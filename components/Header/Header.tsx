@@ -34,6 +34,9 @@ export async function Header({ t }: Props) {
           <Link href="/resources" className="text-white">
             {t("resources")}
           </Link>
+          <Link href="/network" className="text-white">
+            {t("network")}
+          </Link>
           <Link href="/tutorials" className="text-white">
             {t("tutorials")}
           </Link>

@@ -1,0 +1,17 @@
+{
+  "regenerationCredit": "Regeneration Credit",
+  "network": "Network",
+  "home": "Home",
+  "resources": "Resources",
+  "tutorials": "Tutorials",
+  "getCore": "Get core",
+  "about": "About",
+  "seo-title-network": "Sintrop Network",
+  "seo-description-network": "Network details and instructions to connect",
+  "discord": "Discord",
+  "github": "Github",
+  "language": "Language",
+  "addToMetamask": "Add to Metamask",
+  "youCanAddToMMDescription": "You can add the Sintrop Network in your metamask extension",
+  "youNeedAMetamaskExtensionInstalled": "You need a Metamask extension installed"
+}

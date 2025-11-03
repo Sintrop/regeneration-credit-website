@@ -3,6 +3,7 @@ import Link from "next/link";
 import WindowsIcon from "@/public/assets/icons/win.png";
 import LinuxIcon from "@/public/assets/icons/linux.png";
 import MacosIcon from "@/public/assets/icons/macos.png";
+import AndroidIcon from "@/public/assets/icons/android.png";
 import Image from "next/image";
 import { TType } from "@/types/t";
 
@@ -74,6 +75,11 @@ const systemToData = {
     label: "macos",
     image: MacosIcon,
     archiveIncludeName: ".dmg",
+  },
+  androidApk: {
+    label: "Android/APK",
+    image: AndroidIcon,
+    archiveIncludeName: ".apk",
   },
 };
 
