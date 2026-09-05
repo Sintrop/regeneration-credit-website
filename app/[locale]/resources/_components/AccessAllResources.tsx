@@ -10,7 +10,7 @@ export async function AccessAllResources({ t, locale }: Props) {
     locale === "pt" ? "credito-de-regeneracao.pdf" : "regeneration-credit.pdf";
 
   return (
-    <section className="w-full bg-[#08514C] rounded-[40px] px-5 py-10 lg:px-20 lg:py-20 mt-20 mb-10">
+    <section className="w-full bg-brand-forest rounded-3xl px-5 py-10 lg:px-20 lg:py-16 mt-20 mb-10">
       <h3 className="font-bold text-white text-3xl">
         {t("accessAllResources")}
       </h3>

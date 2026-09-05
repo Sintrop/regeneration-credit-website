@@ -66,7 +66,7 @@ export default async function Tutorial({ params }: Props) {
             locale={locale}
             resources={resources}
         >
-            <div className='bg-back-home w-full flex flex-col bg-cover bg-center'>
+            <div className='bg-hero-forest w-full flex flex-col'>
                 <Header t={t} />
                 <HeroTutorials t={t} title={tutorial.title} />
             </div>
