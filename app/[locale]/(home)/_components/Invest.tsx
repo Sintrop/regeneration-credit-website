@@ -16,6 +16,7 @@ export function Invest({ t }: Props) {
         { title: t("invest2Title"), description: t("invest2Desc") },
         { title: t("invest3Title"), description: t("invest3Desc") },
       ]}
+      cta={{ label: t("investCta"), href: "/supporters" }}
     />
   );
 }

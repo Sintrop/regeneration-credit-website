@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
+
 interface Step {
   title: string;
   description: string;
@@ -8,9 +11,10 @@ interface Props {
   title: string;
   description: string;
   steps: Step[];
+  cta?: { label: string; href: string };
 }
 
-export function StepFlow({ eyebrow, title, description, steps }: Props) {
+export function StepFlow({ eyebrow, title, description, steps, cta }: Props) {
   return (
     <section className="py-16 lg:py-24">
       <div className="max-w-2xl">
@@ -33,6 +37,16 @@ export function StepFlow({ eyebrow, title, description, steps }: Props) {
           </li>
         ))}
       </ol>
+
+      {cta && (
+        <Link
+          href={cta.href}
+          className="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep hover:underline"
+        >
+          {cta.label}
+          <FiArrowRight size={15} />
+        </Link>
+      )}
     </section>
   );
 }
