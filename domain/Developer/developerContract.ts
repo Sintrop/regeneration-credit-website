@@ -1,6 +1,6 @@
 import Web3 from "web3"
 import DeveloperRulesJson from "./DeveloperRules.json"
-import { DeveloperContractProps } from "./types";
+import { DeveloperContractProps, ReportContractProps } from "./types";
 
 const provider = new Web3(process.env.NEXT_PUBLIC_RPC_URL)
 const contract = new provider.eth.Contract(DeveloperRulesJson.abi, process.env.NEXT_PUBLIC_DEVELOPER_ADDRESS)
@@ -15,7 +15,19 @@ async function developersAddress({ id }: { id: number }): Promise<string> {
   return response;
 }
 
+async function reportsTotalCount(): Promise<number> {
+  const response = await contract.methods.reportsTotalCount().call();
+  return Number(String(response).replace("n", ""));
+}
+
+async function getReport({ id }: { id: number }): Promise<ReportContractProps> {
+  const response = await contract.methods.getReport(id).call() as ReportContractProps;
+  return response;
+}
+
 export const developerContract = {
   getDeveloper,
-  developersAddress
+  developersAddress,
+  reportsTotalCount,
+  getReport
 }

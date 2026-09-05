@@ -23,5 +23,7 @@
   "descUsers": "Look up regenerators, inspections and offset certificates. Certificate QR codes point here.",
   "downloadApps": "Download the apps",
   "descDownloadApps": "Desktop core and mobile apps for the protocol.",
-  "faq": "FAQ"
+  "faq": "FAQ",
+  "publications": "Community publications",
+  "descPublications": "Researches, contributions and reports published on-chain by members."
 }

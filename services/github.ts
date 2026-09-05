@@ -7,12 +7,16 @@ interface GetReleasesFromGitHubProps {
 
 export async function getReleasesFromGitHub(props: GetReleasesFromGitHubProps): Promise<ReleaseProps[]> {
     const { repo, username } = props;
-    const response = await fetch(`https://api.github.com/repos/${username}/${repo}/releases`);
-    const data = await response.json();
 
-    if (data.message === 'Not Found') {
+    try {
+        const response = await fetch(
+            `https://api.github.com/repos/${username}/${repo}/releases`,
+            { next: { revalidate: 3600 } }
+        );
+        const data = await response.json();
+
+        return Array.isArray(data) ? data : [];
+    } catch {
         return [];
     }
-
-    return data;
 }

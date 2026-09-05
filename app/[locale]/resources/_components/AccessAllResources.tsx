@@ -42,6 +42,12 @@ export function AccessAllResources({ t, locale }: Props) {
       external: true,
     },
     {
+      title: t("publications"),
+      description: t("descPublications"),
+      href: "/publications",
+      external: false,
+    },
+    {
       title: t("downloadApps"),
       description: t("descDownloadApps"),
       href: "/download",
