@@ -1,39 +1,37 @@
-import Image from "next/image";
-//import { Button } from "@/components/ui/button";
-import ImageRc from "@/public/assets/img/rc.png";
 import { TType } from "@/types/t";
 
 interface Props {
   t: TType;
 }
-export async function WhatIsIt({ t }: Props) {
+
+export function WhatIsIt({ t }: Props) {
+  const steps = [
+    { title: t("step1Title"), description: t("step1Desc") },
+    { title: t("step2Title"), description: t("step2Desc") },
+    { title: t("step3Title"), description: t("step3Desc") },
+  ];
+
   return (
-    <section className="flex flex-col items-center justify-between py-10 lg:py-20 lg:flex-row">
-      <div className="flex flex-col flex-1 gap-5 w-full lg:gap-10 lg:max-w-[50%]">
-        <h3 className="font-bold text-4xl">{t("regenerateToEarn")}</h3>
-        <p className="text-xl lg:max-w-[90%]">{t("descWhatIsIt")}</p>
-
-        {/* <div className="flex flex-col gap-5 md:flex-row md:gap-10">
-          <Button className="w-full h-[50px] rounded-[40px] bg-transparent border-2 border-green-primary text-black md:w-[200px]">
-            {t("downloadApp")}
-          </Button>
-
-          <Button className="w-full h-[50px] rounded-[40px] bg-transparent border-2 border-green-primary text-black md:w-[200px]">
-            {t("webPlatform")}
-          </Button>
-        </div> */}
+    <section className="py-16 lg:py-24">
+      <div className="max-w-2xl">
+        <h2 className="text-3xl md:text-4xl">{t("regenerateToEarn")}</h2>
+        <p className="mt-4 text-lg text-ink-soft">{t("descWhatIsIt")}</p>
       </div>
 
-      <div className="hidden lg:flex w-full justify-center items-center max-w-[50%]">
-        <div className="bg-network bg-contain bg-center flex items-center justify-center w-full h-[400px] bg-no-repeat">
-          <Image
-            src={ImageRc}
-            alt={t("altIconRc")}
-            quality={100}
-            className="w-[150px] h-[150px] object-contain"
-          />
-        </div>
-      </div>
+      <ol className="mt-12 grid gap-5 md:grid-cols-3">
+        {steps.map((step, index) => (
+          <li
+            key={step.title}
+            className="rounded-2xl border border-line bg-surface p-6"
+          >
+            <span className="font-anta text-sm text-brand">
+              0{index + 1}
+            </span>
+            <h3 className="mt-3 text-xl">{step.title}</h3>
+            <p className="mt-2 text-ink-soft">{step.description}</p>
+          </li>
+        ))}
+      </ol>
     </section>
   );
 }
