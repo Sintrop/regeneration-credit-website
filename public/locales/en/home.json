@@ -4,7 +4,6 @@
   "seo-description": "A Peer-to-Peer Nature Regeneration System",
   "home": "Home",
   "resources": "Resources",
-  "tutorials": "Tutorials",
   "network": "Network",
   "launchApp": "Launch App",
   "getStarted": "Get started",
@@ -81,7 +80,7 @@
   "step2Desc": "Inspectors visit the area and record its trees and species in a peer-to-peer verification.",
   "step3Title": "Earn credits",
   "step3Desc": "Verified impact is converted into Regeneration Credit, which supporters buy and retire for a certificate.",
-  "investTitle": "Invest in nature regeneration",
+  "investTitle": "Invest in Nature regeneration",
   "investDesc": "Back the regeneration of ecosystems by holding Regeneration Credit and retiring it for a contribution certificate.",
   "invest1Title": "Buy Regeneration Credit",
   "invest1Desc": "Buy directly from a community member to hold a balance of the asset.",
@@ -89,5 +88,6 @@
   "invest2Desc": "Transfer it freely and use it to trade.",
   "invest3Title": "Offset and get your certificate",
   "invest3Desc": "Retire your credits to receive a contribution certificate.",
-  "app": "App"
+  "app": "App",
+  "faq": "FAQ"
 }

@@ -4,7 +4,6 @@
   "seo-description": "This Privacy Policy describes how the \"Sintropia Method\" application (\"the App\") handles your information.",
   "home": "Home",
   "resources": "Resources",
-  "tutorials": "Tutorials",
   "network": "Network",
   "launchApp": "Launch App",
   "getStarted": "Get started",
@@ -61,5 +60,6 @@
       "contact": "If you have questions about this Privacy Policy or data practices, contact us via our repository: https://github.com/Sintrop/Sintropia-method"
     }
   },
-  "app": "App"
+  "app": "App",
+  "faq": "FAQ"
 }

@@ -1,14 +1,13 @@
 {
   "regenerationCredit": "Crédito de regeneração",
   "seo-title": "Crédito de regeneração",
-  "seo-description": "Sistema de regeneração da natureza pessoa a pessoa",
+  "seo-description": "Sistema de regeneração da Natureza pessoa a pessoa",
   "home": "Início",
   "resources": "Recursos",
-  "tutorials": "Tutoriais",
   "launchApp": "Iniciar App",
   "network": "Rede",
   "getStarted": "Vamos começar",
-  "titleHero": "Sistema de regeneração da natureza pessoa a pessoa",
+  "titleHero": "Sistema de regeneração da Natureza pessoa a pessoa",
   "descriptionHero": "Apresentamos o Crédito Regeneração, um mecanismo de financiamento para serviços ambientais e um sistema de certificação de contratos inteligentes.",
   "downloadWhitepaper": "Baixar Whitepaper",
   "regenerateToEarn": "Regenerar para ganhar",
@@ -89,5 +88,6 @@
   "invest2Desc": "Faça transferências e use-o como meio de troca.",
   "invest3Title": "Compense e receba o certificado",
   "invest3Desc": "Faça compensações e troque os créditos pelo certificado de contribuição.",
-  "app": "App"
+  "app": "App",
+  "faq": "FAQ"
 }

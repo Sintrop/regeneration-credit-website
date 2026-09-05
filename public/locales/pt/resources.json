@@ -3,7 +3,6 @@
   "seo-description": "Recursos do Crédito de Regeneração",
   "regenerationCredit": "Crédito de Regeneração",
   "resources": "Recursos",
-  "tutorials": "Tutoriais",
   "network": "Rede",
   "home": "Início",
   "app": "App",
@@ -23,5 +22,6 @@
   "usersPortal": "Portal dos usuários",
   "descUsers": "Consulte regeneradores, inspeções e certificados de compensação. Os QR codes dos certificados apontam para cá.",
   "downloadApps": "Baixar os aplicativos",
-  "descDownloadApps": "Core desktop e aplicativos mobile do protocolo."
+  "descDownloadApps": "Core desktop e aplicativos mobile do protocolo.",
+  "faq": "FAQ"
 }

@@ -3,7 +3,6 @@
   "seo-description": "Resources of Regeneration Credit",
   "regenerationCredit": "Regeneration Credit",
   "resources": "Resources",
-  "tutorials": "Tutorials",
   "network": "Network",
   "home": "Home",
   "app": "App",
@@ -23,5 +22,6 @@
   "usersPortal": "Users portal",
   "descUsers": "Look up regenerators, inspections and offset certificates. Certificate QR codes point here.",
   "downloadApps": "Download the apps",
-  "descDownloadApps": "Desktop core and mobile apps for the protocol."
+  "descDownloadApps": "Desktop core and mobile apps for the protocol.",
+  "faq": "FAQ"
 }

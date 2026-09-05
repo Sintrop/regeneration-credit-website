@@ -3,7 +3,6 @@
   "network": "Network",
   "home": "Home",
   "resources": "Resources",
-  "tutorials": "Tutorials",
   "getCore": "Get core",
   "about": "About",
   "launchApp": "Launch App",
@@ -18,5 +17,6 @@
   "youNeedAMetamaskExtensionInstalled": "You need a Metamask extension installed",
   "app": "App",
   "networkData": "Network data",
-  "networkLead": "Add the Sintrop network to your wallet to interact directly with the protocol contracts."
+  "networkLead": "Add the Sintrop network to your wallet to interact directly with the protocol contracts.",
+  "faq": "FAQ"
 }

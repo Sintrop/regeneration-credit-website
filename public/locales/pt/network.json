@@ -3,7 +3,6 @@
   "network": "Rede",
   "home": "Início",
   "resources": "Recursos",
-  "tutorials": "Tutoriais",
   "getCore": "Obter o core",
   "about": "Sobre",
   "launchApp": "Iniciar App",
@@ -18,5 +17,6 @@
   "youNeedAMetamaskExtensionInstalled": "Você precisa da extensão do Metamask instalada!",
   "app": "App",
   "networkData": "Dados da rede",
-  "networkLead": "Adicione a rede da Sintrop na sua carteira para interagir diretamente com os contratos do protocolo."
+  "networkLead": "Adicione a rede da Sintrop na sua carteira para interagir diretamente com os contratos do protocolo.",
+  "faq": "FAQ"
 }

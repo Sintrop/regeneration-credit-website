@@ -5,7 +5,6 @@
   "home": "Início",
   "resources": "Recursos",
   "network": "Rede",
-  "tutorials": "Tutoriais",
   "launchApp": "Iniciar App",
   "getStarted": "Vamos começar",
   "privacy": {
@@ -61,5 +60,6 @@
       "contact": "Se você tiver dúvidas sobre esta Política de Privacidade ou sobre as práticas de dados do App \"Método Sintropia\", entre em contato conosco através do repositório: https://github.com/Sintrop/Sintropia-method"
     }
   },
-  "app": "App"
+  "app": "App",
+  "faq": "FAQ"
 }

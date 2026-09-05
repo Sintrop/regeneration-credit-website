@@ -5,7 +5,6 @@
   "home": "Início",
   "resources": "Recursos",
   "network": "Rede",
-  "tutorials": "Tutoriais",
   "app": "App",
   "getStarted": "Vamos começar",
   "downloadTitle": "Baixe os aplicativos",
@@ -15,5 +14,6 @@
   "releases": "Versões",
   "latest": "Mais recente",
   "download": "Baixar",
-  "clickHereToSeeAllVersions": "Clique aqui para ver todas as versões"
+  "clickHereToSeeAllVersions": "Clique aqui para ver todas as versões",
+  "faq": "FAQ"
 }

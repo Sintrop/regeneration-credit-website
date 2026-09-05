@@ -1,0 +1,55 @@
+{
+  "regenerationCredit": "Crédito de Regeneração",
+  "seo-title": "FAQ - Crédito de Regeneração",
+  "seo-description": "Perguntas frequentes sobre o protocolo Crédito de Regeneração.",
+  "home": "Início",
+  "resources": "Recursos",
+  "network": "Rede",
+  "app": "App",
+  "faq": "FAQ",
+  "getStarted": "Vamos começar",
+  "title": "Perguntas frequentes",
+  "lead": "O essencial sobre como o Crédito de Regeneração funciona, para regeneradores e apoiadores.",
+  "items": [
+    {
+      "q": "O que é o Crédito de Regeneração?",
+      "a": "É um pagamento por serviços ambientais pessoa a pessoa. Quem regenera ecossistemas degradados ganha tokens de Crédito de Regeneração (RC), e o impacto por trás de cada token é verificado por um processo de inspeção descentralizado."
+    },
+    {
+      "q": "Como alguém ganha Crédito de Regeneração?",
+      "a": "Um regenerador registra uma área de regeneração e a gerencia ao longo do tempo. Inspetores visitam a área e registram suas árvores e espécies. Esse impacto verificado é então convertido em RC pelos pools do protocolo."
+    },
+    {
+      "q": "Como eu apoio o projeto?",
+      "a": "Compre RC diretamente de um membro da comunidade para ter saldo no ativo. Você pode transferi-lo livremente, usá-lo como meio de troca ou aposentá-lo por um certificado de contribuição."
+    },
+    {
+      "q": "O que é o certificado de contribuição?",
+      "a": "Quando um apoiador aposenta (queima) seu RC, recebe um certificado que comprova ter financiado aquela quantidade de regeneração verificada. Os tokens certificados são contabilizados à parte on-chain."
+    },
+    {
+      "q": "Quem verifica o impacto?",
+      "a": "Os inspetores, num processo pessoa a pessoa. Eles visitam as áreas de regeneração e registram a contagem de árvores e espécies. Validadores podem revisar inspeções e invalidar as fraudulentas."
+    },
+    {
+      "q": "Em qual blockchain o protocolo roda?",
+      "a": "Na Sintrop Impact Blockchain. Você pode adicionar a rede na sua carteira pela página Rede e navegar por tudo no explorador de blocos."
+    },
+    {
+      "q": "O código é auditado e de código aberto?",
+      "a": "Sim. Os 22 contratos do núcleo foram auditados pela Nethermind Security antes de ir para a mainnet, e cada contrato e interface é público no GitHub."
+    },
+    {
+      "q": "Como o impacto de uma árvore é estimado?",
+      "a": "Cada árvore registrada é padronizada numa média de 100 kg de carbono sequestrado. O contrato RegenerationCreditImpact agrega árvores, espécies, carbono e área de todo o sistema."
+    },
+    {
+      "q": "Onde vejo os dados ao vivo e os usuários?",
+      "a": "A página inicial mostra o impacto on-chain do sistema. O portal dos usuários em users.regenerationcredit.org lista regeneradores, inspeções e certificados de compensação, e é para onde os QR codes dos certificados apontam."
+    },
+    {
+      "q": "Onde eu baixo os aplicativos?",
+      "a": "Na página App: os aplicativos mobile na Google Play e na App Store, além do core desktop e das versões em APK."
+    }
+  ]
+}
