@@ -3,59 +3,53 @@ import { SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import Image from "next/image";
 import ImageRc from "@/public/assets/img/rc.png";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { FaPlay } from "react-icons/fa6";
 
 interface Props {
   t: TType;
 }
 export function NavMenuMobile({ t }: Props) {
+  const links = [
+    { href: "/", label: t("home") },
+    { href: "/resources", label: t("resources") },
+    { href: "/network", label: t("network") },
+    { href: "/tutorials", label: t("tutorials") },
+  ];
+
   return (
-    <SheetContent className="">
-      <SheetHeader className="">
-        <Link
-          className="flex justify-start items-center gap-3 w-[150px]"
-          href="/"
-        >
+    <SheetContent>
+      <SheetHeader>
+        <Link className="flex items-center gap-3" href="/">
           <Image
             src={ImageRc}
-            alt="Regeneration credit icon"
+            alt="Regeneration Credit"
             quality={100}
             className="w-8 h-8 object-contain"
           />
 
-          <SheetTitle className="text-black font-bold uppercase text-sm">
+          <SheetTitle className="font-anta text-ink uppercase tracking-wide text-sm">
             {t("regenerationCredit")}
           </SheetTitle>
         </Link>
       </SheetHeader>
 
-      <nav className="flex flex-col gap-5 mt-10">
-        <Link href="/" className="text-black underline">
-          - {t("home")}
-        </Link>
-        <Link href="/resources" className="text-black underline">
-          - {t("resources")}
-        </Link>
-        <Link href="/network" className="text-black underline">
-          - {t("network")}
-        </Link>
-        <Link href="/tutorials" className="text-black underline">
-          - {t("tutorials")}
-        </Link>
+      <nav className="flex flex-col mt-8">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="py-3 border-b border-line text-ink font-medium transition-colors hover:text-brand"
+          >
+            {link.label}
+          </Link>
+        ))}
       </nav>
 
-      <Button className="hidden px-10 h-[50px] rounded-[40px] bg-blue-primary text-white text-semibold mt-10">
-        {t("launchApp")}
-      </Button>
-
-      <Button className="mt-5 border-2 border-blue-primary rounded-[40px] h-[50px] bg-transparent text-black flex items-center justify-between pr-1 font-semibold gap-5 w-fit">
+      <Link
+        href="/resources"
+        className="mt-8 inline-flex items-center justify-center rounded-full bg-brand px-7 h-12 font-semibold text-white transition-colors hover:bg-brand-deep"
+      >
         {t("getStarted")}
-
-        <div className="h-[40px] w-[40px] rounded-full bg-blue-primary flex items-center justify-center">
-          <FaPlay size={20} color="white" />
-        </div>
-      </Button>
+      </Link>
     </SheetContent>
   );
 }

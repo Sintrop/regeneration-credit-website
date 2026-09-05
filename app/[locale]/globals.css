@@ -63,6 +63,24 @@
   }
 }
 
+@layer components {
+  /* Deep forest backdrop used behind the header and page heroes. */
+  .bg-hero-forest {
+    background-color: hsl(var(--brand-forest));
+    background-image:
+      radial-gradient(
+        120% 90% at 15% 0%,
+        hsl(var(--brand-deep) / 0.55) 0%,
+        transparent 60%
+      ),
+      radial-gradient(
+        90% 80% at 100% 10%,
+        hsl(152 60% 24% / 0.5) 0%,
+        transparent 55%
+      );
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
