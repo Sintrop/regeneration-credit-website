@@ -73,11 +73,21 @@
   "viewCode": "View the code",
   "openExplorer": "Open the explorer",
   "readAudit": "Read the audit",
-  "howItWorks": "How it works",
+  "forRegenerators": "For regenerators",
+  "forSupporters": "For supporters",
   "step1Title": "Regenerate",
   "step1Desc": "Register a regeneration area and bring it back to life, planting and protecting the ecosystem.",
   "step2Title": "Get inspected",
   "step2Desc": "Inspectors visit the area and record its trees and species in a peer-to-peer verification.",
   "step3Title": "Earn credits",
-  "step3Desc": "Verified impact is converted into Regeneration Credit, which supporters buy and retire for a certificate."
+  "step3Desc": "Verified impact is converted into Regeneration Credit, which supporters buy and retire for a certificate.",
+  "investTitle": "Invest in nature regeneration",
+  "investDesc": "Back the regeneration of ecosystems by holding Regeneration Credit and retiring it for a contribution certificate.",
+  "invest1Title": "Buy Regeneration Credit",
+  "invest1Desc": "Buy directly from a community member to hold a balance of the asset.",
+  "invest2Title": "Use it as a medium of exchange",
+  "invest2Desc": "Transfer it freely and use it to trade.",
+  "invest3Title": "Offset and get your certificate",
+  "invest3Desc": "Retire your credits to receive a contribution certificate.",
+  "app": "App"
 }

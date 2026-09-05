@@ -24,7 +24,7 @@ export function Hero({ t, locale }: Props) {
 
         <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
           <Link
-            href="/resources"
+            href="/download"
             className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 h-12 font-semibold text-brand-forest transition-colors hover:bg-brand-tint"
           >
             {t("getStarted")}

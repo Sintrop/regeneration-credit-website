@@ -9,6 +9,9 @@ export function HeroResources({ t }: Props) {
       <h1 className="text-white font-semibold text-4xl md:text-5xl">
         {t("resources")}
       </h1>
+      <p className="mt-4 text-white/80 text-lg max-w-2xl">
+        {t("resourcesLead")}
+      </p>
     </section>
   );
 }

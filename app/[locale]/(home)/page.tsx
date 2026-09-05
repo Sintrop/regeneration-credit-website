@@ -5,6 +5,7 @@ import TranslationsProvider from "@/components/TranslationsProvider";
 import { Header } from "@/components/Header/Header";
 import { Hero } from "./_components/Hero";
 import { WhatIsIt } from "./_components/WhatIsIt";
+import { Invest } from "./_components/Invest";
 import { Technology } from "./_components/Technology";
 import { Community } from "./_components/Community/Community";
 import { Footer } from "@/components/Footer/Footer";
@@ -56,9 +57,11 @@ export default async function Home({ params }: Props) {
 
       <main>
         <div className="container mx-auto px-5 lg:px-20">
+          <RcToken t={t} />
+
           <WhatIsIt t={t} />
 
-          <RcToken t={t} />
+          <Invest t={t} />
         </div>
 
         <Technology t={t} />

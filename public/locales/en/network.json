@@ -15,5 +15,6 @@
   "language": "Language",
   "addToMetamask": "Add to Metamask",
   "youCanAddToMMDescription": "You can add the Sintrop Network in your metamask extension",
-  "youNeedAMetamaskExtensionInstalled": "You need a Metamask extension installed"
+  "youNeedAMetamaskExtensionInstalled": "You need a Metamask extension installed",
+  "app": "App"
 }

@@ -11,6 +11,7 @@ export function NavMenuMobile({ t }: Props) {
   const links = [
     { href: "/", label: t("home") },
     { href: "/resources", label: t("resources") },
+    { href: "/download", label: t("app") },
     { href: "/network", label: t("network") },
     { href: "/tutorials", label: t("tutorials") },
   ];
@@ -45,7 +46,7 @@ export function NavMenuMobile({ t }: Props) {
       </nav>
 
       <Link
-        href="/resources"
+        href="/download"
         className="mt-8 inline-flex items-center justify-center rounded-full bg-brand px-7 h-12 font-semibold text-white transition-colors hover:bg-brand-deep"
       >
         {t("getStarted")}

@@ -73,11 +73,21 @@
   "viewCode": "Ver o código",
   "openExplorer": "Abrir o explorer",
   "readAudit": "Ler a auditoria",
-  "howItWorks": "Como funciona",
+  "forRegenerators": "Para regeneradores",
+  "forSupporters": "Para apoiadores",
   "step1Title": "Regenerar",
   "step1Desc": "Registre uma área de regeneração e traga ela de volta à vida, plantando e protegendo o ecossistema.",
   "step2Title": "Ser inspecionado",
   "step2Desc": "Inspetores visitam a área e registram suas árvores e espécies numa verificação pessoa a pessoa.",
   "step3Title": "Ganhar créditos",
-  "step3Desc": "O impacto verificado vira Crédito de Regeneração, que apoiadores compram e aposentam por um certificado."
+  "step3Desc": "O impacto verificado vira Crédito de Regeneração, que apoiadores compram e aposentam por um certificado.",
+  "investTitle": "Invista na regeneração da Natureza",
+  "investDesc": "Apoie a regeneração de ecossistemas mantendo o Crédito de Regeneração e aposentando-o por um certificado de contribuição.",
+  "invest1Title": "Compre o Crédito de Regeneração",
+  "invest1Desc": "Compre diretamente de um membro da comunidade para ter saldo no ativo.",
+  "invest2Title": "Use como meio de troca",
+  "invest2Desc": "Faça transferências e use-o como meio de troca.",
+  "invest3Title": "Compense e receba o certificado",
+  "invest3Desc": "Faça compensações e troque os créditos pelo certificado de contribuição.",
+  "app": "App"
 }

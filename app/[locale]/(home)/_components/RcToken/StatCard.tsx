@@ -40,7 +40,7 @@ export function StatCard({ label, value, unit, decimals = 0, hint }: Props) {
 
         requestAnimationFrame(tick);
       },
-      { threshold: 0.4 }
+      { threshold: 0.1 }
     );
 
     observer.observe(node);

@@ -11,6 +11,7 @@ export async function Footer({ t }: Props) {
   const links = [
     { href: "/", label: t("home") },
     { href: "/resources", label: t("resources") },
+    { href: "/download", label: t("app") },
     { href: "/network", label: t("network") },
     { href: "/tutorials", label: t("tutorials") },
   ];
