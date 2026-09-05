@@ -46,7 +46,8 @@
     "descDevelopers": "Responsável pelo desenvolvimento técnico do sistema, incluindo contratos inteligentes, interfaces front-end e aplicativos relacionados.",
     "descContributors": "Um usuário contribuinte genérico que pode fornecer suporte à comunidade, traduções, design e quaisquer outras funções gerais que beneficiem o projeto.",
     "descActivists": "Autorizado a convidar novos Regeneradores e Inspetores para o sistema, expandindo o alcance da comunidade.",
-    "descSupporters": "Qualquer indivíduo ou organização que pode financiar a regeneração comprando tokens de usuários e depois queimando-os para receber um certificado de compensação, expandindo o alcance da comunidade."
+    "descSupporters": "Qualquer indivíduo ou organização que pode financiar a regeneração comprando tokens de usuários e depois queimando-os para receber um certificado de compensação, expandindo o alcance da comunidade.",
+    "cta": "Conheça a comunidade"
   },
   "linkMoreInfo": "Link para mais informações",
   "circulatingSupply": "Circulante",

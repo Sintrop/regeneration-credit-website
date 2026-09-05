@@ -1,0 +1,54 @@
+{
+  "regenerationCredit": "Regeneration Credit",
+  "seo-title": "Community - Regeneration Credit",
+  "seo-description": "The seven roles that run the Regeneration Credit protocol, and how each one is rewarded.",
+  "home": "Home",
+  "resources": "Resources",
+  "network": "Network",
+  "app": "App",
+  "faq": "FAQ",
+  "getStarted": "Get started",
+  "title": "The community runs the protocol",
+  "lead": "There is no company behind the Regeneration Credit. Seven roles keep it running, and it is not only the regenerator who earns: every role is rewarded from its own pool for the work it brings to the system.",
+  "membersLabel": "members",
+  "roles": [
+    {
+      "name": "Regenerators",
+      "what": "Register and manage a regeneration area, planting and protecting the ecosystem over time.",
+      "earn": "Earn Regeneration Credit from the regenerator pool, in proportion to the verified impact of their area."
+    },
+    {
+      "name": "Inspectors",
+      "what": "Visit regeneration areas and record their trees and species in a peer-to-peer verification.",
+      "earn": "Earn from the inspector pool for each inspection they carry out and submit."
+    },
+    {
+      "name": "Researchers",
+      "what": "Produce environmental research, evaluation methods and impact calculator items for the protocol.",
+      "earn": "Earn from the researcher pool for each valid research and method they publish."
+    },
+    {
+      "name": "Developers",
+      "what": "Build and maintain the software: smart contracts, interfaces and related applications.",
+      "earn": "Earn from the developer pool for the development reports they publish."
+    },
+    {
+      "name": "Contributors",
+      "what": "Support the community with education, translations, design, presentations and other general work.",
+      "earn": "Earn from the contributor pool for each valid contribution they publish."
+    },
+    {
+      "name": "Activists",
+      "what": "Invite new regenerators and inspectors into the system, expanding the community's reach.",
+      "earn": "Earn from the activist pool, with rewards that grow with their level."
+    },
+    {
+      "name": "Supporters",
+      "what": "Any person or organization that finances regeneration by acquiring Regeneration Credit.",
+      "earn": "Do not earn tokens: they fund the system and can retire their credits for a contribution certificate."
+    }
+  ],
+  "ctaTitle": "Join the community",
+  "openUsersPortal": "Open the users portal",
+  "getTheApp": "Get the app"
+}

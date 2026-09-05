@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
 import { TType } from "@/types/t";
 import { UserTypeCommunity } from "./UserTypeCommunity";
 
@@ -17,6 +19,14 @@ export function Community({ t }: Props) {
           <UserTypeCommunity key={userType} t={t} userType={userType} />
         ))}
       </div>
+
+      <Link
+        href="/community"
+        className="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep hover:underline"
+      >
+        {t("community.cta")}
+        <FiArrowRight size={15} />
+      </Link>
     </section>
   );
 }
