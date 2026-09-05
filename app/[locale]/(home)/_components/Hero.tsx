@@ -36,7 +36,7 @@ export function Hero({ t, locale }: Props) {
           href={`https://regenerationcredit.org/assets/${whitepaperFileName}`}
           className="bg-blue-primary w-full md:w-[295px] rounded-full flex items-center justify-center h-12 text-white"
           target="_blank"
-          rel="noreferer noopener"
+          rel="noopener noreferrer"
         >
           {t("downloadWhitepaper")}
         </Link>

@@ -28,7 +28,7 @@ export async function WhatIsIt({ t }: Props) {
         <div className="bg-network bg-contain bg-center flex items-center justify-center w-full h-[400px] bg-no-repeat">
           <Image
             src={ImageRc}
-            alt={t("altIconRC")}
+            alt={t("altIconRc")}
             quality={100}
             className="w-[150px] h-[150px] object-contain"
           />

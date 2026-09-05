@@ -21,7 +21,7 @@ export async function CardInfoWithLink({ description, link, title, t }: Props) {
           href={link}
           target="_blank"
           className="underline"
-          rel="noreferer noopener"
+          rel="noopener noreferrer"
         >
           {t('linkMoreInfo')}
         </Link>

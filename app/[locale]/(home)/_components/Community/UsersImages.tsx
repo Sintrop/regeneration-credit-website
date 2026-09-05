@@ -10,57 +10,50 @@ export function UsersImages({ userType }: Props) {
   const [images, setImages] = useState<string[]>([]);
 
   useEffect(() => {
+    let active = true;
+
     async function getImages() {
-      const response = await getUsersImages({ userType });
-      setImages(response);
+      try {
+        const response = await getUsersImages({ userType });
+        if (active) {
+          setImages(response.filter(Boolean).slice(0, 4));
+        }
+      } catch {
+        if (active) setImages([]);
+      }
     }
+
     getImages();
-  }, []);
+
+    return () => {
+      active = false;
+    };
+  }, [userType]);
+
+  function handleImageError(src: string) {
+    setImages((current) => current.filter((image) => image !== src));
+  }
+
+  if (images.length === 0) {
+    return (
+      <div className="w-[182px] h-[175px] rounded-2xl bg-gray-100" aria-hidden />
+    );
+  }
 
   return (
-    <div className="flex flex-col w-[182px] h-[175px] gap-0 rounded-2xl bg-gray-100 overflow-hidden">
-      {images.length > 0 && (
-        <>
-          <div className="flex">
-            <Image
-              src={images[0]}
-              width={200}
-              height={200}
-              className="object-cover w-[88px] h-[88px] border border-white"
-              alt={`image user`}
-              quality={100}
-            />
-
-            <Image
-              src={images[1]}
-              width={200}
-              height={200}
-              className="object-cover w-[88px] h-[88px] border border-white"
-              alt={`image user`}
-              quality={100}
-            />
-          </div>
-          <div className="flex">
-            <Image
-              src={images[2]}
-              width={200}
-              height={200}
-              className="object-cover w-[88px] h-[88px] border border-white"
-              alt={`image user`}
-              quality={100}
-            />
-
-            <Image
-              src={images[3]}
-              width={200}
-              height={200}
-              className="object-cover w-[88px] h-[88px] border border-white"
-              alt={`image user`}
-              quality={100}
-            />
-          </div>
-        </>
-      )}
+    <div className="grid grid-cols-2 w-[182px] h-[175px] rounded-2xl bg-gray-100 overflow-hidden">
+      {images.map((src, index) => (
+        <Image
+          key={`${src}-${index}`}
+          src={src}
+          width={200}
+          height={200}
+          className="object-cover w-[91px] h-[87px] border border-white"
+          alt="Community member"
+          sizes="91px"
+          onError={() => handleImageError(src)}
+        />
+      ))}
     </div>
   );
 }

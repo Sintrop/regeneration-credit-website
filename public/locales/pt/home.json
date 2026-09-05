@@ -4,6 +4,7 @@
   "seo-description": "Sistema de regeneração da natureza pessoa a pessoa",
   "home": "Início",
   "resources": "Recursos",
+  "tutorials": "Tutoriais",
   "launchApp": "Iniciar App",
   "network": "Rede",
   "getStarted": "Vamos começar",
@@ -32,7 +33,7 @@
   "errorGetDataToken": "Erro ao obter as informações do token!",
   "community": {
     "title": "Comunidade",
-    "description": "",
+    "description": "Sete papéis complementares sustentam o protocolo, da regeneração em campo à verificação, pesquisa, desenvolvimento e financiamento.",
     "regenerators": "Regeneradores",
     "inspectors": "Inspetores",
     "researchers": "Pesquisadores",

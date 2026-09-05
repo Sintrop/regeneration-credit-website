@@ -69,7 +69,7 @@ export function ReleaseItem({ t, release, latest, apk }: Props) {
         <Link
           href={release.html_url}
           target="_blank"
-          rel="noopener noreferer"
+          rel="noopener noreferrer"
           className="text-center mt-3 text-sm text-blue-500 underline"
         >
           {t("clickHereToSeeAllVersions")}

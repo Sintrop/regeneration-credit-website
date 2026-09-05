@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import TranslationsProvider from "@/components/TranslationsProvider";
+import { OG_IMAGE, localizedAlternates, localizedUrl } from "@/lib/metadata";
 import initTranslations from "@/app/i18n";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
@@ -18,25 +19,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { t } = await initTranslations(locale, i18nNamespaces);
 
   return {
-    title: t("seo-title"),
-    description: t("seo-description"),
+    title: t("seo-title-network"),
+    description: t("seo-description-network"),
     openGraph: {
       type: "website",
-      title: t("seo-title") as string,
-      description: t("seo-description") as string,
+      title: t("seo-title-network") as string,
+      description: t("seo-description-network") as string,
       alternateLocale: ["en", "pt"],
-      url: `https://regenerationcredit.org/${locale}/network`,
+      url: localizedUrl("/network", locale),
       locale,
       siteName: t("regenerationCredit"),
-      images: "https://regenerationcredit.org/assets/img/og.jpg",
+      images: OG_IMAGE,
     },
-    alternates: {
-      canonical: "https://regenerationcredit.org/network",
-      languages: {
-        en: "https://regenerationcredit.org/en/network",
-        pt: "https://regenerationcredit.org/pt/network",
-      },
-    },
+    alternates: localizedAlternates("/network", locale),
   };
 }
 

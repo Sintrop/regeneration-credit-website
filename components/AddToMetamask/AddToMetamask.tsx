@@ -1,6 +1,7 @@
 "use client";
 import MMIcon from "@/public/assets/icons/metamask.png";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 interface Props {
@@ -8,42 +9,46 @@ interface Props {
 }
 export function AddToMetamask({ networkPage }: Props) {
   const { t } = useTranslation();
+  const [hasProvider, setHasProvider] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    setHasProvider(typeof window !== "undefined" && !!window.ethereum);
+  }, []);
 
   async function handleAddChain() {
-    if (typeof window !== "undefined") {
-      if (!window.ethereum) return;
+    if (typeof window === "undefined" || !window.ethereum) return;
 
-      const networkParams = {
-        chainId: "0x3D171",
-        chainName: "Sintrop",
-        nativeCurrency: {
-          name: "SINTROP",
-          symbol: "SIN",
-          decimals: 18,
-        },
-        rpcUrls: ["https://rpc.sintrop.com"],
-        blockExplorerUrls: ["https://explorer.sintrop.com"],
-      };
+    const networkParams = {
+      chainId: "0x3D171",
+      chainName: "Sintrop",
+      nativeCurrency: {
+        name: "SINTROP",
+        symbol: "SIN",
+        decimals: 18,
+      },
+      rpcUrls: ["https://rpc.sintrop.com"],
+      blockExplorerUrls: ["https://explorer.sintrop.com"],
+    };
 
-      await window.ethereum.request({
-        method: "wallet_addEthereumChain",
-        params: [networkParams],
-      });
-    }
+    await window.ethereum.request({
+      method: "wallet_addEthereumChain",
+      params: [networkParams],
+    });
   }
 
   if (networkPage) {
     return (
       <div className="flex flex-col gap-2">
         <p className="text-gray-500 text-sm">{t("youCanAddToMMDescription")}</p>
-        {typeof window !== "undefined" && !window.ethereum ? (
+        {hasProvider === false ? (
           <p className="text-red-500">
             {t("youNeedAMetamaskExtensionInstalled")}
           </p>
         ) : (
           <button
             onClick={handleAddChain}
-            className="w-full bg-green-700 gap-3 h-[50px] md:h-[60px] rounded-md text-white font-semibold md:w-[220px] flex items-center justify-center hover:cursor-pointer hover:bg-green-800 duration-200"
+            disabled={hasProvider === null}
+            className="w-full bg-green-700 gap-3 h-[50px] md:h-[60px] rounded-md text-white font-semibold md:w-[220px] flex items-center justify-center hover:cursor-pointer hover:bg-green-800 duration-200 disabled:opacity-60 disabled:cursor-default"
           >
             <Image
               alt="metamask icon"
@@ -51,7 +56,7 @@ export function AddToMetamask({ networkPage }: Props) {
               width={40}
               height={40}
               quality={100}
-              objectFit="contain"
+              className="object-contain"
             />
 
             {t("addToMetamask")}
@@ -61,10 +66,8 @@ export function AddToMetamask({ networkPage }: Props) {
     );
   }
 
-  if (typeof window !== "undefined") {
-    if (!window.ethereum) {
-      return <div />;
-    }
+  if (!hasProvider) {
+    return null;
   }
 
   return (
@@ -78,7 +81,7 @@ export function AddToMetamask({ networkPage }: Props) {
         width={40}
         height={40}
         quality={100}
-        objectFit="contain"
+        className="object-contain"
       />
 
       {t("addToMetamask")}

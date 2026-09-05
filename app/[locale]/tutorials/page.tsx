@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import type { Metadata } from "next";
+import { OG_IMAGE, localizedAlternates, localizedUrl } from "@/lib/metadata";
 import initTranslations from "../../i18n";
 import TranslationsProvider from "../../../components/TranslationsProvider";
 import { Header } from "@/components/Header/Header";
@@ -30,18 +31,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: t("seo-title") as string,
       description: t("seo-description") as string,
       alternateLocale: ["en", "pt"],
-      url: `https://regenerationcredit.org/${locale}/tutorials`,
+      url: localizedUrl("/tutorials", locale),
       locale,
       siteName: t("regenerationCredit"),
-      images: "https://regenerationcredit.org/assets/img/og.jpg",
+      images: OG_IMAGE,
     },
-    alternates: {
-      canonical: "https://regenerationcredit.org/tutorials",
-      languages: {
-        en: "https://regenerationcredit.org/en/tutorials",
-        pt: "https://regenerationcredit.org/pt/tutorials",
-      },
-    },
+    alternates: localizedAlternates("/tutorials", locale),
   };
 }
 

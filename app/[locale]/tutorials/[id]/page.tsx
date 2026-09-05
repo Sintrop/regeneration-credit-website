@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer/Footer';
 import { LanguagesAvailablesForTutorials, tutorialsListPerLanguage } from '../tutorialsList';
 import { redirect } from 'next/navigation';
 import { getContentMDFromGitHub } from '@/services/github';
+import { OG_IMAGE, localizedAlternates, localizedUrl } from '@/lib/metadata';
 import type { Metadata } from 'next';
 
 const i18nNamespaces = ['tutorials'];
@@ -23,26 +24,22 @@ export async function generateMetadata(
     const findTutorial = tutorialsListPerLanguage[locale].filter(item => item.id === id);
     const tutorial = findTutorial[0];
 
+    const tutorialPath = `/tutorials/${tutorial?.id}`;
+
     return {
         title: t(tutorial?.title),
         description: t(tutorial?.description),
         openGraph: {
-            type: "website",
+            type: "article",
             title: t(tutorial?.title) as string,
             description: t(tutorial?.description) as string,
             alternateLocale: ["en", "pt"],
-            url: `https://sintrop.com/${locale}/tutorials/${tutorial?.id}`,
+            url: localizedUrl(tutorialPath, locale),
             locale,
-            siteName: "Sintrop",
-            images: "https://sintrop.com/assets/images/sintrop-og.png",
+            siteName: t("regenerationCredit"),
+            images: OG_IMAGE,
         },
-        alternates: {
-            canonical: `https://sintrop.com/tutorials/${tutorial?.id}`,
-            languages: {
-                "en": `https://sintrop.com/en/tutorials/${tutorial?.id}`,
-                "pt": `https://sintrop.com/pt/tutorials/${tutorial?.id}`,
-            }
-        },
+        alternates: localizedAlternates(tutorialPath, locale),
     }
 }
 

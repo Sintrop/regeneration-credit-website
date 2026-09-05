@@ -9,11 +9,13 @@
   "accessAllResources": "Access all resources",
   "descGithub": "Code open source and community developed.",
   "linkMoreInfo": "Link to more information",
-  "commingSoon": "Comming soon",
+  "commingSoon": "Coming soon",
   "descPaper": "Article with the description and conceptual explanation of the project and its foundations.",
   "descDocs": "Technical documentation for developers.",
   "clickHereToSeeAllVersions": "Click here to see all versions",
   "clickToDownload": "Click to download",
   "releases": "Releases",
+  "latest": "Latest",
+  "download": "Download",
   "downloadAppStores": "Download the app version from the app stores"
 }

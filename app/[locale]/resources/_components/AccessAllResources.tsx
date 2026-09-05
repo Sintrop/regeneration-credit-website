@@ -17,7 +17,7 @@ export async function AccessAllResources({ t, locale }: Props) {
 
       <div className="flex flex-wrap mt-10 gap-10 lg:gap-5 justify-center">
         <CardInfoWithLink
-          title="Whitepapper"
+          title="Whitepaper"
           description={t("descPaper")}
           link={`https://regenerationcredit.org/assets/${whitepaperFileName}`}
           t={t}

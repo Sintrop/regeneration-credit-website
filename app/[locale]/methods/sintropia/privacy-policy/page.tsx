@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { OG_IMAGE, localizedAlternates, localizedUrl } from "@/lib/metadata";
 import initTranslations from "@/app/i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import { Header } from "@/components/Header/Header";
@@ -24,18 +25,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: t("seo-title") as string,
       description: t("seo-description") as string,
       alternateLocale: ["en", "pt"],
-      url: `https://regenerationcredit.org/${locale}/methods/sintropia/privacy-policy`,
+      url: localizedUrl("/methods/sintropia/privacy-policy", locale),
       locale,
       siteName: t('regenerationCredit'),
-      images: "https://regenerationcredit.org/assets/img/og.jpg",
+      images: OG_IMAGE,
     },
-    alternates: {
-      canonical: "https://regenerationcredit.org/methods/sintropia/privacy-policy",
-      languages: {
-        en: "https://regenerationcredit.org/en/methods/sintropia/privacy-policy",
-        pt: "https://regenerationcredit.org/pt/methods/sintropia/privacy-policy",
-      },
-    },
+    alternates: localizedAlternates("/methods/sintropia/privacy-policy", locale),
   };
 }
 
