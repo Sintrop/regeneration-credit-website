@@ -10,6 +10,11 @@ export default {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			sans: ['var(--font-body)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+  			display: ['var(--font-display)', 'Georgia', 'serif'],
+  			anta: ['var(--font-anta)', 'ui-monospace', 'monospace']
+  		},
   		backgroundImage: {
   			'back-home': 'url("/assets/img/capa-site-1.png")',
   			'back-home-2': 'url("/assets/img/capa-site-2.png")',
@@ -22,6 +27,22 @@ export default {
   			green: {
   				primary: '#149954'
   			},
+  			brand: {
+  				DEFAULT: 'hsl(var(--brand))',
+  				deep: 'hsl(var(--brand-deep))',
+  				forest: 'hsl(var(--brand-forest))',
+  				tint: 'hsl(var(--brand-tint))'
+  			},
+  			page: 'hsl(var(--page))',
+  			surface: {
+  				DEFAULT: 'hsl(var(--surface))',
+  				sunken: 'hsl(var(--surface-sunken))'
+  			},
+  			ink: {
+  				DEFAULT: 'hsl(var(--ink))',
+  				soft: 'hsl(var(--ink-soft))'
+  			},
+  			line: 'hsl(var(--line))',
   			'users-community': '#F7FFF4',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

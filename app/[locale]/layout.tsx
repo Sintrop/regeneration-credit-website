@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Anta, Akatab } from "next/font/google";
+import { Anta, Fraunces, Figtree } from "next/font/google";
 import { dir } from 'i18next';
 import { notFound } from 'next/navigation';
 import i18nConfig from '@/i18nConfig';
@@ -8,16 +8,27 @@ import { SITE_URL, OG_IMAGE } from "@/lib/metadata";
 import "./globals.css";
 import "./markdown.css";
 
+// Body / UI text.
+const bodyFont = Figtree({
+  variable: "--font-body",
+  subsets: ["latin"],
+  display: "swap",
+})
+
+// Headings and other display type.
+const displayFont = Fraunces({
+  variable: "--font-display",
+  subsets: ["latin"],
+  display: "swap",
+  axes: ["opsz"],
+})
+
+// Wordmark and on-chain figures.
 const antaFont = Anta({
   variable: "--font-anta",
   subsets: ["latin"],
-  weight: "400"
-})
-
-const akatabFont = Akatab({
-  variable: "--font-akatab",
-  subsets: ["latin"],
-  weight: '400'
+  weight: "400",
+  display: "swap",
 })
 
 export const metadata: Metadata = {
@@ -60,7 +71,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={dir(locale)}>
       <body
-        className={`${antaFont.variable} ${akatabFont.variable} antialiased`}
+        className={`${bodyFont.variable} ${displayFont.variable} ${antaFont.variable} antialiased`}
       >
         {children}
 
