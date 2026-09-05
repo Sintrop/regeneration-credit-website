@@ -19,12 +19,10 @@ export async function TutorialItem({ item, t, index }: Props) {
     return (
         <AccordionItem
             value={index.toString()}
-            className="w-full bg-[#E9E9E9] rounded-md px-5"
+            className="w-full rounded-2xl border border-line bg-surface px-5"
         >
             <AccordionTrigger>{t(item?.title)}</AccordionTrigger>
-            <AccordionContent
-                className="bg-green-2 w-full p-5 rounded-md mb-5"
-            >
+            <AccordionContent className="w-full pb-5">
                 <div
                     dangerouslySetInnerHTML={{ __html: htmlContent }}
                     className="markdown-content"
@@ -33,7 +31,7 @@ export async function TutorialItem({ item, t, index }: Props) {
                 <div className="flex items-center justify-center mt-5">
                     <Link
                         href={`/tutorials/${item?.id}`}
-                        className="text-center text-blue-500 underline"
+                        className="text-center text-brand-deep underline"
                     >
                         {t('seeMoreDetails')}
                     </Link>

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import type { Metadata } from "next";
 import { OG_IMAGE, localizedAlternates, localizedUrl } from "@/lib/metadata";
 import initTranslations from "../../i18n";
@@ -55,16 +54,19 @@ export default async function Tutorials({ params }: Props) {
         <HeroTutorials t={t} title="tutorials" />
       </div>
 
-      <main className="container mx-auto px-5 lg:px-20 my-10 lg:my-20">
-        <h4 className="text-center">{t("commingSoon")}</h4>
-        <Accordion type="single" collapsible className="gap-5 flex flex-col">
-          {tutorialsListPerLanguage[locale].map((item, index) => (
-            <>
-              {/*@ts-ignore*/}
+      <main className="container mx-auto px-5 lg:px-20 py-14 lg:py-20">
+        {tutorialsListPerLanguage[locale].length === 0 ? (
+          <div className="rounded-2xl border border-line bg-surface p-10 text-center text-ink-soft">
+            {t("commingSoon")}
+          </div>
+        ) : (
+          <Accordion type="single" collapsible className="gap-4 flex flex-col">
+            {tutorialsListPerLanguage[locale].map((item, index) => (
+              // @ts-expect-error async server component used as a JSX child
               <TutorialItem key={index} index={index} item={item} t={t} />
-            </>
-          ))}
-        </Accordion>
+            ))}
+          </Accordion>
+        )}
       </main>
 
       <Footer t={t} />

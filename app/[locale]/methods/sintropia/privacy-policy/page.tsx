@@ -51,8 +51,8 @@ export default async function PrivacyPolicySintropia({ params }: Props) {
       </div>
 
       <main>
-        <div className="container mx-auto px-5 lg:px-20 py-10 lg:py-20">
-          <p className="text-sm text-gray-500 mb-8">{t("privacy.updated")}</p>
+        <div className="container mx-auto px-5 lg:px-20 py-14 lg:py-20 max-w-3xl">
+          <p className="text-sm text-ink-soft mb-8">{t("privacy.updated")}</p>
 
           <p className="mb-4">{t("privacy.intro")}</p>
 

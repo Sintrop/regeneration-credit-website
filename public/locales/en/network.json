@@ -16,5 +16,7 @@
   "addToMetamask": "Add to Metamask",
   "youCanAddToMMDescription": "You can add the Sintrop Network in your metamask extension",
   "youNeedAMetamaskExtensionInstalled": "You need a Metamask extension installed",
-  "app": "App"
+  "app": "App",
+  "networkData": "Network data",
+  "networkLead": "Add the Sintrop network to your wallet to interact directly with the protocol contracts."
 }

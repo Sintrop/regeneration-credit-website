@@ -51,15 +51,18 @@ export default async function Network({ params }: Props) {
         <HeroNetwork t={t} />
       </div>
 
-      <main className="container mx-auto px-5 lg:px-20 py-10 lg:py-20">
-        <div className="flex flex-wrap w-full gap-10">
-          <div className="flex flex-col w-full lg:w-[50%] gap-4">
-            <h3 className="text-2xl md:text-4xl">Sintrop Impact Blockchain</h3>
-
-            <AddToMetamask networkPage />
+      <main className="container mx-auto px-5 lg:px-20 py-14 lg:py-20">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="flex flex-col gap-4">
+            <h2 className="text-2xl md:text-3xl">Sintrop Impact Blockchain</h2>
+            <p className="text-ink-soft">{t("networkLead")}</p>
+            <div className="mt-2">
+              <AddToMetamask networkPage />
+            </div>
           </div>
 
           <NetworkData
+            t={t}
             coinName="Sintrop (SIN)"
             name="Sintrop"
             explorer="https://explorer.sintrop.com"
