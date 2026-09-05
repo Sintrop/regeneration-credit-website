@@ -7,8 +7,13 @@ import { regeneratorService } from "@/domain/Regenerator/regeneratorService";
 import { researcherService } from "@/domain/Researcher/researcherService";
 import { supporterService } from "@/domain/Supporter/supporterService";
 
+const MAX_PHOTOS = 4;
+// Sample more candidates than needed so a user type still fills the grid when
+// some registered members have no photo on-chain.
+const MAX_CANDIDATES = 8;
+
 function ipfsUrl(hash?: string): string | null {
-  if (!hash) return null;
+  if (!hash || hash.trim() === "") return null;
   return `${process.env.NEXT_PUBLIC_IPFS_GATEWAY_URL}/ipfs/${hash}`;
 }
 
@@ -44,41 +49,43 @@ async function getPhotoHash(userType: number, id: number): Promise<string | unde
   return undefined;
 }
 
-export async function getUsersImages({ userType }: { userType: number }): Promise<string[]> {
-  const usersCount = await communityService.getUserTypesCount({ userType });
-  if (!usersCount || usersCount < 1) return [];
-
-  const ids = sortIds({
-    count: usersCount < 4 ? usersCount : 4,
-    max: usersCount,
-    min: 1
-  });
-
-  const photosUrl: string[] = [];
-  for (const id of ids) {
-    try {
-      const url = ipfsUrl(await getPhotoHash(userType, id));
-      if (url) photosUrl.push(url);
-    } catch {
-      // Skip users whose on-chain data can't be resolved.
-    }
+async function resolvePhoto(userType: number, id: number): Promise<string | null> {
+  try {
+    return ipfsUrl(await getPhotoHash(userType, id));
+  } catch {
+    return null;
   }
-
-  return photosUrl;
 }
 
-interface SortIdsProps {
+export async function getUsersImages({ userType }: { userType: number }): Promise<string[]> {
+  const usersCount = Number(await communityService.getUserTypesCount({ userType }));
+  if (!usersCount || usersCount < 1) return [];
+
+  const candidateIds = pickRandomIds({
+    count: Math.min(usersCount, MAX_CANDIDATES),
+    min: 1,
+    max: usersCount,
+  });
+
+  const resolved = await Promise.all(
+    candidateIds.map((id) => resolvePhoto(userType, id))
+  );
+
+  return resolved.filter((url): url is string => Boolean(url)).slice(0, MAX_PHOTOS);
+}
+
+interface PickRandomIdsProps {
   count: number;
   min: number;
   max: number;
 }
-function sortIds({ count, max, min }: SortIdsProps): number[] {
+function pickRandomIds({ count, max, min }: PickRandomIdsProps): number[] {
   const ids: number[] = [];
 
   while (ids.length < count) {
     const id = Math.floor(Math.random() * (max - min + 1)) + min;
     if (!ids.includes(id)) {
-      ids.push(id)
+      ids.push(id);
     }
   }
 
