@@ -1,7 +1,6 @@
 import { TType } from "@/types/t";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
-import { FiDownload } from "react-icons/fi";
+import { FiArrowRight, FiDownload } from "react-icons/fi";
 
 interface Props {
   t: TType;
@@ -24,24 +23,24 @@ export function Hero({ t, locale }: Props) {
 
         <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
           <Link
-            href="/download"
+            href={`https://regenerationcredit.org/assets/${whitepaperFileName}`}
             className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 h-12 font-semibold text-brand-forest transition-colors hover:bg-brand-tint"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            {t("getStarted")}
-            <FaArrowRight
+            {t("readWhitepaper")}
+            <FiArrowRight
               size={15}
               className="transition-transform group-hover:translate-x-0.5"
             />
           </Link>
 
           <Link
-            href={`https://regenerationcredit.org/assets/${whitepaperFileName}`}
+            href="/download"
             className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 px-7 h-12 font-medium text-white transition-colors hover:bg-white/10"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <FiDownload size={16} />
-            {t("downloadWhitepaper")}
+            {t("downloadApp")}
           </Link>
         </div>
       </div>

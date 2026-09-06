@@ -12,7 +12,7 @@
   "downloadWhitepaper": "Download Whitepaper",
   "regenerateToEarn": "Regenerate to earn",
   "descWhatIsIt": "The Regeneration Credit is a payment for environmental service system. Users can regenerate to earn the tokens and trade it for a certificate.",
-  "downloadApp": "Download App",
+  "downloadApp": "Download app",
   "webPlatform": "Web platform",
   "altIconRc": "Regeneration Credit icon",
   "totalSupply": "Total Supply",
@@ -94,5 +94,6 @@
   "investCta": "Learn how to support",
   "publications": "Publications",
   "supporters": "Supporters",
-  "communityNav": "Community"
+  "communityNav": "Community",
+  "readWhitepaper": "Read whitepaper"
 }

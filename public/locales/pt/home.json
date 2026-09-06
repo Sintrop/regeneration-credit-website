@@ -12,7 +12,7 @@
   "downloadWhitepaper": "Baixar Whitepaper",
   "regenerateToEarn": "Regenerar para ganhar",
   "descWhatIsIt": "O Crédito Regeneração é um sistema de pagamento por serviço ambiental. Os usuários podem regenerar para ganhar os tokens e trocá-los por um certificado.",
-  "downloadApp": "Baixar App",
+  "downloadApp": "Baixar aplicativo",
   "webPlatform": "Plataforma Web",
   "altIconRc": "Ícone do crédito de regeneração",
   "totalSupply": "Oferta total",
@@ -94,5 +94,6 @@
   "investCta": "Saiba como apoiar",
   "publications": "Publicações",
   "supporters": "Apoiadores",
-  "communityNav": "Comunidade"
+  "communityNav": "Comunidade",
+  "readWhitepaper": "Ler whitepaper"
 }
