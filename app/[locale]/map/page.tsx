@@ -9,7 +9,7 @@ import { MapView } from "./MapView";
 
 const i18nNamespaces = ["map"];
 
-export const revalidate = 600;
+export const revalidate = 3600;
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -74,6 +74,7 @@ export default async function MapPage({ params }: Props) {
             areas={areas}
             areaLabel={t("areaUnit")}
             scoreLabel={t("score")}
+            listTitle={t("areasListTitle")}
           />
         )}
       </main>

@@ -16,5 +16,6 @@
   "areasCount": "{{count}} áreas mapeadas",
   "areaUnit": "m²",
   "score": "Score",
-  "emptyState": "Nenhuma área de regeneração disponível no momento."
+  "emptyState": "Nenhuma área de regeneração disponível no momento.",
+  "areasListTitle": "Todas as áreas"
 }
