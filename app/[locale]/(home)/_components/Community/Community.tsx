@@ -12,6 +12,23 @@ export function Community({ t }: Props) {
       <div className="max-w-2xl">
         <h2 className="text-3xl md:text-4xl">{t("community.title")}</h2>
         <p className="mt-4 text-lg text-ink-soft">{t("community.description")}</p>
+
+        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+          <Link
+            href="/community"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep hover:underline"
+          >
+            {t("community.cta")}
+            <FiArrowRight size={15} />
+          </Link>
+          <Link
+            href="/map"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep hover:underline"
+          >
+            {t("community.mapCta")}
+            <FiArrowRight size={15} />
+          </Link>
+        </div>
       </div>
 
       <div className="mt-12 flex flex-col gap-4">
@@ -19,14 +36,6 @@ export function Community({ t }: Props) {
           <UserTypeCommunity key={userType} t={t} userType={userType} />
         ))}
       </div>
-
-      <Link
-        href="/community"
-        className="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep hover:underline"
-      >
-        {t("community.cta")}
-        <FiArrowRight size={15} />
-      </Link>
     </section>
   );
 }

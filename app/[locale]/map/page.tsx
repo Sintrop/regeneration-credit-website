@@ -9,7 +9,8 @@ import { MapView } from "./MapView";
 
 const i18nNamespaces = ["map"];
 
-export const revalidate = 3600;
+// Coordinates change rarely; re-read the contract at most once a week.
+export const revalidate = 604800;
 
 type Props = {
   params: Promise<{ locale: string }>;

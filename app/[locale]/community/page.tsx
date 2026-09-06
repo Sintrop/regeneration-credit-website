@@ -95,6 +95,15 @@ export default async function Community({ params }: Props) {
                 <p className="text-ink">
                   <span className="font-medium">{role.earn}</span>
                 </p>
+                {index === 0 && (
+                  <Link
+                    href="/map"
+                    className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-brand-deep hover:underline"
+                  >
+                    {t("viewMap")}
+                    <FiArrowUpRight size={15} />
+                  </Link>
+                )}
               </div>
             </article>
           ))}
