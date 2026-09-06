@@ -10,6 +10,9 @@ interface Props {
 export async function Footer({ t }: Props) {
   const links = [
     { href: "/", label: t("home") },
+    { href: "/publications", label: t("publications") },
+    { href: "/community", label: t("communityNav") },
+    { href: "/supporters", label: t("supporters") },
     { href: "/resources", label: t("resources") },
     { href: "/download", label: t("app") },
     { href: "/network", label: t("network") },

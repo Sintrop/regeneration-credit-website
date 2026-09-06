@@ -61,5 +61,8 @@
     }
   },
   "app": "App",
-  "faq": "FAQ"
+  "faq": "FAQ",
+  "publications": "Publications",
+  "supporters": "Supporters",
+  "communityNav": "Community"
 }

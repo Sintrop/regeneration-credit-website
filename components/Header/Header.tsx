@@ -12,9 +12,11 @@ interface Props {
 export async function Header({ t }: Props) {
   const links = [
     { href: "/", label: t("home") },
+    { href: "/publications", label: t("publications") },
+    { href: "/community", label: t("communityNav") },
+    { href: "/supporters", label: t("supporters") },
     { href: "/resources", label: t("resources") },
     { href: "/download", label: t("app") },
-    { href: "/network", label: t("network") },
     { href: "/faq", label: t("faq") },
   ];
 
@@ -33,12 +35,12 @@ export async function Header({ t }: Props) {
         </span>
       </Link>
 
-      <nav className="hidden lg:flex items-center gap-8">
+      <nav className="hidden lg:flex items-center gap-5 xl:gap-7">
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="text-white/80 text-sm font-medium transition-colors hover:text-white"
+            className="text-white/80 text-sm font-medium whitespace-nowrap transition-colors hover:text-white"
           >
             {link.label}
           </Link>

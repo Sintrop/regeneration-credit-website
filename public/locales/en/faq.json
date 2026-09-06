@@ -36,6 +36,14 @@
       "a": "The Sintrop Impact Blockchain. You can add the network to your wallet from the Network page and browse everything on the block explorer."
     },
     {
+      "q": "Which wallet do I need?",
+      "a": "MetaMask. It is a self-custody wallet, meaning only you hold the keys and the funds, and for now it is the only wallet the apps integrate with. Install the MetaMask extension or app and create a wallet before you start."
+    },
+    {
+      "q": "How do I add the Sintrop network to my wallet?",
+      "a": "Open the Network page and use the \"Add to MetaMask\" button, or add it manually with the ID, RPC and explorer shown there. You need the network configured before you can hold or move Regeneration Credit."
+    },
+    {
       "q": "Is the code audited and open source?",
       "a": "Yes. The 22 core contracts were audited by Nethermind Security before going to mainnet, and every contract and interface is public on GitHub."
     },
@@ -51,5 +59,8 @@
       "q": "Where do I download the apps?",
       "a": "On the App page: the mobile apps on the Google Play and App Store, plus the desktop core and APK releases."
     }
-  ]
+  ],
+  "publications": "Publications",
+  "supporters": "Supporters",
+  "communityNav": "Community"
 }

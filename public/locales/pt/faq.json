@@ -36,6 +36,14 @@
       "a": "Na Sintrop Impact Blockchain. Você pode adicionar a rede na sua carteira pela página Rede e navegar por tudo no explorador de blocos."
     },
     {
+      "q": "Qual carteira eu preciso?",
+      "a": "A MetaMask. É uma carteira de autocustódia, ou seja, só você tem as chaves e os fundos, e por enquanto é a única carteira com integração nos aplicativos. Instale a extensão ou o app da MetaMask e crie uma carteira antes de começar."
+    },
+    {
+      "q": "Como adiciono a rede Sintrop na minha carteira?",
+      "a": "Abra a página Rede e use o botão \"Adicionar ao MetaMask\", ou adicione manualmente com o ID, RPC e explorador mostrados lá. Você precisa da rede configurada antes de manter ou movimentar o Crédito de Regeneração."
+    },
+    {
       "q": "O código é auditado e de código aberto?",
       "a": "Sim. Os 22 contratos do núcleo foram auditados pela Nethermind Security antes de ir para a mainnet, e cada contrato e interface é público no GitHub."
     },
@@ -51,5 +59,8 @@
       "q": "Onde eu baixo os aplicativos?",
       "a": "Na página App: os aplicativos mobile na Google Play e na App Store, além do core desktop e das versões em APK."
     }
-  ]
+  ],
+  "publications": "Publicações",
+  "supporters": "Apoiadores",
+  "communityNav": "Comunidade"
 }

@@ -14,5 +14,8 @@
   "contributions": "Contribuições",
   "reports": "Relatórios de desenvolvimento",
   "openFile": "Abrir arquivo",
-  "emptyState": "Nenhuma publicação disponível no momento."
+  "emptyState": "Nenhuma publicação disponível no momento.",
+  "publications": "Publicações",
+  "supporters": "Apoiadores",
+  "communityNav": "Comunidade"
 }

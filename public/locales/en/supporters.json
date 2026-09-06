@@ -13,17 +13,37 @@
   "whyTitle": "Why it matters",
   "whyBody": "Today people have more economic incentive to clear land than to regenerate it. The Regeneration Credit turns verified regeneration into an asset, so regenerators earn an income and supporters can direct funding straight to the people bringing ecosystems back to life.",
   "howTitle": "How to take part",
-  "step1Title": "Buy Regeneration Credit",
-  "step1Body": "Buy RC directly from a community member. A peer-to-peer trade gives you a balance of the asset without any intermediary.",
-  "step2Title": "Hold or use it",
-  "step2Body": "Keep it as a stake in the system, transfer it freely, or use it as a medium of exchange within the community.",
-  "step3Title": "Offset for a certificate",
-  "step3Body": "When you retire (burn) your RC, you receive a contribution certificate: on-chain proof that you financed that amount of verified regeneration.",
+  "steps": [
+    {
+      "title": "Set up a self-custody wallet",
+      "body": "Create a MetaMask wallet. It is self-custody, so only you hold the keys, and for now it is the only wallet the apps integrate with."
+    },
+    {
+      "title": "Add the Sintrop network",
+      "body": "Add the Sintrop Impact Blockchain to MetaMask from the Network page, so your wallet can hold and move Regeneration Credit."
+    },
+    {
+      "title": "Buy Regeneration Credit",
+      "body": "Buy RC directly from a community member. A peer-to-peer trade gives you a balance of the asset without any intermediary."
+    },
+    {
+      "title": "Hold or use it",
+      "body": "Keep it as a stake in the system, transfer it freely, or use it as a medium of exchange within the community."
+    },
+    {
+      "title": "Offset for a certificate",
+      "body": "When you retire (burn) your RC, you receive a contribution certificate: on-chain proof that you financed that amount of verified regeneration."
+    }
+  ],
   "certificateTitle": "The contribution certificate",
   "certificateBody": "Every certificate is recorded on-chain and can be checked by anyone on the users portal, where each certificate's QR code resolves. Certified credits are counted separately so the system's certified total is always transparent.",
+  "certificateAlt": "Example of a supporter's contribution certificate",
   "startTitle": "Where to start",
   "readWhitepaper": "Read the whitepaper",
+  "getTheApp": "Get the app",
   "seeImpact": "See the live impact",
   "openUsersPortal": "Open the users portal",
-  "getTheApp": "Get the app"
+  "publications": "Publications",
+  "supporters": "Supporters",
+  "communityNav": "Community"
 }

@@ -14,5 +14,8 @@
   "contributions": "Contributions",
   "reports": "Development reports",
   "openFile": "Open file",
-  "emptyState": "No publications are available right now."
+  "emptyState": "No publications are available right now.",
+  "publications": "Publications",
+  "supporters": "Supporters",
+  "communityNav": "Community"
 }

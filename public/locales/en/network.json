@@ -18,5 +18,8 @@
   "app": "App",
   "networkData": "Network data",
   "networkLead": "Add the Sintrop network to your wallet to interact directly with the protocol contracts.",
-  "faq": "FAQ"
+  "faq": "FAQ",
+  "publications": "Publications",
+  "supporters": "Supporters",
+  "communityNav": "Community"
 }
