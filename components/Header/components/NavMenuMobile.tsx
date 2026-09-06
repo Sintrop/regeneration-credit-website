@@ -10,8 +10,8 @@ interface Props {
 export function NavMenuMobile({ t }: Props) {
   const links = [
     { href: "/", label: t("home") },
-    { href: "/network", label: t("network") },
     { href: "/download", label: t("app") },
+    { href: "/network", label: t("network") },
     { href: "/resources", label: t("resources") },
     { href: "/publications", label: t("publications") },
     { href: "/community", label: t("communityNav") },

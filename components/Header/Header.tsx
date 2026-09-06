@@ -11,8 +11,8 @@ interface Props {
 }
 export async function Header({ t }: Props) {
   const links = [
-    { href: "/network", label: t("network") },
     { href: "/download", label: t("app") },
+    { href: "/network", label: t("network") },
     { href: "/resources", label: t("resources") },
     { href: "/publications", label: t("publications") },
     { href: "/community", label: t("communityNav") },
