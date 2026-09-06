@@ -13,21 +13,21 @@ interface Props {
 
 export function ReleaseItem({ t, release, latest, apk }: Props) {
   return (
-    <div className="p-5 rounded-md bg-green-200 w-full flex flex-wrap justify-between">
+    <div className="p-6 rounded-2xl border border-line bg-surface w-full flex flex-wrap justify-between">
       <div className="flex flex-col w-full md:max-w-[50%]">
         <div className="flex items-center gap-3">
           <h4 className="text-2xl">{release?.name}</h4>
 
           {latest && (
-            <div className="px-4 py-1 border border-green-primary rounded-xl">
-              <p className="text-xs text-green-primary">{t("latest")}</p>
-            </div>
+            <span className="px-3 py-1 rounded-full bg-brand-tint text-xs font-medium text-brand-deep">
+              {t("latest")}
+            </span>
           )}
         </div>
-        <p className="text-gray-500 text-xs">
+        <p className="text-ink-soft text-xs mt-1">
           {format(new Date(release?.created_at), "yyyy/MM/dd - kk:mm")}
         </p>
-        <p className="font-[akatab] text-sm mt-3 md:max-w-[80%]">
+        <p className="text-sm text-ink-soft mt-3 md:max-w-[80%]">
           {release?.body}
         </p>
       </div>
@@ -69,8 +69,8 @@ export function ReleaseItem({ t, release, latest, apk }: Props) {
         <Link
           href={release.html_url}
           target="_blank"
-          rel="noopener noreferer"
-          className="text-center mt-3 text-sm text-blue-500 underline"
+          rel="noopener noreferrer"
+          className="text-center mt-3 text-sm text-brand-deep underline"
         >
           {t("clickHereToSeeAllVersions")}
         </Link>

@@ -15,7 +15,18 @@ async function regeneratorsAddress({ id }: { id: number }): Promise<string> {
   return response;
 }
 
+export interface CoordinateContractProps {
+  latitude: string;
+  longitude: string;
+}
+
+async function getCoordinates({ address }: { address: string }): Promise<CoordinateContractProps[]> {
+  const response = await contract.methods.getCoordinates(address).call() as CoordinateContractProps[];
+  return response;
+}
+
 export const regeneratorContract = {
   getRegenerator,
-  regeneratorsAddress
+  regeneratorsAddress,
+  getCoordinates
 }

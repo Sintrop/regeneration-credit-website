@@ -1,23 +1,40 @@
+import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
 import { TType } from "@/types/t";
 import { UserTypeCommunity } from "./UserTypeCommunity";
 
 interface Props {
   t: TType;
 }
-export async function Community({ t }: Props) {
+export function Community({ t }: Props) {
   return (
-    <section className="flex flex-col py-10 lg:py-20">
-      <h3 className="font-bold text-3xl">{t("community.title")}</h3>
-      <p className="text-lg mt-5">{t("community.description")}</p>
+    <section className="py-16 lg:py-24">
+      <div className="max-w-2xl">
+        <h2 className="text-3xl md:text-4xl">{t("community.title")}</h2>
+        <p className="mt-4 text-lg text-ink-soft">{t("community.description")}</p>
 
-      <div className="flex flex-col gap-10 mt-10">
-        <UserTypeCommunity t={t} userType={1} />
-        <UserTypeCommunity t={t} userType={2} />
-        <UserTypeCommunity t={t} userType={3} />
-        <UserTypeCommunity t={t} userType={4} />
-        <UserTypeCommunity t={t} userType={5} />
-        <UserTypeCommunity t={t} userType={6} />
-        <UserTypeCommunity t={t} userType={7} />
+        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+          <Link
+            href="/community"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep hover:underline"
+          >
+            {t("community.cta")}
+            <FiArrowRight size={15} />
+          </Link>
+          <Link
+            href="/map"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep hover:underline"
+          >
+            {t("community.mapCta")}
+            <FiArrowRight size={15} />
+          </Link>
+        </div>
+      </div>
+
+      <div className="mt-12 flex flex-col gap-4">
+        {([1, 2, 3, 4, 5, 6, 7] as const).map((userType) => (
+          <UserTypeCommunity key={userType} t={t} userType={userType} />
+        ))}
       </div>
     </section>
   );

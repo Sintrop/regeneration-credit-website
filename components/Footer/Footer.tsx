@@ -1,56 +1,58 @@
 import ImageRc from "@/public/assets/img/rc.png";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import { TType } from "@/types/t";
-import { FaPlay } from "react-icons/fa6";
 import LanguageChanger from "../LanguageChanger";
 
 interface Props {
   t: TType;
 }
 export async function Footer({ t }: Props) {
+  const links = [
+    { href: "/", label: t("home") },
+    { href: "/download", label: t("app") },
+    { href: "/network", label: t("network") },
+    { href: "/resources", label: t("resources") },
+    { href: "/publications", label: t("publications") },
+    { href: "/community", label: t("communityNav") },
+    { href: "/supporters", label: t("supporters") },
+    { href: "/faq", label: t("faq") },
+  ];
+
   return (
-    <footer className="bg-green-primary py-10">
-      <div className="container mx-auto flex flex-col gap-5">
-        <section className="flex flex-col gap-5 items-center justify-around lg:flex-row">
+    <footer className="bg-hero-forest text-white">
+      <div className="container mx-auto px-5 lg:px-20 py-14">
+        <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <Link className="flex items-center gap-3" href="/">
             <Image
               src={ImageRc}
-              alt="Regeneration credit icon"
+              alt="Regeneration Credit"
               quality={100}
-              className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] object-contain"
+              className="w-10 h-10 object-contain"
             />
-
-            <h4 className="text-white font-bold uppercase lg:text-xl">
+            <span className="font-anta uppercase tracking-wide text-sm">
               {t("regenerationCredit")}
-            </h4>
+            </span>
           </Link>
 
-          <nav className="flex flex-col gap-5">
-            <Link href="/" className="text-white hover:underline">
-              - {t("home")}
-            </Link>
-            <Link href="/resources" className="text-white hover:underline">
-              - {t("resources")}
-            </Link>
-            <Link href="/tutorials" className="text-white hover:underline">
-              - {t("tutorials")}
-            </Link>
+          <nav className="flex flex-col gap-3">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-white/80 text-sm transition-colors hover:text-white"
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
 
-          <div className="flex flex-col gap-5">
-            <LanguageChanger />
+          <LanguageChanger />
+        </div>
 
-            <Button className="border-2 border-white rounded-[40px] h-[50px] bg-transparent flex items-center justify-between pr-1 font-semibold gap-5 w-fit md:w-auto">
-              {t("getStarted")}
-
-              <div className="h-[40px] w-[40px] rounded-full bg-blue-primary flex items-center justify-center">
-                <FaPlay size={20} color="white" />
-              </div>
-            </Button>
-          </div>
-        </section>
+        <p className="mt-12 pt-6 border-t border-white/15 text-xs text-white/60">
+          {t("regenerationCredit")} · {t("descriptionHero")}
+        </p>
       </div>
     </footer>
   );

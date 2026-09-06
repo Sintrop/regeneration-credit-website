@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
 import Image from "next/image";
 import ImageRc from "@/public/assets/img/rc.png";
 import { TType } from "@/types/t";
@@ -11,46 +10,47 @@ interface Props {
   t: TType;
 }
 export async function Header({ t }: Props) {
+  const links = [
+    { href: "/download", label: t("app") },
+    { href: "/network", label: t("network") },
+    { href: "/resources", label: t("resources") },
+    { href: "/publications", label: t("publications") },
+    { href: "/community", label: t("communityNav") },
+    { href: "/supporters", label: t("supporters") },
+    { href: "/faq", label: t("faq") },
+  ];
+
   return (
-    <header className="container mx-auto py-10 flex items-center justify-between px-5">
+    <header className="container mx-auto px-5 lg:px-20 py-6 flex items-center justify-between">
       <Link className="flex items-center gap-3" href="/">
         <Image
           src={ImageRc}
-          alt="Regeneration credit icon"
+          alt="Regeneration Credit"
           quality={100}
-          className="w-[35px] h-[35px] md:w-[50px] md:h-[50px] object-contain"
+          className="w-9 h-9 md:w-10 md:h-10 object-contain"
         />
 
-        <h1 className="text-white font-bold uppercase text-sm md:text-xl">
+        <span className="font-anta text-white uppercase tracking-wide text-sm md:text-base">
           {t("regenerationCredit")}
-        </h1>
+        </span>
       </Link>
 
-      <section className="items-center gap-5 hidden lg:flex">
-        <nav className="flex items-center gap-10 rounded-button bg-white/50 px-10 h-[60px]">
-          <Link href="/" className="text-white">
-            {t("home")}
+      <nav className="hidden lg:flex items-center gap-5 xl:gap-7">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="text-white/80 text-sm font-medium whitespace-nowrap transition-colors hover:text-white"
+          >
+            {link.label}
           </Link>
-          <Link href="/resources" className="text-white">
-            {t("resources")}
-          </Link>
-          <Link href="/network" className="text-white">
-            {t("network")}
-          </Link>
-          <Link href="/tutorials" className="text-white">
-            {t("tutorials")}
-          </Link>
-        </nav>
-
-        <Button className="hidden px-10 h-[50px] rounded-[40px] bg-blue-primary text-white text-semibold">
-          {t("launchApp")}
-        </Button>
-      </section>
+        ))}
+      </nav>
 
       <div className="lg:hidden">
         <Sheet>
-          <SheetTrigger>
-            <HiOutlineBars3BottomRight size={25} color="white" />
+          <SheetTrigger aria-label="Open menu">
+            <HiOutlineBars3BottomRight size={26} color="white" />
           </SheetTrigger>
           <NavMenuMobile t={t} />
         </Sheet>

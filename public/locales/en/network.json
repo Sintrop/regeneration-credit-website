@@ -3,9 +3,10 @@
   "network": "Network",
   "home": "Home",
   "resources": "Resources",
-  "tutorials": "Tutorials",
   "getCore": "Get core",
   "about": "About",
+  "launchApp": "Launch App",
+  "getStarted": "Get started",
   "seo-title-network": "Sintrop Network",
   "seo-description-network": "Network details and instructions to connect",
   "discord": "Discord",
@@ -13,5 +14,12 @@
   "language": "Language",
   "addToMetamask": "Add to Metamask",
   "youCanAddToMMDescription": "You can add the Sintrop Network in your metamask extension",
-  "youNeedAMetamaskExtensionInstalled": "You need a Metamask extension installed"
+  "youNeedAMetamaskExtensionInstalled": "You need a Metamask extension installed",
+  "app": "App",
+  "networkData": "Network data",
+  "networkLead": "Add the Sintrop network to your wallet to interact directly with the protocol contracts.",
+  "faq": "FAQ",
+  "publications": "Publications",
+  "supporters": "Supporters",
+  "communityNav": "Community"
 }

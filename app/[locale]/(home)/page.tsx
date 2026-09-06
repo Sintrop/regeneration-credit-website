@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { OG_IMAGE, localizedAlternates, localizedUrl } from "@/lib/metadata";
 import initTranslations from "../../i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import { Header } from "@/components/Header/Header";
 import { Hero } from "./_components/Hero";
 import { WhatIsIt } from "./_components/WhatIsIt";
+import { Invest } from "./_components/Invest";
 import { Technology } from "./_components/Technology";
 import { Community } from "./_components/Community/Community";
 import { Footer } from "@/components/Footer/Footer";
@@ -28,18 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: t("seo-title") as string,
       description: t("seo-description") as string,
       alternateLocale: ["en", "pt"],
-      url: `https://regenerationcredit.org/${locale}`,
+      url: localizedUrl("/", locale),
       locale,
       siteName: t("regenerationCredit"),
-      images: "https://regenerationcredit.org/assets/img/og.jpg",
+      images: OG_IMAGE,
     },
-    alternates: {
-      canonical: "https://regenerationcredit.org",
-      languages: {
-        en: "https://regenerationcredit.org/en",
-        pt: "https://regenerationcredit.org/pt",
-      },
-    },
+    alternates: localizedAlternates("/", locale),
   };
 }
 
@@ -53,7 +49,7 @@ export default async function Home({ params }: Props) {
       locale={locale}
       resources={resources}
     >
-      <div className="bg-back-home w-full flex flex-col bg-cover bg-center">
+      <div className="bg-hero-forest w-full flex flex-col">
         <Header t={t} />
 
         <Hero t={t} locale={locale} />
@@ -61,9 +57,11 @@ export default async function Home({ params }: Props) {
 
       <main>
         <div className="container mx-auto px-5 lg:px-20">
+          <RcToken t={t} />
+
           <WhatIsIt t={t} />
 
-          <RcToken t={t} />
+          <Invest t={t} />
         </div>
 
         <Technology t={t} />

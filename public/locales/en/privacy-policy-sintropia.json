@@ -4,9 +4,9 @@
   "seo-description": "This Privacy Policy describes how the \"Sintropia Method\" application (\"the App\") handles your information.",
   "home": "Home",
   "resources": "Resources",
-  "tutorials": "Tutorials",
   "network": "Network",
   "launchApp": "Launch App",
+  "getStarted": "Get started",
   "privacy": {
     "title": "Privacy Policy - Sintropia Method",
     "updated": "Last updated: June 3, 2025",
@@ -14,10 +14,7 @@
     "commitmentTitle": "Core Commitment",
     "commitment": "The \"Sintropia Method\" App has been developed with a strong focus on your privacy. We do not collect, store, or process any personal information or usage data on private servers, in the cloud, or in any other location external to your device. All data generated during your use of the App is saved exclusively locally, on the user's own mobile phone.",
     "agreement": "By using the App, you agree to the terms of this policy.",
-
     "section1": {
-      "title": "1. What information do we collect and how is it used?",
-      "description": "The App does not collect information for any external server or database. Information is generated and processed only on your device for the following purposes:",
       "1": {
         "title": "1.1. Information generated and saved locally on your device",
         "inspection": "Inspection Data: The information you enter into the App to record inspections (such as tree count, number of species, descriptions, etc.) is processed and saved only on your device.",
@@ -28,44 +25,44 @@
         "title": "1.2. How we use your information (locally)",
         "reports": "Generate Inspection Reports: The App uses the data entered and collected (camera, location) to compile an automated inspection report.",
         "functionality": "App Functionality: To allow you to view, edit, and manage your locally saved inspections."
-      }
+      },
+      "title": "1. What information do we collect and how is it used?",
+      "description": "The App does not collect information for any external server or database. Information is generated and processed only on your device for the following purposes:"
     },
-
     "section2": {
       "title": "2. How is your information shared?",
       "description": "The App does not share your data with servers, developers, or third parties.",
       "blockchain": "If you choose to use this report on a blockchain, remember that blockchain data is public and immutable. We have no control over this data after submission."
     },
-
     "section3": {
       "title": "3. Your privacy rights",
       "control": "Local Control: You have full control over the data saved on your phone.",
       "permissions": "Device Permissions: You can manage the App's camera and location permissions in your device settings."
     },
-
     "section4": {
       "title": "4. Data security",
       "description": "The security of your information depends on your device. The App does not transmit your data, so protection relies on your own security settings."
     },
-
     "section5": {
       "title": "5. Data retention",
       "description": "All information is retained only locally on your device for as long as you wish. You can delete the data by uninstalling the App or clearing its data."
     },
-
     "section6": {
       "title": "6. Children's privacy",
       "description": "Our Services are not intended for children under 13. We do not knowingly collect information from children under 13. If you are aware of such collection, please contact us."
     },
-
     "section7": {
       "title": "7. Changes to this Privacy Policy",
       "description": "We may update our Privacy Policy. We will notify you of changes by updating this page. Please review periodically."
     },
-
     "section8": {
       "title": "8. Contact",
       "contact": "If you have questions about this Privacy Policy or data practices, contact us via our repository: https://github.com/Sintrop/Sintropia-method"
     }
-  }
+  },
+  "app": "App",
+  "faq": "FAQ",
+  "publications": "Publications",
+  "supporters": "Supporters",
+  "communityNav": "Community"
 }

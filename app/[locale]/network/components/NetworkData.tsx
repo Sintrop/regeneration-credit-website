@@ -1,7 +1,9 @@
 import { DataItem } from "@/components/DataItem/DataItem";
 import { JSX } from "react";
+import { TType } from "@/types/t";
 
 interface Props {
+  t: TType;
   id: number;
   name: string;
   coinName: string;
@@ -9,6 +11,7 @@ interface Props {
   explorer: string;
 }
 export function NetworkData({
+  t,
   coinName,
   explorer,
   id,
@@ -16,9 +19,11 @@ export function NetworkData({
   rpc,
 }: Props): JSX.Element {
   return (
-    <div className="flex flex-col gap-1 w-full max-w-[500px]">
-      <p className="text-black">Network data</p>
-      <div className="rounded-2xl p-3 border flex flex-col gap-1">
+    <div className="w-full max-w-md">
+      <h2 className="text-sm font-semibold uppercase tracking-wide text-ink-soft">
+        {t("networkData")}
+      </h2>
+      <div className="mt-4 rounded-2xl border border-line bg-surface px-5">
         <DataItem label="ID" value={id} />
         <DataItem label="Name" value={name} />
         <DataItem label="Coin name" value={coinName} />

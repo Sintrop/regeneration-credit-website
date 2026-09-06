@@ -1,0 +1,58 @@
+{
+  "regenerationCredit": "Crédito de Regeneração",
+  "seo-title": "Comunidade - Crédito de Regeneração",
+  "seo-description": "Os sete papéis que operam o protocolo Crédito de Regeneração, e como cada um é recompensado.",
+  "home": "Início",
+  "resources": "Recursos",
+  "network": "Rede",
+  "app": "App",
+  "faq": "FAQ",
+  "getStarted": "Vamos começar",
+  "title": "A comunidade opera o protocolo",
+  "lead": "Não há uma empresa por trás do Crédito de Regeneração. Sete papéis o mantêm em funcionamento, e não é só o regenerador que ganha: cada papel é recompensado a partir do seu próprio pool pelo trabalho que traz ao sistema.",
+  "membersLabel": "membros",
+  "roles": [
+    {
+      "name": "Regeneradores",
+      "what": "Registram e gerenciam uma área de regeneração, plantando e protegendo o ecossistema ao longo do tempo.",
+      "earn": "Ganham Crédito de Regeneração do pool de regeneradores, na proporção do impacto verificado da sua área."
+    },
+    {
+      "name": "Inspetores",
+      "what": "Visitam as áreas de regeneração e registram suas árvores e espécies numa verificação pessoa a pessoa.",
+      "earn": "Ganham do pool de inspetores por cada inspeção que realizam e enviam."
+    },
+    {
+      "name": "Pesquisadores",
+      "what": "Produzem pesquisa ambiental, métodos de avaliação e itens de calculadora de impacto para o protocolo.",
+      "earn": "Ganham do pool de pesquisadores por cada pesquisa e método válido que publicam."
+    },
+    {
+      "name": "Desenvolvedores",
+      "what": "Constroem e mantêm o software: contratos inteligentes, interfaces e aplicativos relacionados.",
+      "earn": "Ganham do pool de desenvolvedores pelos relatórios de desenvolvimento que publicam."
+    },
+    {
+      "name": "Contribuidores",
+      "what": "Apoiam a comunidade com educação, traduções, design, apresentações e outros trabalhos gerais.",
+      "earn": "Ganham do pool de contribuidores por cada contribuição válida que publicam."
+    },
+    {
+      "name": "Ativistas",
+      "what": "Convidam novos regeneradores e inspetores para o sistema, expandindo o alcance da comunidade.",
+      "earn": "Ganham do pool de ativistas, com recompensas que aumentam com o nível."
+    },
+    {
+      "name": "Apoiadores",
+      "what": "Qualquer pessoa ou organização que financia a regeneração adquirindo Crédito de Regeneração.",
+      "earn": "Não ganham tokens: financiam o sistema e podem aposentar seus créditos por um certificado de contribuição."
+    }
+  ],
+  "ctaTitle": "Faça parte da comunidade",
+  "openUsersPortal": "Abrir o portal dos usuários",
+  "getTheApp": "Baixar o app",
+  "publications": "Publicações",
+  "supporters": "Apoiadores",
+  "communityNav": "Comunidade",
+  "viewMap": "Ver o mapa das áreas"
+}

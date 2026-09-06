@@ -30,7 +30,7 @@ export function SystemItemDownload({ system, assets, t }: Props) {
     <Link
       href={linkDownload}
       target="_blank"
-      rel="noopener noreferer"
+      rel="noopener noreferrer"
       className="w-[120px] h-[150px] bg-green-primary rounded-md flex flex-col items-center justify-center p-2"
     >
       <Image
