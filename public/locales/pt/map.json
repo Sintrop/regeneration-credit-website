@@ -1,0 +1,20 @@
+{
+  "regenerationCredit": "Crédito de Regeneração",
+  "seo-title": "Mapa das áreas de regeneração - Crédito de Regeneração",
+  "seo-description": "Um mapa interativo de todas as áreas de regeneração registradas on-chain pela comunidade.",
+  "home": "Início",
+  "network": "Rede",
+  "app": "App",
+  "resources": "Recursos",
+  "publications": "Publicações",
+  "communityNav": "Comunidade",
+  "supporters": "Apoiadores",
+  "faq": "FAQ",
+  "getStarted": "Vamos começar",
+  "title": "Áreas de regeneração",
+  "lead": "Cada polígono é uma área de regeneração registrada on-chain por um regenerador. As coordenadas vêm direto do contrato.",
+  "areasCount": "{{count}} áreas mapeadas",
+  "areaUnit": "m²",
+  "score": "Score",
+  "emptyState": "Nenhuma área de regeneração disponível no momento."
+}

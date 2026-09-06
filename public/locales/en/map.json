@@ -1,0 +1,20 @@
+{
+  "regenerationCredit": "Regeneration Credit",
+  "seo-title": "Regeneration areas map - Regeneration Credit",
+  "seo-description": "An interactive map of every regeneration area registered on-chain by the community.",
+  "home": "Home",
+  "network": "Network",
+  "app": "App",
+  "resources": "Resources",
+  "publications": "Publications",
+  "communityNav": "Community",
+  "supporters": "Supporters",
+  "faq": "FAQ",
+  "getStarted": "Get started",
+  "title": "Regeneration areas",
+  "lead": "Every polygon is a regeneration area registered on-chain by a regenerator. Coordinates come straight from the contract.",
+  "areasCount": "{{count}} areas mapped",
+  "areaUnit": "m²",
+  "score": "Score",
+  "emptyState": "No regeneration areas are available right now."
+}

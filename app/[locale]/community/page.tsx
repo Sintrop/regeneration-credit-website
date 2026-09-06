@@ -102,19 +102,26 @@ export default async function Community({ params }: Props) {
 
         <section className="mt-14">
           <h2 className="text-2xl md:text-3xl">{t("ctaTitle")}</h2>
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <Link
+              href="/map"
+              className="group inline-flex items-center justify-between gap-2 rounded-2xl border border-line bg-surface p-5 font-medium text-ink transition-colors hover:border-brand"
+            >
+              {t("viewMap")}
+              <FiArrowUpRight size={16} className="text-ink-soft group-hover:text-brand" />
+            </Link>
             <Link
               href="https://users.regenerationcredit.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-between gap-2 rounded-2xl border border-line bg-surface p-5 font-medium text-ink transition-colors hover:border-brand sm:w-72"
+              className="group inline-flex items-center justify-between gap-2 rounded-2xl border border-line bg-surface p-5 font-medium text-ink transition-colors hover:border-brand"
             >
               {t("openUsersPortal")}
               <FiArrowUpRight size={16} className="text-ink-soft group-hover:text-brand" />
             </Link>
             <Link
               href="/download"
-              className="group inline-flex items-center justify-between gap-2 rounded-2xl border border-line bg-surface p-5 font-medium text-ink transition-colors hover:border-brand sm:w-72"
+              className="group inline-flex items-center justify-between gap-2 rounded-2xl border border-line bg-surface p-5 font-medium text-ink transition-colors hover:border-brand"
             >
               {t("getTheApp")}
               <FiArrowUpRight size={16} className="text-ink-soft group-hover:text-brand" />
