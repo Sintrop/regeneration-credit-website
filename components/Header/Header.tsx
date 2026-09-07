@@ -13,6 +13,7 @@ export async function Header({ t }: Props) {
   const links = [
     { href: "/download", label: t("app") },
     { href: "/network", label: t("network") },
+    { href: "/tokenomics", label: t("tokenomics") },
     { href: "/resources", label: t("resources") },
     { href: "/publications", label: t("publications") },
     { href: "/community", label: t("communityNav") },
@@ -35,7 +36,7 @@ export async function Header({ t }: Props) {
         </span>
       </Link>
 
-      <nav className="hidden lg:flex items-center gap-5 xl:gap-7">
+      <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
         {links.map((link) => (
           <Link
             key={link.href}

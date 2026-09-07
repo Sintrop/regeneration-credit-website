@@ -95,5 +95,6 @@
     "applyCta": "Apply for a role",
     "emptyState": "There are no open applications right now.",
     "disclaimer": "Applicants agreed that the information shown here — including the wallet address — is public. It is mirrored from GitHub issues."
-  }
+  },
+  "tokenomics": "Tokenomics"
 }

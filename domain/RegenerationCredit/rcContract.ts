@@ -34,8 +34,19 @@ async function totalCertified(): Promise<number> {
   }
 }
 
+async function balanceOf(address: string): Promise<number> {
+  try {
+    const response = await contract.methods.balanceOf(address).call();
+    return parseFloat(String(response).replace('n', '')) / 10 ** 18;
+  } catch (e) {
+    console.log(e);
+    return 0;
+  }
+}
+
 export const rcContract = {
   totalSupply,
   totalLocked,
-  totalCertified
+  totalCertified,
+  balanceOf
 }

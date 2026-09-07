@@ -12,6 +12,7 @@ export async function Footer({ t }: Props) {
     { href: "/", label: t("home") },
     { href: "/download", label: t("app") },
     { href: "/network", label: t("network") },
+    { href: "/tokenomics", label: t("tokenomics") },
     { href: "/resources", label: t("resources") },
     { href: "/publications", label: t("publications") },
     { href: "/community", label: t("communityNav") },
