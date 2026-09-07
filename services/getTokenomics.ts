@@ -16,15 +16,16 @@ interface PoolAllocation {
 }
 
 // Initial allocation (whitepaper, Table 1). Pool addresses are immutable mainnet contracts.
+// The regenerator pool is read first, so it must stay at index 0 (see getEraEpoch).
 const POOLS: PoolAllocation[] = [
   { key: "regenerator", address: "0xFC222077860d34dEfA62Dd8A848703025B7b75f7", allocation: 750_000_000 },
   { key: "inspector", address: "0x3d7C162cf5c18432c3bb8535a96046A5e4E95ABB", allocation: 230_000_000 },
-  { key: "prelaunch", address: null, allocation: 160_000_000 },
   { key: "researcher", address: "0x659962e70B2cD88886461e8165D56fA4C5CB4278", allocation: 40_000_000 },
   { key: "developer", address: "0xCd74352812802a476161815daD31A0197BC65BC5", allocation: 40_000_000 },
   { key: "contributor", address: "0xfc2A8ee64FF2a5E26cb150Ffc39e0C1B77b296B4", allocation: 40_000_000 },
   { key: "activist", address: "0x138EaB1427437F5B22E834863294a13b5CB9d175", allocation: 40_000_000 },
   { key: "validation", address: "0xA9E14EefACeb8b9E83592F6BC692BfdAA6F7f1F1", allocation: 10_000_000 },
+  { key: "prelaunch", address: null, allocation: 160_000_000 },
 ];
 
 const POOL_ERA_ABI = [

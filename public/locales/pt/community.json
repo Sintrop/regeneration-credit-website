@@ -96,5 +96,6 @@
     "emptyState": "Não há candidaturas abertas no momento.",
     "disclaimer": "Os candidatos concordaram que as informações aqui exibidas — incluindo o endereço da carteira — são públicas. São espelhadas das issues do GitHub."
   },
-  "tokenomics": "Tokenomics"
+  "tokenomics": "Tokenomics",
+  "seeTokenomics": "Veja como a emissão funciona"
 }

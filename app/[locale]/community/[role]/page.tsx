@@ -129,6 +129,13 @@ export default async function RolePage({ params }: Props) {
                 {t("howYouEarnTitle")}
               </h2>
               <p className="mt-3 text-ink-soft">{role.earn}</p>
+              <Link
+                href="/tokenomics"
+                className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-brand-deep hover:underline"
+              >
+                {t("seeTokenomics")}
+                <FiArrowUpRight size={15} />
+              </Link>
             </section>
 
             <section>
