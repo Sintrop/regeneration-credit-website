@@ -51,7 +51,7 @@ export async function Footer({ t }: Props) {
         </div>
 
         <p className="mt-12 pt-6 border-t border-white/15 text-xs text-white/60">
-          {t("regenerationCredit")} · {t("descriptionHero")}
+          © {new Date().getFullYear()} {t("regenerationCredit")}
         </p>
       </div>
     </footer>
