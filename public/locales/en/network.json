@@ -13,8 +13,6 @@
   "github": "Github",
   "language": "Language",
   "addToMetamask": "Add to Metamask",
-  "youCanAddToMMDescription": "You can add the Sintrop Network in your metamask extension",
-  "youNeedAMetamaskExtensionInstalled": "You need a Metamask extension installed",
   "app": "App",
   "networkData": "Network data",
   "networkLead": "Add the Sintrop network to your wallet to interact directly with the protocol contracts.",
@@ -22,5 +20,10 @@
   "publications": "Publications",
   "supporters": "Supporters",
   "communityNav": "Community",
-  "tokenomics": "Tokenomics"
+  "tokenomics": "Tokenomics",
+  "aboutSintrop": "About the Sintrop blockchain",
+  "connectTitle": "Connecting a wallet",
+  "connectLead": "The apps connect through MetaMask. In the browser, with the MetaMask extension, you can add the network in one click; the mobile apps use MetaMask mobile.",
+  "metamaskGuide": "Open the MetaMask guide",
+  "metamaskGuideNote": "A community guide on installing MetaMask, creating an account and connecting."
 }
