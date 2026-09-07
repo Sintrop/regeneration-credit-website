@@ -1,5 +1,5 @@
 {
-  "regenerationCredit": "Crédito de regeneração",
+  "regenerationCredit": "Crédito de Regeneração",
   "network": "Rede",
   "home": "Início",
   "resources": "Recursos",
@@ -13,13 +13,17 @@
   "github": "Github",
   "language": "Idioma",
   "addToMetamask": "Add. ao Metamask",
-  "youCanAddToMMDescription": "Você pode adicionar a rede da Sintrop no seu Metamask",
-  "youNeedAMetamaskExtensionInstalled": "Você precisa da extensão do Metamask instalada!",
   "app": "App",
   "networkData": "Dados da rede",
   "networkLead": "Adicione a rede da Sintrop na sua carteira para interagir diretamente com os contratos do protocolo.",
   "faq": "FAQ",
   "publications": "Publicações",
   "supporters": "Apoiadores",
-  "communityNav": "Comunidade"
+  "communityNav": "Comunidade",
+  "tokenomics": "Tokenomics",
+  "aboutSintrop": "Sobre a blockchain Sintrop",
+  "connectTitle": "Conectando uma carteira",
+  "connectLead": "Os aplicativos conectam pelo MetaMask. No navegador, com a extensão do MetaMask, dá pra adicionar a rede em um clique; os aplicativos mobile usam o MetaMask mobile.",
+  "metamaskGuide": "Abrir o guia do MetaMask",
+  "metamaskGuideNote": "Um guia da comunidade que ensina a instalar o MetaMask, criar uma conta e conectar."
 }

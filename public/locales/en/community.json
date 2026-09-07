@@ -13,39 +13,60 @@
   "membersLabel": "members",
   "roles": [
     {
+      "slug": "regenerator",
       "name": "Regenerators",
       "what": "Register and manage a regeneration area, planting and protecting the ecosystem over time.",
-      "earn": "Earn Regeneration Credit from the regenerator pool, in proportion to the verified impact of their area."
+      "earn": "Earn Regeneration Credit from the regenerator pool, in proportion to the verified impact of their area.",
+      "intro": "Regenerators are the core users of the protocol. They register a parcel of degraded land as a regeneration area — a polygon of 3 to 10 coordinate points, between 2,500 and 1,000,000 m² — and bring it back to life over time, planting and protecting native vegetation.",
+      "howToJoin": "Regenerators join by on-chain invitation. An activist or another member with enough level invites your wallet, and you then register your area and identity in the app."
     },
     {
+      "slug": "inspector",
       "name": "Inspectors",
       "what": "Visit regeneration areas and record their trees and species in a peer-to-peer verification.",
-      "earn": "Earn from the inspector pool for each inspection they carry out and submit."
+      "earn": "Earn from the inspector pool for each inspection they carry out and submit.",
+      "intro": "Inspectors carry out the decentralized verification that backs every credit. They travel to regeneration areas and record, on the ground, how many trees and how many distinct species are present, submitting the result as an on-chain inspection.",
+      "howToJoin": "Inspectors join by on-chain invitation and must keep a good track record: a minimum of three completed inspections makes you eligible for pool rewards, and unrealized inspections count against you."
     },
     {
+      "slug": "researcher",
       "name": "Researchers",
       "what": "Produce environmental research, evaluation methods and impact calculator items for the protocol.",
-      "earn": "Earn from the researcher pool for each valid research and method they publish."
+      "earn": "Earn from the researcher pool for each valid research and method they publish.",
+      "intro": "Researchers build the scientific layer of the protocol. They publish environmental research, propose evaluation methods, and register impact-calculator items that convert real-world quantities (litres of fuel, kilos of plastic, and so on) into a carbon figure.",
+      "howToJoin": "Researchers join by on-chain invitation from the community. Once invited, you register in the app and can start publishing research."
     },
     {
+      "slug": "developer",
       "name": "Developers",
       "what": "Build and maintain the software: smart contracts, interfaces and related applications.",
-      "earn": "Earn from the developer pool for the development reports they publish."
+      "earn": "Earn from the developer pool for the development reports they publish.",
+      "intro": "Developers build and maintain the software the protocol runs on: the smart contracts, the web interfaces, the mobile apps and the supporting tools. They document their work by publishing development reports on-chain.",
+      "howToJoin": "Developers join by on-chain invitation from the community. Once invited, you register in the app and publish development reports for your work."
     },
     {
+      "slug": "contributor",
       "name": "Contributors",
       "what": "Support the community with education, translations, design, presentations and other general work.",
-      "earn": "Earn from the contributor pool for each valid contribution they publish."
+      "earn": "Earn from the contributor pool for each valid contribution they publish.",
+      "intro": "Contributors cover everything the other roles do not: education, translation, design, presentations, documentation, community support and any other work that moves the project forward. Each piece of work is published on-chain as a contribution.",
+      "howToJoin": "Contributors join by on-chain invitation from the community. Once invited, you register in the app and publish your contributions."
     },
     {
+      "slug": "activist",
       "name": "Activists",
       "what": "Invite new regenerators and inspectors into the system, expanding the community's reach.",
-      "earn": "Earn from the activist pool, with rewards that grow with their level."
+      "earn": "Earn from the activist pool, with rewards that grow with their level.",
+      "intro": "Activists grow the network. They invite new regenerators and inspectors into the system and are rewarded as those people become active — in particular as the inspectors they brought in have their inspections validated.",
+      "howToJoin": "Activists join by on-chain invitation from the community. Once invited, you register in the app and can start inviting regenerators and inspectors."
     },
     {
+      "slug": "supporter",
       "name": "Supporters",
       "what": "Any person or organization that finances regeneration by acquiring Regeneration Credit.",
-      "earn": "Do not earn tokens: they fund the system and can retire their credits for a contribution certificate."
+      "earn": "Do not earn tokens: they fund the system and can retire their credits for a contribution certificate.",
+      "intro": "Supporters fund the regeneration. Any person or organization can acquire Regeneration Credit from a community member, hold it, use it, and — when they choose — retire it to receive a contribution certificate recorded on-chain.",
+      "howToJoin": "Supporters do not need an invitation. Anyone can register as a supporter and start directly."
     }
   ],
   "ctaTitle": "Join the community",
@@ -54,5 +75,27 @@
   "publications": "Publications",
   "supporters": "Supporters",
   "communityNav": "Community",
-  "viewMap": "View the areas map"
+  "viewMap": "View the areas map",
+  "aboutRole": "About the role",
+  "howYouEarnTitle": "How you're rewarded",
+  "howToJoinTitle": "How to join",
+  "learnRole": "About this role",
+  "applyForRole": "Apply for this role",
+  "applyOnGithub": "Apply on GitHub",
+  "startSupporting": "Start supporting",
+  "noGithubNote": "No GitHub account? Open a discussion on the applications repository and the community will help.",
+  "backToCommunity": "Community",
+  "roleMembers": "members",
+  "applications": {
+    "navLabel": "Applications",
+    "title": "Community applications",
+    "lead": "People who have expressed interest in joining a community role. Existing members review these and, when they choose, issue an on-chain invitation.",
+    "walletLabel": "Wallet",
+    "openIssue": "Open on GitHub",
+    "applyCta": "Apply for a role",
+    "emptyState": "There are no open applications right now.",
+    "disclaimer": "Applicants agreed that the information shown here — including the wallet address — is public. It is mirrored from GitHub issues."
+  },
+  "tokenomics": "Tokenomics",
+  "seeTokenomics": "See how emissions work"
 }

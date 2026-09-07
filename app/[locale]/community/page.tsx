@@ -7,13 +7,20 @@ import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 import { UsersImages } from "@/app/[locale]/(home)/_components/Community/UsersImages";
 import { communityService } from "@/domain/Community/communityService";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 
 const i18nNamespaces = ["community"];
 
 export const revalidate = 600;
 
-type Role = { name: string; what: string; earn: string };
+type Role = {
+  slug: string;
+  name: string;
+  what: string;
+  earn: string;
+  intro: string;
+  howToJoin: string;
+};
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -75,7 +82,7 @@ export default async function Community({ params }: Props) {
         <div className="flex flex-col gap-5">
           {roles.map((role, index) => (
             <article
-              key={role.name}
+              key={role.slug}
               className="flex flex-col gap-6 rounded-2xl border border-line bg-surface p-6 md:flex-row md:items-start"
             >
               <div className="shrink-0">
@@ -95,15 +102,27 @@ export default async function Community({ params }: Props) {
                 <p className="text-ink">
                   <span className="font-medium">{role.earn}</span>
                 </p>
-                {index === 0 && (
+
+                <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1">
                   <Link
-                    href="/map"
-                    className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-brand-deep hover:underline"
+                    href={`/community/${role.slug}`}
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-brand-deep hover:underline"
                   >
-                    {t("viewMap")}
-                    <FiArrowUpRight size={15} />
+                    {role.slug === "supporter"
+                      ? t("startSupporting")
+                      : `${t("learnRole")} · ${t("applyForRole")}`}
+                    <FiArrowRight size={15} />
                   </Link>
-                )}
+                  {role.slug === "regenerator" && (
+                    <Link
+                      href="/map"
+                      className="inline-flex items-center gap-1 text-sm font-semibold text-brand-deep hover:underline"
+                    >
+                      {t("viewMap")}
+                      <FiArrowUpRight size={15} />
+                    </Link>
+                  )}
+                </div>
               </div>
             </article>
           ))}
@@ -112,6 +131,13 @@ export default async function Community({ params }: Props) {
         <section className="mt-14">
           <h2 className="text-2xl md:text-3xl">{t("ctaTitle")}</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <Link
+              href="/community/applications"
+              className="group inline-flex items-center justify-between gap-2 rounded-2xl border border-line bg-surface p-5 font-medium text-ink transition-colors hover:border-brand"
+            >
+              {t("applications.navLabel")}
+              <FiArrowRight size={16} className="text-ink-soft group-hover:text-brand" />
+            </Link>
             <Link
               href="/map"
               className="group inline-flex items-center justify-between gap-2 rounded-2xl border border-line bg-surface p-5 font-medium text-ink transition-colors hover:border-brand"
@@ -126,13 +152,6 @@ export default async function Community({ params }: Props) {
               className="group inline-flex items-center justify-between gap-2 rounded-2xl border border-line bg-surface p-5 font-medium text-ink transition-colors hover:border-brand"
             >
               {t("openUsersPortal")}
-              <FiArrowUpRight size={16} className="text-ink-soft group-hover:text-brand" />
-            </Link>
-            <Link
-              href="/download"
-              className="group inline-flex items-center justify-between gap-2 rounded-2xl border border-line bg-surface p-5 font-medium text-ink transition-colors hover:border-brand"
-            >
-              {t("getTheApp")}
               <FiArrowUpRight size={16} className="text-ink-soft group-hover:text-brand" />
             </Link>
           </div>
