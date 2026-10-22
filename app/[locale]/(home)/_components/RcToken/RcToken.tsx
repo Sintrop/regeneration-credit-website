@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
 import { TType } from "@/types/t";
 import { QrToken } from "./QrToken";
 import { AddTokenToMetamask } from "./AddTokenToMetamask";
@@ -89,6 +91,14 @@ export async function RcToken({ t }: Props) {
               />
             )}
           </div>
+
+          <Link
+            href="/tokenomics"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-deep hover:underline"
+          >
+            {t("tokenomicsLink")}
+            <FiArrowRight size={15} />
+          </Link>
 
           <div className="mt-6 flex flex-col items-start gap-4 rounded-2xl border border-line bg-surface p-5">
             <div className="flex items-center gap-4">

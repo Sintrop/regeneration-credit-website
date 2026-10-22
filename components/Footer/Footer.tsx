@@ -12,6 +12,7 @@ export async function Footer({ t }: Props) {
     { href: "/", label: t("home") },
     { href: "/download", label: t("app") },
     { href: "/network", label: t("network") },
+    { href: "/tokenomics", label: t("tokenomics") },
     { href: "/resources", label: t("resources") },
     { href: "/publications", label: t("publications") },
     { href: "/community", label: t("communityNav") },
@@ -51,7 +52,7 @@ export async function Footer({ t }: Props) {
         </div>
 
         <p className="mt-12 pt-6 border-t border-white/15 text-xs text-white/60">
-          {t("regenerationCredit")} · {t("descriptionHero")}
+          © {new Date().getFullYear()} {t("regenerationCredit")}
         </p>
       </div>
     </footer>

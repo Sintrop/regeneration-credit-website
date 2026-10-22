@@ -2,11 +2,16 @@ import { Metadata } from "next";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import { OG_IMAGE, localizedAlternates, localizedUrl } from "@/lib/metadata";
 import initTranslations from "@/app/i18n";
+import Link from "next/link";
+import { FiArrowUpRight } from "react-icons/fi";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 import { HeroNetwork } from "./components/HeroNetwork";
 import { AddToMetamask } from "@/components/AddToMetamask/AddToMetamask";
 import { NetworkData } from "./components/NetworkData";
+
+const METAMASK_GUIDE_URL =
+  "https://ipfs.sintrop.com/ipfs/QmStSpPexGVQsLnkimNabGrDbhuAPcmUS5x61r7q5Uvg94";
 
 const i18nNamespaces = ["network"];
 
@@ -56,8 +61,34 @@ export default async function Network({ params }: Props) {
           <div className="flex flex-col gap-4">
             <h2 className="text-2xl md:text-3xl">Sintrop Impact Blockchain</h2>
             <p className="text-ink-soft">{t("networkLead")}</p>
-            <div className="mt-2">
-              <AddToMetamask networkPage />
+            <Link
+              href="https://www.sintrop.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-brand-deep hover:underline"
+            >
+              {t("aboutSintrop")}
+              <FiArrowUpRight size={15} />
+            </Link>
+
+            <div className="mt-4 rounded-2xl border border-line bg-surface p-6">
+              <h3 className="text-lg">{t("connectTitle")}</h3>
+              <p className="mt-2 text-ink-soft text-sm">{t("connectLead")}</p>
+              <div className="mt-4">
+                <AddToMetamask networkPage />
+              </div>
+              <Link
+                href={METAMASK_GUIDE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-deep hover:underline"
+              >
+                {t("metamaskGuide")}
+                <FiArrowUpRight size={15} />
+              </Link>
+              <p className="mt-1 text-xs text-ink-soft">
+                {t("metamaskGuideNote")}
+              </p>
             </div>
           </div>
 

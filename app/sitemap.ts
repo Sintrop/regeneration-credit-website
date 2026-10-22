@@ -9,9 +9,23 @@ type Route = {
 
 const routes: Route[] = [
   { path: '/', priority: 1, changeFrequency: 'daily' },
+  { path: '/tokenomics', priority: 0.8, changeFrequency: 'weekly' },
   { path: '/resources', priority: 0.8, changeFrequency: 'weekly' },
   { path: '/publications', priority: 0.7, changeFrequency: 'weekly' },
   { path: '/community', priority: 0.7, changeFrequency: 'monthly' },
+  ...[
+    'regenerator',
+    'inspector',
+    'researcher',
+    'developer',
+    'contributor',
+    'activist',
+    'supporter',
+  ].map((role) => ({
+    path: `/community/${role}`,
+    priority: 0.5,
+    changeFrequency: 'monthly' as const,
+  })),
   { path: '/map', priority: 0.6, changeFrequency: 'weekly' },
   { path: '/supporters', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/download', priority: 0.7, changeFrequency: 'weekly' },

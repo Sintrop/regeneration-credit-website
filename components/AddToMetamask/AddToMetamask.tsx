@@ -9,7 +9,7 @@ interface Props {
 }
 export function AddToMetamask({ networkPage }: Props) {
   const { t } = useTranslation();
-  const [hasProvider, setHasProvider] = useState<boolean | null>(null);
+  const [hasProvider, setHasProvider] = useState(false);
 
   useEffect(() => {
     setHasProvider(typeof window !== "undefined" && !!window.ethereum);
@@ -36,54 +36,26 @@ export function AddToMetamask({ networkPage }: Props) {
     });
   }
 
-  if (networkPage) {
-    return (
-      <div className="flex flex-col gap-2">
-        <p className="text-gray-500 text-sm">{t("youCanAddToMMDescription")}</p>
-        {hasProvider === false ? (
-          <p className="text-red-500">
-            {t("youNeedAMetamaskExtensionInstalled")}
-          </p>
-        ) : (
-          <button
-            onClick={handleAddChain}
-            disabled={hasProvider === null}
-            className="w-full bg-green-700 gap-3 h-[50px] md:h-[60px] rounded-md text-white font-semibold md:w-[220px] flex items-center justify-center hover:cursor-pointer hover:bg-green-800 duration-200 disabled:opacity-60 disabled:cursor-default"
-          >
-            <Image
-              alt="metamask icon"
-              src={MMIcon}
-              width={40}
-              height={40}
-              quality={100}
-              className="object-contain"
-            />
-
-            {t("addToMetamask")}
-          </button>
-        )}
-      </div>
-    );
-  }
-
-  if (!hasProvider) {
-    return null;
-  }
+  // Only offer the one-click flow to visitors who already run the extension.
+  if (!hasProvider) return null;
 
   return (
     <button
       onClick={handleAddChain}
-      className="w-full border-2 border-white gap-3 h-[50px] md:h-[60px] rounded-md text-white font-semibold md:w-[220px] flex items-center justify-center hover:cursor-pointer hover:bg-white hover:text-black duration-200"
+      className={
+        networkPage
+          ? "inline-flex h-12 items-center justify-center gap-3 rounded-full bg-brand px-6 font-semibold text-white transition-colors hover:bg-brand-deep"
+          : "inline-flex h-12 items-center justify-center gap-3 rounded-md border-2 border-white px-6 font-semibold text-white transition-colors hover:bg-white hover:text-black"
+      }
     >
       <Image
-        alt="metamask icon"
+        alt=""
         src={MMIcon}
-        width={40}
-        height={40}
+        width={24}
+        height={24}
         quality={100}
         className="object-contain"
       />
-
       {t("addToMetamask")}
     </button>
   );

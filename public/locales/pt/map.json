@@ -17,5 +17,6 @@
   "areaUnit": "m²",
   "score": "Score",
   "emptyState": "Nenhuma área de regeneração disponível no momento.",
-  "areasListTitle": "Todas as áreas"
+  "areasListTitle": "Todas as áreas",
+  "tokenomics": "Tokenomics"
 }

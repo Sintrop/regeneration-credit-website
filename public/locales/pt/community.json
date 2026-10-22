@@ -13,39 +13,60 @@
   "membersLabel": "membros",
   "roles": [
     {
+      "slug": "regenerator",
       "name": "Regeneradores",
       "what": "Registram e gerenciam uma área de regeneração, plantando e protegendo o ecossistema ao longo do tempo.",
-      "earn": "Ganham Crédito de Regeneração do pool de regeneradores, na proporção do impacto verificado da sua área."
+      "earn": "Ganham Crédito de Regeneração do pool de regeneradores, na proporção do impacto verificado da sua área.",
+      "intro": "Os regeneradores são os usuários centrais do protocolo. Eles registram uma parcela de terra degradada como área de regeneração — um polígono de 3 a 10 pontos de coordenada, entre 2.500 e 1.000.000 m² — e a trazem de volta à vida ao longo do tempo, plantando e protegendo a vegetação nativa.",
+      "howToJoin": "Regeneradores entram por convite on-chain. Um ativista ou outro membro com nível suficiente convida a sua carteira, e então você registra a sua área e a sua identidade no app."
     },
     {
+      "slug": "inspector",
       "name": "Inspetores",
       "what": "Visitam as áreas de regeneração e registram suas árvores e espécies numa verificação pessoa a pessoa.",
-      "earn": "Ganham do pool de inspetores por cada inspeção que realizam e enviam."
+      "earn": "Ganham do pool de inspetores por cada inspeção que realizam e enviam.",
+      "intro": "Os inspetores realizam a verificação descentralizada que lastreia cada crédito. Eles vão até as áreas de regeneração e registram, em campo, quantas árvores e quantas espécies distintas existem, enviando o resultado como uma inspeção on-chain.",
+      "howToJoin": "Inspetores entram por convite on-chain e precisam manter um bom histórico: no mínimo três inspeções concluídas te tornam elegível às recompensas do pool, e inspeções não realizadas contam contra você."
     },
     {
+      "slug": "researcher",
       "name": "Pesquisadores",
       "what": "Produzem pesquisa ambiental, métodos de avaliação e itens de calculadora de impacto para o protocolo.",
-      "earn": "Ganham do pool de pesquisadores por cada pesquisa e método válido que publicam."
+      "earn": "Ganham do pool de pesquisadores por cada pesquisa e método válido que publicam.",
+      "intro": "Os pesquisadores constroem a camada científica do protocolo. Publicam pesquisa ambiental, propõem métodos de avaliação e registram itens de calculadora de impacto que convertem quantidades do mundo real (litros de combustível, quilos de plástico e assim por diante) em uma medida de carbono.",
+      "howToJoin": "Pesquisadores entram por convite on-chain da comunidade. Uma vez convidado, você se registra no app e pode começar a publicar pesquisa."
     },
     {
+      "slug": "developer",
       "name": "Desenvolvedores",
       "what": "Constroem e mantêm o software: contratos inteligentes, interfaces e aplicativos relacionados.",
-      "earn": "Ganham do pool de desenvolvedores pelos relatórios de desenvolvimento que publicam."
+      "earn": "Ganham do pool de desenvolvedores pelos relatórios de desenvolvimento que publicam.",
+      "intro": "Os desenvolvedores constroem e mantêm o software em que o protocolo roda: os contratos inteligentes, as interfaces web, os aplicativos mobile e as ferramentas de apoio. Documentam seu trabalho publicando relatórios de desenvolvimento on-chain.",
+      "howToJoin": "Desenvolvedores entram por convite on-chain da comunidade. Uma vez convidado, você se registra no app e publica relatórios de desenvolvimento do seu trabalho."
     },
     {
+      "slug": "contributor",
       "name": "Contribuidores",
       "what": "Apoiam a comunidade com educação, traduções, design, apresentações e outros trabalhos gerais.",
-      "earn": "Ganham do pool de contribuidores por cada contribuição válida que publicam."
+      "earn": "Ganham do pool de contribuidores por cada contribuição válida que publicam.",
+      "intro": "Os contribuidores cobrem tudo o que os outros papéis não cobrem: educação, tradução, design, apresentações, documentação, suporte à comunidade e qualquer outro trabalho que faça o projeto avançar. Cada trabalho é publicado on-chain como uma contribuição.",
+      "howToJoin": "Contribuidores entram por convite on-chain da comunidade. Uma vez convidado, você se registra no app e publica as suas contribuições."
     },
     {
+      "slug": "activist",
       "name": "Ativistas",
       "what": "Convidam novos regeneradores e inspetores para o sistema, expandindo o alcance da comunidade.",
-      "earn": "Ganham do pool de ativistas, com recompensas que aumentam com o nível."
+      "earn": "Ganham do pool de ativistas, com recompensas que aumentam com o nível.",
+      "intro": "Os ativistas fazem a rede crescer. Convidam novos regeneradores e inspetores para o sistema e são recompensados conforme essas pessoas se tornam ativas — em especial conforme os inspetores que trouxeram têm suas inspeções validadas.",
+      "howToJoin": "Ativistas entram por convite on-chain da comunidade. Uma vez convidado, você se registra no app e pode começar a convidar regeneradores e inspetores."
     },
     {
+      "slug": "supporter",
       "name": "Apoiadores",
       "what": "Qualquer pessoa ou organização que financia a regeneração adquirindo Crédito de Regeneração.",
-      "earn": "Não ganham tokens: financiam o sistema e podem aposentar seus créditos por um certificado de contribuição."
+      "earn": "Não ganham tokens: financiam o sistema e podem aposentar seus créditos por um certificado de contribuição.",
+      "intro": "Os apoiadores financiam a regeneração. Qualquer pessoa ou organização pode adquirir Crédito de Regeneração de um membro da comunidade, mantê-lo, usá-lo e — quando quiser — aposentá-lo para receber um certificado de contribuição registrado on-chain.",
+      "howToJoin": "Apoiadores não precisam de convite. Qualquer pessoa pode se registrar como apoiador e começar diretamente."
     }
   ],
   "ctaTitle": "Faça parte da comunidade",
@@ -54,5 +75,27 @@
   "publications": "Publicações",
   "supporters": "Apoiadores",
   "communityNav": "Comunidade",
-  "viewMap": "Ver o mapa das áreas"
+  "viewMap": "Ver o mapa das áreas",
+  "aboutRole": "Sobre o papel",
+  "howYouEarnTitle": "Como você é recompensado",
+  "howToJoinTitle": "Como ingressar",
+  "learnRole": "Sobre este papel",
+  "applyForRole": "Candidatar-se a este papel",
+  "applyOnGithub": "Candidatar-se no GitHub",
+  "startSupporting": "Começar a apoiar",
+  "noGithubNote": "Sem conta no GitHub? Abra uma discussão no repositório de candidaturas e a comunidade ajuda.",
+  "backToCommunity": "Comunidade",
+  "roleMembers": "membros",
+  "applications": {
+    "navLabel": "Candidaturas",
+    "title": "Candidaturas da comunidade",
+    "lead": "Pessoas que manifestaram interesse em ingressar em um papel da comunidade. Membros existentes analisam e, quando decidem, emitem um convite on-chain.",
+    "walletLabel": "Carteira",
+    "openIssue": "Abrir no GitHub",
+    "applyCta": "Candidatar-se a um papel",
+    "emptyState": "Não há candidaturas abertas no momento.",
+    "disclaimer": "Os candidatos concordaram que as informações aqui exibidas — incluindo o endereço da carteira — são públicas. São espelhadas das issues do GitHub."
+  },
+  "tokenomics": "Tokenomics",
+  "seeTokenomics": "Veja como a emissão funciona"
 }
